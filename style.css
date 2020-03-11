@@ -5,57 +5,43 @@
   font-size: 10px;
 }
 
-.Title li {
-  list-style: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-}
-
-.TopName {
+.TopTopMenu {
   display: flex;
+  flex-direction: row;
 }
-.MyName {
-  display: flex;
-  list-style: none;
-  font-family: "Raleway", sans-serif;
-  justify-content: space-evenly;
-  font-weight: 500;
-}
-
 .Amanda {
+  display: flex;
   font-size: 4rem;
-  font-weight: bolder;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
   -webkit-animation: colorchange 6s 3 alternate;
   animation-iteration-count: infinite;
-}
-.Low {
-  font-size: 4rem;
-  margin-left: 1vw;
-  font-weight: bolder;
-  -webkit-animation: colorchange 6s 3 alternate;
-  animation-iteration-count: infinite;
+  margin-right: 63vw;
 }
 
 .TopMenu {
-  list-style: none;
   display: flex;
+  list-style: none;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  justify-content: space-evenly;
-  margin-left: 41vw;
-  width: 32vw;
 }
-.Title li Name {
-  font-size: 4rem;
+
+.Menu2 {
+  display: flex;
+  font-weight: 600;
+  /* text-align: right; */
+  width: auto;
 }
 
 .AboutMe a {
   color: #f59000;
   font-size: 2rem;
 }
+
 .Linkedin a {
   color: #973cbf;
   font-size: 2rem;
+  margin-right: 2vw;
 }
 .Contact a {
   color: #fe6f61;
@@ -127,12 +113,12 @@
   background-color: white;
   color: #313131;
   font-size: 3rem;
+
   /* position: absolute; */
 }
-.HeadlineText {
+/* .HeadlineText {
   width: 40vw;
-  margin: 2vw;
-}
+} */
 
 .MenuLine {
   width: 35px;
