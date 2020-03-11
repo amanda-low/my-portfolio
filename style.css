@@ -43,7 +43,7 @@
   font-size: 2rem;
   margin-right: 2vw;
 }
-.Contact a {
+.Contact1 a {
   color: #fe6f61;
   font-size: 2rem;
 }
@@ -75,7 +75,7 @@
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
-.Contact:hover {
+.Contact1:hover {
   color: darkmagenta;
   animation: Bounce;
   animation-duration: 0.3s;
@@ -348,7 +348,7 @@ html {
   font-size: 3rem;
   font-weight: 500;
 }
-#Bottom {
+#Contact {
   width: 100 vw;
   height: 40vh;
   background-color: #f4f4f4;
