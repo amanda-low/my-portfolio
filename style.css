@@ -1,16 +1,64 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ultra&display=swap");
 * {
   font-size: 10px;
 }
+
+.Title li {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+
+.TopName {
+  display: flex;
+}
+.MyName {
+  display: flex;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+.Amanda {
+  font-size: 4rem;
+  font-weight: bolder;
+  -webkit-animation: colorchange 6s 3 alternate;
+  animation-iteration-count: infinite;
+}
+.Low {
+  font-size: 4rem;
+  margin-left: 1vw;
+  font-weight: bolder;
+  -webkit-animation: colorchange 6s 3 alternate;
+  animation-iteration-count: infinite;
+}
+
 .TopMenu {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  width: 50vw;
   font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  justify-content: space-evenly;
+  margin-left: 41vw;
+  width: 32vw;
+}
+.Title li Name {
+  font-size: 4rem;
 }
 
-.TopMenu li {
+.AboutMe a {
+  color: #f59000;
+  font-size: 2rem;
+}
+.Linkedin a {
+  color: #973cbf;
+  font-size: 2rem;
+}
+.Contact a {
+  color: #fe6f61;
   font-size: 2rem;
 }
 .Home:hover {
@@ -59,29 +107,33 @@
 }
 
 .Headline1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .Headline2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
-.Headline3 {
-  font-size: 3rem;
+
+.MyName {
+  width: 40vw;
+  margin-left: 2vw;
 }
 .Headline {
   font-family: futura;
   font-family: "Raleway", sans-serif;
-  width: 40vw;
-  height: 40vw;
-  background-color:#F8B461;
+
+  width: 45vw;
+  height: 25vw;
+  background-color: white;
   color: #313131;
   font-size: 3rem;
   /* position: absolute; */
-  -webkit-animation: colorchange 20s 3 alternate;
-  animation-iteration-count: infinite;
 }
 .HeadlineText {
-  margin: 5vw;
+  width: 40vw;
+  margin: 2vw;
 }
+
 .MenuLine {
   width: 35px;
   height: 5px;
@@ -90,67 +142,40 @@
 }
 .BurgerMenu {
   position: fixed;
-right: 7vw;
+  right: 7vw;
 }
-
 
 @-webkit-keyframes colorchange {
   0% {
-    color: blue;
+    color: #c62a9e;
   }
 
-  10% {
-    color: #8e44ad;
-  }
-
-  20% {
-    color: #1abc9c;
-  }
-
-  30% {
-    color: #d35400;
-  }
-
-  40% {
-    color: blue;
+  25% {
+    color: #fead51;
   }
 
   50% {
-    color: #34495e;
+    color: #973cbf;
   }
 
-  60% {
-    color: blue;
+  75% {
+    color: #fe6f61;
   }
-
-  70% {
-    color: #2980b9;
-  }
-  80% {
-    color: #f1c40f;
-  }
-
-  90% {
-    color: #2980b9;
-  }
-
   100% {
-    color: pink;
+    color: #c62a9e;
   }
 }
 
 .PhotoMe {
-  width: 40vw;
-  height: 40vw;
-  opacity: 1;
+  width: 45vw;
+  height: 25vw;
   display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
 }
 .AmandaLow {
+  margin-top: 4vh;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 7vw;
+  /* margin-top: 2vw; */
 }
 
 .container {
@@ -162,29 +187,29 @@ right: 7vw;
   grid-template-rows: 1 fr 1fr;
 }
 .Boxes1 {
-  margin-top: 10vh;
+  margin-top: 4vh;
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 .Boxes2 {
   display: flex;
   justify-content: space-evenly;
 }
 .Box1 {
-  width: 40vw;
-  height: 40vw;
-  background-color: pink;
+  width: 45vw;
+  height: 25vw;
+  background-color: #c62a9e;
   /* animation-name: Grow; */
 }
 .Picture1 {
-  width: 40vw;
-  height: 40vw;
+  width: 45vw;
+  height: 25vw;
 }
 #Animation1 {
   position: relative;
-  height: 40vh;
-  width: 40vw;
+  height: 45vh;
+  width: 25vw;
   margin: 0;
 }
 #Animation1 img {
@@ -200,19 +225,19 @@ right: 7vw;
 }
 
 .Box2 {
-  width: 40vw;
-  height: 40vw;
-  background-color: palevioletred;
+  width: 45vw;
+  height: 25vw;
+  background-color: #fead51;
 }
 .Box3 {
-  width: 40vw;
-  height: 40vw;
-  background-color: darkmagenta;
+  width: 45vw;
+  height: 25vw;
+  background-color: #973cbf;
 }
 .Box4 {
-  width: 40vw;
-  height: 40vw;
-  background-color: #f59000;
+  width: 45vw;
+  height: 25vw;
+  background-color: #fe6f61;
 }
 
 .Image {
@@ -281,20 +306,197 @@ right: 7vw;
 }
 .Text {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   /* padding: 16px 32px; */
   font-family: "Raleway", sans-serif;
   justify-content: left;
 }
-.AboutMe2 {
-  width: 100 vw;
-  height: 20vh;
-  background-color: #f4f4f4;
-  margin-top: 10vh;
-}
+
 .Social {
-  width: 40px;
-  height: 40px;
-  margin: 1vw;
-  align
+  display: flex;
+  width: 20vw;
+  justify-content: space-evenly;
+  margin-left: 40%;
+  margin-top: 2vh;
+}
+.Tooltip {
+  position: relative;
+  display: inline-block;
+}
+.Tooltip .Tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.Tooltip:hover .Tooltiptext {
+  visibility: visible;
+}
+
+.emailaddress {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Copyright {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.LetsConnect {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#Bottom {
+  width: 100 vw;
+  height: 40vh;
+  background-color: #f4f4f4;
+  margin-top: 4vh;
+}
+@media screen and (max-width: 600px) {
+  .Home {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1.Headline1 {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2.Headline2 {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AmandaLow {
+    margin-top: 4vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 600px) {
+  .PhotoMe {
+    width: 90vw;
+    height: 50vw;
+    margin-top: 8vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Boxes1 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box1 {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Box2 {
+    width: 90vw;
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Boxes2 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Box3 {
+    width: 90vw;
+    margin-top: 17vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Box4 {
+    width: 90vw;
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Bottom {
+    margin-top: 22vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box1:hover .Middle {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box1:hover .Image {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box2:hover .Middle {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box2:hover .Image {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box3:hover .Middle {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box3:hover .Image {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box4:hover .Middle {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Box4:hover .Image {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Amanda {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Low {
+    font-size: 3rem;
+  }
 }
