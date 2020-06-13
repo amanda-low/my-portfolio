@@ -1,1 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ultra&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* <<<<<<<<<<<<<<<<< header >>>>>>>>>>>>> */
+
+#header {
+  width: auto;
+  height: 100px;
+  padding-top: 20px;
+  /* position: relative; */
+}
+
+#links {
+  position: relative;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+.contact-link {
+  margin-left: 10px;
+}
+
+/* <<<<<<<<<< end header >>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<< about me >>>>>>>>>>>>>>>> */
+
+/* #about-me div {
+  padding-bottom: 1vw;
+} */
+
+#about-me {
+  width: auto;
+  height: 300px;
+}
+
+.photo1 {
+  width: 100%;
+  margin-right: 1vw;
+}
+
+/* <<<<<<<<<<<< end about me >>>>>>>>>>>>> */
+
+/* <<<<<<<<<< portfolio >>>>>>>>>>>>> */
+
+#portfolio {
+  margin: 3vw;
+}
+
+#box-padding-1 {
+  padding: 0.5vw;
+}
+#box-padding-2 {
+  padding: 0.5vw;
+}
+#box-padding-3 {
+  padding: 0.5vw;
+}
+#box-padding-4 {
+  padding: 0.5vw;
+}
+
+#box1 {
+  background-color: blue;
+  width: 100%;
+  height: 400px;
+}
+
+#box2 {
+  background-color: blue;
+  width: 100%;
+  height: 400px;
+}
+
+#box3 {
+  background-color: blue;
+  width: 100%;
+  height: 400px;
+}
+
+#box4 {
+  background-color: blue;
+  width: 100%;
+  height: 400px;
+}
+
+/* <<<<<<<<< end portfolio >>>>>>>>> */
+
+/* <<<<<<<<<< contact>>>>>>>>>> */
+
+#contact {
+  margin: 3vw;
+  margin-top: 2vw;
+}
+#contact-box-1 {
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+}
+
+#contact-box-padding-1 {
+  padding: 0.5vw;
+}
+
+#contact-box-padding-2 {
+  padding: 0.5vw;
+}
+
+#contact-box-2 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: red;
+}
+
+#copyright {
+  position: absolute;
+  right: 4vw;
+  bottom: 1vw;
+}
+/* <<<<<<<<<< end contact>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<< media queries >>>>>>>>>>>>> */
+@media (min-width: 720px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 719px) {
+  .col-xs-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+/* <<<<<<<<<< end media query >>>>>>>>>>> */

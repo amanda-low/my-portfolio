@@ -10,7 +10,7 @@
   flex-direction: row;
 }
 .Amanda {
-  display: flex;
+  /* display: flex; */
   font-size: 4rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -29,7 +29,6 @@
 .Menu2 {
   display: flex;
   font-weight: 600;
-  /* text-align: right; */
   width: auto;
 }
 
@@ -45,7 +44,7 @@
 }
 .Contact1 a {
   color: #fe6f61;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .Home:hover {
   color: pink;
@@ -94,9 +93,10 @@
 
 .Headline1 {
   font-size: 3rem;
+  font-weight: 500;
 }
 .Headline2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -356,7 +356,7 @@ html {
 }
 @media screen and (max-width: 600px) {
   .Home {
-    display: none;
+    display: none;xw
   }
 }
 @media screen and (max-width: 600px) {
@@ -486,3 +486,4 @@ html {
     font-size: 3rem;
   }
 }
+
