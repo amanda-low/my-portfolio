@@ -8,27 +8,66 @@
 }
 
 /* <<<<<<<<<<<<<<<<< header >>>>>>>>>>>>> */
+#header-1 {
+  background-color: yellow;
+  width: 100%;
+  height: 100px;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+}
+#header-2 {
+  background-color: aqua;
+  width: 100%;
+  height: 100px;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
 
 #header {
-  width: auto;
-  height: 100px;
-  padding-top: 20px;
-  /* position: relative; */
-}
-
-#links {
-  position: relative;
-}
-
-.links-list {
-  list-style: none;
   display: flex;
-  position: absolute;
-  right: 30px;
+  align-items: ;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  justify-content: space-between;
 }
 
-.contact-link {
-  margin-left: 10px;
+#header-1-padding {
+  padding: 0.5vw;
+}
+
+#header-2-padding {
+  padding: 0.5vw;
+}
+
+.nav {
+  text-align: right;
+}
+
+.links {
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+}
+
+.links a {
+  text-decoration: none;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+
+label {
+  margin-right: 2vw;
+  font-size: 2rem;
+  line-height: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* <<<<<<<<<< end header >>>>>>>>>>>>>>> */
@@ -54,7 +93,8 @@
 /* <<<<<<<<<< portfolio >>>>>>>>>>>>> */
 
 #portfolio {
-  margin: 3vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 #box-padding-1 {
@@ -99,7 +139,8 @@
 /* <<<<<<<<<< contact>>>>>>>>>> */
 
 #contact {
-  margin: 3vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   margin-top: 2vw;
 }
 #contact-box-1 {
@@ -116,17 +157,27 @@
   padding: 0.5vw;
 }
 
+#contact-box-1 {
+  padding-left: 1vw;
+  font-family: "Raleway", sans-serif;
+}
+
 #contact-box-2 {
   width: 100%;
   height: 100px;
   position: relative;
   background-color: red;
+  font-family: "Raleway", sans-serif;
 }
 
+#contact-title {
+  font-size: 1.5rem;
+}
 #copyright {
   position: absolute;
-  right: 4vw;
+  right: 1vw;
   bottom: 1vw;
+  font-size: 0.8rem;
 }
 /* <<<<<<<<<< end contact>>>>>>>>>> */
 
@@ -138,10 +189,40 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 719px) {
+@media (max-width: 719px) {
   .col-xs-12 {
     width: 100%;
     float: left;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  #header-2-padding {
+    display: flex;
+  }
+  #contact-box-1 {
+    text-align: center;
+  }
+  #contact-box-2 {
+    right: 50;
+  }
+  .links {
+    text-align: center;
+    width: 30vw;
+    display: none;
+  }
+
+  .links a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+
+  #toggle:checked + .links {
+    display: block;
   }
 }
 
