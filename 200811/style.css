@@ -9,6 +9,7 @@ html {
 body {
 }
 
+/* <<<<<<<<<<<<<<header>>>>>>>>>>>>>>>>> */
 .header {
   display: grid;
   grid-gap: 20px;
@@ -24,40 +25,52 @@ body {
   font-weight: bolder;
 } */
 
+/* <<<<<<<<<<<<<<header end>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<projects>>>>>>>>>>>>>>>>> */
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-gap: 20px; */
-  grid-template-areas: "project_img project_details";
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  grid-gap: 10px;
 }
 
-.project_img {
-  grid-area: project_img;
+/* .project_img {
+  grid-area: project-img;
 }
 
 .project_details {
-  grid-area: project_details;
-}
+  grid-area: project-details;
+} */
 
 .project {
   background: rgba(255, 255, 255, 0.2);
   padding: 10px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: ;
   grid-gap: 10px;
+  align-items: center;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .project {
     grid-template-areas:
       "project_img"
       "project_details";
   }
+} */
+
+/* .project_img {
+  width: 100%;
+} */
+
+.project_desc {
+  font-size: 1.5rem;
 }
 
-.project_img {
-  /* width: 100%; */
-}
+/* <<<<<<<<<<<<<<projects end>>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<footer>>>>>>>>>>>>>>>>> */
 
 .footer {
   display: grid;
@@ -72,3 +85,5 @@ body {
 .footer_3 {
   justify-self: right;
 }
+
+/* <<<<<<<<<<<<<<footer end>>>>>>>>>>>>>>>>> */
