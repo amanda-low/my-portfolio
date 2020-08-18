@@ -4,17 +4,19 @@ html {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   font-size: 10px;
+  font-weight: 300;
   color: #3f4241;
 }
 body {
   text-decoration: none;
+  color: #3f4241;
 }
 .header {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 85px;
   /* margin-left: 100px;
   margin-right: 100px; */
   text-decoration: none;
@@ -22,11 +24,20 @@ body {
 
 .header_name {
   text-decoration: none;
-  color: black;
+  color: #3f4241;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header_title {
+  font-size: 2rem;
+}
+.header_name {
+  font-weight: 00;
 }
 
 .header_name:hover {
-  font-weight: 600;
+  font-weight: 800;
 }
 .header_2 {
   justify-self: end;
@@ -36,7 +47,15 @@ body {
 .dropdown_btn {
   background-color: white;
   border: none;
+  color: #3f4241;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 600;
+}
+
+.dropdown_arrow {
+  font-size: 1.5rem;
+  color: #3f4241;
 }
 
 .dropdown {
@@ -47,10 +66,14 @@ body {
 .dropdown_list {
   display: none;
   position: absolute;
+  right: 0;
+  font-size: 1.4rem;
+  color: #3f4241;
+  font-family: "Nunito Sans", sans-serif;
   background-color: white;
-  min-width: 300px;
-  z-index: 1;
-  cursor: pointer;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  min-width: 160px;
+  /* z-index: 1; */
 }
 
 .dropdown_list a {
@@ -66,7 +89,7 @@ body {
 }
 
 .dropdown:hover .dropdown_btn {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .projects {
@@ -99,6 +122,10 @@ body {
 .contact_email {
   justify-self: center;
   font-size: 2rem;
+}
+
+.contact_btn {
+  font-weight: 600;
 }
 
 .footer {
