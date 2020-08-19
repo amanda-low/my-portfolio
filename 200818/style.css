@@ -10,6 +10,8 @@ html {
 body {
   text-decoration: none;
   color: #3f4241;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 /* #menuToggle {
   display: block;
@@ -201,18 +203,18 @@ transform-origin: 0% 0%;
   text-decoration: none;
   color: #3f4241;
   font-size: 2rem;
+}
+
+.header_name_1 {
   font-weight: 600;
 }
 
 .header_title {
   font-size: 2rem;
 }
-.header_name {
-  font-weight: 00;
-}
 
 .header_name:hover {
-  font-weight: 800;
+  /* font-weight: ; */
 }
 .header_2 {
   justify-self: end;
@@ -264,7 +266,7 @@ transform-origin: 0% 0%;
 }
 
 .dropdown:hover .dropdown_btn {
-  font-weight: 800;
+  font-weight: 710;
 }
 
 .projects {
@@ -272,62 +274,82 @@ transform-origin: 0% 0%;
   /* justify-self: center; */
   /* justify-items: center; */
   /* grid-gap: 20px; */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, 500px);
   margin-bottom: 30px;
 }
-.project {
-  width: 100%;
+
+/* .project_1 {
+  background: url(https://source.unsplash.com/random/500x300?v=1);
+  background-size: cover;
+}
+.project_2 {
+  background: url(https://source.unsplash.com/random/500x300?v=2);
 }
 
-.project_img {
-  /* object-fit: cover; */
-  width: 100%;
-  justify-content: center;
+.project_3 {
+  background: url(https://source.unsplash.com/random/400x300?v=3);
 }
+.project_4 {
+  background: url(https://source.unsplash.com/random/400x300?v=4);
+} */
+
 /* .project_img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 } */
 
-.contact {
-  display: grid;
-}
-
-.contact_email {
-  justify-self: center;
-  font-size: 2rem;
-}
-
-.contact_btn {
-  font-weight: 600;
-}
-
-.accordion {
-  background-color: white;
-  color: #3f4241;
-  padding: 18px;
+.project_img img {
   width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
 }
 
-.active {
+.about_me {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.5rem;
+}
+
+.about_text button {
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+  border: none;
+  background-color: white;
+  text-align: left;
+  padding-left: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.about_title:hover {
   font-weight: 600;
 }
 
-.contact_panel {
-  padding: 0 18px;
+.contact_title:hover {
+  font-weight: 600;
+}
+
+.contact {
+  justify-self: end;
+}
+
+.contact button {
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+  border: none;
   background-color: white;
-  display: none;
-  overflow: hidden;
+  justify-content: left;
+  text-align: left;
+  padding-left: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.contact_email {
+  font-size: 1.5rem;
 }
 
 .footer {
   display: grid;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .footer_icons {
@@ -337,7 +359,15 @@ transform-origin: 0% 0%;
 .footer_icon {
   margin: 1rem;
 }
-@media (max-width: 7000px) {
+
+.footer_img {
+  text-decoration: none;
+}
+/* .footer_icon:hover {
+  height: 26px;
+  width: 26px;
+} */
+@media (max-width: 1000px) {
   .projects {
     margin-left: 0;
     margin-right: 0;
@@ -345,19 +375,33 @@ transform-origin: 0% 0%;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
+  body {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
+  .about_me {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    margin-top: 30px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .dropdown {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
   .burger {
     display: none;
   }

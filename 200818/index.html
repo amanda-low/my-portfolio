@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <style></style>
+
     <title>Amanda Low UX Designer</title>
   </head>
   <body>
@@ -43,13 +43,14 @@
 
     <div class="header">
       <div class="header_1">
-        <a class="header_name" href="index.html"> AMANDA LOW</a
-        ><span class="header_title"> UX Design</span>
+        <a class="header_name" href="index.html"
+          ><span class="header_name_1"> AMANDA LOW</span
+          ><span class="header_name_2"> UX Design</span></a
+        >
       </div>
       <div class="header_2">
         <div class="dropdown" style="float: right;">
-          <button class="dropdown_btn">Work</button
-          ><span class="dropdown_arrow">&or;</span>
+          <button class="dropdown_btn">Work</button>
           <div class="dropdown_list">
             <a href="whatsapp-subgroup.html">WhatsApp Subgroup</a>
             <a href="member-database.html">Member Database</a>
@@ -90,43 +91,69 @@
 
     <!-- end projects -->
 
-    <!-- contact -->
+    <!-- about -->
 
-    <div class="contact">
-      <div class="contact_email">
-        <button class="contact_accordion">Email +</button>
-        <div class="contact_panel">
-          <span class="contact_details">amanda.r.low@outlook.com</span>
+    <div class="about_me">
+      <div class="about_text">
+        <button onclick="myFunction() ">
+          <p class="about_title">About Me +</p>
+        </button>
+        <div id="about_desc">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente,
+          tempore cum quaerat ipsa aliquid aspernatur id eveniet sunt.
+          <br />
+          Mollitia tempora voluptas cupiditate harum quo rem qui natus iste
+          nostrum nobis?
         </div>
+      </div>
+
+      <div class="contact">
+        <button onclick="someFunction() ">
+          <span class="contact_title">Email +</span>
+        </button>
+        <br />
+        <div id="contact_email">amanda.r.low@outlook.com</div>
       </div>
     </div>
 
-    <!-- end contact -->
+    <!-- end about -->
 
     <!-- footer -->
     <div class="footer">
       <div class="footer_icons">
-        <a href="https://www.linkedin.com/in/amanda-r-low/" target="_blank">
+        <a
+          class="footer_img"
+          href="https://www.linkedin.com/in/amanda-r-low/"
+          target="_blank"
+        >
           <img
-            class="footer_icon"
+            class="footer_icon footer_icon_1"
             src="linkedin 24px.png"
             alt=""
             width="24px"
             height="24px"
           />
         </a>
-        <a href="https://medium.com/@amanda.low" target="_blank">
+        <a
+          class="footer_img"
+          href="https://medium.com/@amanda.low"
+          target="_blank"
+        >
           <img
-            class="footer_icon"
+            class="footer_icon footer_icon_2"
             src="medium 24px.png"
             alt=""
             width="24px"
             height="24px"
           />
         </a>
-        <a href="https://github.com/amanda-low" target="_blank">
+        <a
+          class="footer_img"
+          href="https://github.com/amanda-low"
+          target="_blank"
+        >
           <img
-            class="footer_icon"
+            class="footer_icon footer_icon_3"
             src="github 24pxx.png"
             alt=""
             width="24px"
