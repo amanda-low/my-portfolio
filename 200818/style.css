@@ -198,6 +198,7 @@ body {
   padding-left: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
 }
 
 .about_title:hover {
@@ -222,6 +223,7 @@ body {
   padding-left: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
 }
 .contact_email {
   font-size: 1.5rem;
