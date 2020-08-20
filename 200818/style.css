@@ -304,7 +304,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 10vh 100vh 50vh;
+  grid-template-rows: 50vh 50vh 50vh 50vh 50vh 70vh 50vh 50vh 10vh 100vh 50vh;
   grid-gap: 10px;
 }
 
@@ -379,10 +379,10 @@ body {
 
 .header_texts {
   display: grid;
-  /* padding: 20px; */
-  /* grid-gap: 20px; */
   grid-template-columns: 1fr 1fr;
-  /* align-content: center; */
+  grid-gap: 20px;
+  padding: 20px;
+  align-content: center;
 }
 
 .main_title {
@@ -412,11 +412,19 @@ body {
 }
 
 .method_texts,
-.iterations_texts,
 .insights_texts {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  align-content: center;
+}
+
+.iterations_texts {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   padding: 20px;
   align-content: center;
 }
