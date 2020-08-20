@@ -10,10 +10,11 @@ html {
 body {
   text-decoration: none;
   color: #3f4241;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
+/* <<<<<<<<<<<<<<<<< Burger Menu >>>>>>>>>>>>>>>> */
 .burger_menu {
   display: grid;
 }
@@ -84,6 +85,10 @@ body {
 .burger:active .burger_list {
   display: block;
 }
+
+/* <<<<<<<<<<<<<<<<< End Burger Menu >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>> */
 
 .header {
   display: grid;
@@ -167,11 +172,15 @@ body {
   font-weight: 600;
 }
 
+/* <<<<<<<<<<<<<<<<< End Header >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Projects >>>>>>>>>>>>>>>> */
+
 .projects {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, 500px);
-  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, 500px);
+  justify-content: center; */
 }
 
 .project_img:hover {
@@ -181,6 +190,10 @@ body {
 .project_img img {
   width: 100%;
 }
+
+/* <<<<<<<<<<<<<<<<< End Projects >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< About Me/Contact >>>>>>>>>>>>>>>> */
 
 .about_me {
   display: grid;
@@ -196,14 +209,10 @@ body {
   background-color: white;
   text-align: left;
   padding-left: 0px;
-  padding: 0px;
-  margin: 0px;
+  /* padding: 0px;
+  margin: 0px; */
   outline: none;
 }
-
-/* .about_desc {
-  display: none;
-} */
 
 .about_title:hover {
   font-weight: 600;
@@ -224,7 +233,7 @@ body {
   background-color: white;
   justify-content: left;
   text-align: left;
-  padding-left: 0px;
+  padding-right: 0px;
   padding: 0px;
   margin: 0px;
   outline: none;
@@ -232,6 +241,10 @@ body {
 .contact_email {
   font-size: 1.5rem;
 }
+
+/* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>> */
 
 .footer {
   display: grid;
@@ -259,18 +272,24 @@ body {
   }
 } */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .projects {
     margin-left: 0;
     margin-right: 0;
     justify-self: center;
   }
+} */
+
+@media (min-width: 1280px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1279px) {
   body {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .header {
     grid-template-columns: 1fr;
@@ -285,21 +304,20 @@ body {
   .contact {
     margin-top: 30px;
   }
-}
-
-@media (max-width: 767px) {
   .dropdown {
     display: none;
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .burger {
     display: none;
   }
 }
 
-/* ------- Sub page -------- */
+/* <<<<<<<<<<<<<<<<< End Footer >>>>>>>>>>>>>>>> */
+
+/* ---------------------------------- Sub page --------------------------------- */
 
 .grid {
   display: grid;
@@ -480,4 +498,4 @@ body {
   }
 }
 
-/* ------- Sub page end -------- */
+/* ---------------------------------- End Sub page --------------------------------- */

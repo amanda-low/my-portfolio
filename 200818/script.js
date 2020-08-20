@@ -1,6 +1,6 @@
-function myFunction(x) {
-  x.classList.toggle("change");
-}
+// function myFunction(x) {
+//   x.classList.toggle("change");
+// }
 
 function myFunction() {
   var x = document.getElementById("about_desc");
