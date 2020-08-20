@@ -142,7 +142,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #3f4241;
   font-family: "Nunito Sans", sans-serif;
   background-color: white;
@@ -312,7 +312,7 @@ body {
 }
 
 .header_img {
-  background-image: url(test_img.jpeg);
+  background-image: url(test_img.png);
   position: relative;
 }
 
@@ -336,12 +336,12 @@ body {
   /* background-color: white; */
 }
 
-.header_img:hover .img_overlay {
-  opacity: 100%;
-}
-
 .header_img:hover {
   opacity: 50%;
+}
+
+.header_img:hover .img_overlay {
+  opacity: 100%;
 }
 
 .img_text {
