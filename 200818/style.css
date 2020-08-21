@@ -162,14 +162,14 @@ body {
 }
 
 .dropdown_list a:hover {
-  font-weight: 600;
+  opacity: 70%;
 }
 .dropdown:hover .dropdown_list {
   display: block;
 }
 
 .dropdown:hover .dropdown_btn {
-  font-weight: 600;
+  opacity: 70%;
 }
 
 /* <<<<<<<<<<<<<<<<< End Header >>>>>>>>>>>>>>>> */
@@ -217,7 +217,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1.5rem;
-  /* margin-top: 50px; */
+  margin-top: 50px;
 }
 
 .about_text button {
@@ -230,6 +230,17 @@ body {
   padding: 0px;
   margin: 0px;
   outline: none;
+}
+
+#about_desc img {
+  width: 100px;
+  height: 100px;
+}
+
+.about_desc_wrap {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  margin-top: 20px;
 }
 
 .contact button {
@@ -246,19 +257,20 @@ body {
 }
 
 .about_title:hover {
-  font-weight: 600;
+  opacity: 70%;
 }
 
 .contact_title:hover {
-  font-weight: 600;
+  opacity: 70%;
 }
 
 .contact {
   text-align: right;
 }
 
-.contact_email {
+#contact_email {
   font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 /* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
@@ -285,6 +297,8 @@ body {
   opacity: 50%;
 }
 
+/* <<<<<<<<<<<<<<<<< End Footer >>>>>>>>>>>>>>>> */
+
 /* @media (max-width: 1439px) {
   .header_empty {
     display: none;
@@ -310,18 +324,23 @@ body {
     margin-right: 10px;
     margin-left: 10px;
   }
-  .header {
-    grid-template-columns: 1fr;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
+  .header,
+  .projects,
   .about_me {
     grid-template-columns: 1fr;
   }
+
+  .about_me,
   .contact {
-    margin-top: 30px;
+    text-align: center;
+  }
+
+  .contact {
+    margin-top: 20px;
+  }
+
+  .about_desc_2 {
+    text-align: left;
   }
   .dropdown {
     display: none;
@@ -334,7 +353,9 @@ body {
   }
 }
 
-/* <<<<<<<<<<<<<<<<< End Footer >>>>>>>>>>>>>>>> */
+.footer {
+  margin-top: 40px;
+}
 
 /* ---------------------------------- Sub page --------------------------------- */
 
@@ -484,7 +505,7 @@ body {
 /* iphone 6/7/8 */
 @media (max-width: 767px) {
   .grid {
-    grid-template-rows: 50vh 90vh 50vh 80vh 50vh 140vh 50vh 80vh 10vh 50vh;
+    grid-template-rows: 50vh 110vh 50vh 80vh 50vh 140vh 50vh 80vh 10vh 50vh;
   }
   .main_title {
     font-size: 3rem;
@@ -501,7 +522,16 @@ body {
   .prototype_title {
     font-size: 3rem;
   }
-  .about_me {
+  .about_desc_wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .about_desc_2 {
+    margin-top: 20px;
+  }
+
+  .contact {
+    margin-top: 20px;
   }
 }
 
