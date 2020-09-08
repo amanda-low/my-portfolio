@@ -243,6 +243,11 @@ body {
   margin-top: 20px;
 }
 
+.about_desc_space {
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
 .contact button {
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
@@ -257,11 +262,11 @@ body {
 }
 
 .about_title:hover {
-  opacity: 70%;
+  opacity: 50%;
 }
 
 .contact_title:hover {
-  opacity: 70%;
+  opacity: 50%;
 }
 
 .contact {
