@@ -217,7 +217,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1.5rem;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .about_text button {
@@ -261,6 +261,10 @@ body {
   outline: none;
 }
 
+.about_title_font {
+  text-decoration: none;
+  color: #3f4241;
+}
 .about_title:hover {
   opacity: 50%;
 }
@@ -269,6 +273,10 @@ body {
   opacity: 50%;
 }
 
+.contact_title_font {
+  text-decoration: none;
+  color: #3f4241;
+}
 .contact {
   text-align: right;
 }
@@ -276,6 +284,10 @@ body {
 #contact_email {
   font-size: 1.5rem;
   margin-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
@@ -293,6 +305,13 @@ body {
 
 .footer_icon {
   margin: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
+.footer_icon_1 {
+  width: 24px;
+  height: 24px;
 }
 
 .footer_img {
