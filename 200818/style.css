@@ -245,7 +245,7 @@ body {
 
 .about_desc_space {
   margin-top: 0.7rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
 .contact button {
@@ -301,17 +301,11 @@ html {
 
 .footer_icons {
   justify-self: center;
+  margin-top: 1vh;
 }
 
 .footer_icon {
-  margin: 1rem;
-  width: 24px;
-  height: 24px;
-}
-
-.footer_icon_1 {
-  width: 24px;
-  height: 24px;
+  margin-right: 1rem;
 }
 
 .footer_img {
@@ -386,12 +380,16 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh 50vh 50vh 50vh 50vh 70vh 50vh 50vh 10vh 100vh;
+  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto 80vh;
   grid-gap: 10px;
 }
 
-.text_bold {
+.bold {
   font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* .header_img,
@@ -468,7 +466,11 @@ html {
 }
 
 .subtitle_link {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #3f4241;
+}
+
+.desc_link {
   color: #3f4241;
 }
 
@@ -529,9 +531,9 @@ html {
 
 /* iphone 6/7/8 */
 @media (max-width: 767px) {
-  .grid {
+  /* .grid {
     grid-template-rows: 50vh 110vh 50vh 80vh 50vh 140vh 50vh 80vh 10vh 50vh;
-  }
+  } */
   .main_title {
     font-size: 3rem;
   }
@@ -562,9 +564,9 @@ html {
 
 /* iphone 5 */
 @media (max-width: 374px) {
-  .grid {
+  /* .grid {
     grid-template-rows: 50vh 110vh 50vh 90vh 50vh 170vh 50vh 120vh 10vh 50vh;
-  }
+  } */
   .main_title {
     font-size: 2.5rem;
   }
