@@ -392,6 +392,13 @@ html {
   font-style: italic;
 }
 
+.center {
+  justify-content: center;
+}
+
+.list_none {
+  list-style-type: none;
+}
 /* .header_img,
 .header_texts,
 .method_img,
