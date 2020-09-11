@@ -146,7 +146,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
-  width: 200px;
+  width: 250px;
   font-size: 1.7rem;
   color: #3f4241;
   font-family: "Nunito Sans", sans-serif;
@@ -305,7 +305,7 @@ html {
 }
 
 .footer_icon {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .footer_img {
