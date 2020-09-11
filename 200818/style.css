@@ -380,7 +380,7 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto 80vh;
+  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto 80vh auto auto auto auto;
   grid-gap: 10px;
 }
 
@@ -538,9 +538,6 @@ html {
 
 /* iphone 6/7/8 */
 @media (max-width: 767px) {
-  /* .grid {
-    grid-template-rows: 50vh 110vh 50vh 80vh 50vh 140vh 50vh 80vh 10vh 50vh;
-  } */
   .main_title {
     font-size: 3rem;
   }
@@ -571,9 +568,6 @@ html {
 
 /* iphone 5 */
 @media (max-width: 374px) {
-  /* .grid {
-    grid-template-rows: 50vh 110vh 50vh 90vh 50vh 170vh 50vh 120vh 10vh 50vh;
-  } */
   .main_title {
     font-size: 2.5rem;
   }
@@ -583,3 +577,5 @@ html {
 }
 
 /* ---------------------------------- End Sub page --------------------------------- */
+
+/* ---------------------------------- Sub page - Queer Booth --------------------------------- */
