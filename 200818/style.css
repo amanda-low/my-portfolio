@@ -300,7 +300,8 @@ html {
 }
 
 .footer_icons {
-  justify-self: center;
+  /* justify-self: center;
+  align-items: center; */
   margin-top: 1vh;
 }
 
@@ -380,7 +381,7 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto 80vh auto auto auto auto auto auto;
+  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto auto auto auto auto auto auto auto;
   grid-gap: 10px;
 }
 
