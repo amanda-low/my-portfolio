@@ -300,9 +300,9 @@ html {
 }
 
 .footer_icons {
-  /* justify-self: center;
-  align-items: center; */
-  margin-top: 1vh;
+  justify-self: center;
+  align-items: center;
+  /* margin-top: 1vh; */
 }
 
 .footer_icon {
