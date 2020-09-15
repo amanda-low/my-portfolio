@@ -303,6 +303,7 @@ html {
   justify-self: center;
   align-items: center;
   /* margin-top: 1vh; */
+  margin-bottom: 3vh;
 }
 
 .footer_icon {
