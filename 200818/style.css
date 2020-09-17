@@ -394,6 +394,9 @@ html {
   font-style: italic;
 }
 
+.list_style_none {
+  list-style: none;
+}
 .center {
   justify-content: center;
 }
