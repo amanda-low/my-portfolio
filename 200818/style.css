@@ -352,7 +352,7 @@ html {
 
 .footer {
   display: grid;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .footer_icons {
@@ -398,8 +398,6 @@ html {
   }
 }
 
-
-
 @media (max-width: 1279px) {
   body {
     margin-right: 10px;
@@ -413,7 +411,7 @@ html {
 
   .header_1 {
     text-align: center;
-      }
+  }
   .header,
   .projects,
   .about_me {
@@ -437,6 +435,14 @@ html {
   }
 }
 
+@media (max-width: 767px) {
+  .about_desc_wrap {
+    grid-template-columns: 1fr;
+  }
+  .about_desc_2 {
+    margin-top: 3vh;
+  }
+}
 
 @media (min-width: 768px) {
 
