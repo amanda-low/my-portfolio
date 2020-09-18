@@ -3,162 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amanda Low UX/UI Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      a {
-        text-decoration: none;
-      }
-    </style>
+
+    <title>AL UX Design</title>
   </head>
   <body>
-  
+    <!-- Burger Menu -->
 
-      <div class="TopTopMenu">
-        <ul class="TopMenu">
-    <li class="Amanda">AMANDA LOW</li>
-    <div class="Menu2">
-          <li class="Contact1"><a href="#Contact">CONTACT</a></li>
-        </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <li>Work:</li>
+          <blockquote>
+            <a href="whatsapp-subgroup.html"><li>WhatsApp Subgroups</li></a>
+            <a href="queer-booth-augmented-reality.html"
+              ><li>Queer Booth Augmented Reality</li></a
+            >
+            <a href="goalgirls-member-database.html"
+              ><li>GOALGIRLS Member Database</li></a
+            >
+            <a href="sports-bro-editorial-design.html"
+              ><li><Sports Bro Editorial Design</li></a
+            >
+          </blockquote>
+          <a href="#footer"><li>About Me / Email</li></a>
         </ul>
-     
+      </div>
+    </nav>
+
+    <!-- End Burger Menu -->
+
+    <div class="header">
+      <div class="header_1">
+        <a class="header_name" href="index.html"
+          ><span class="header_name_1"> AMANDA LOW</span
+          ><span class="header_name_2"> UX Design</span></a
+        >
       </div>
 
-      <!-- <section class="BurgerMenu">
-      <div class="MenuLine"></div>
-      <div class="MenuLine"></div>
-      <div class="MenuLine"></div>
-    </section> -->
-    </section>
-    <div>
-      <section class="AmandaLow">
-        <section class="Headline">
-          <div class="HeadlineText">
-            <h1 class="Headline1">
-              I'm a UX/UI Designer with a background in digital marketing.
-            </h1>
-            <h2 class="Headline2">
-              With 8 years of experience working in fashion, beauty, and
-              wellness e-commerce, I'm fascinated about all aspects of user experience. 
-              <br /><br />
-              I aim to create solutions focusing on sustainability, by combining design thinking with tech.
-              <br><br>
-              Currently learning JavaScript.
-            </h2>
-
-            <!-- <h3 class="Headline3">I also write and code.</h3> -->
-          </div>
-        </section>
-        <img
-          class="PhotoMe"
-          src="Amanda_Low_Photo.png"
-          alt="Photo Amanda Low"
-        />
-      </section>
-      <br />
-
-      <section class="Boxes1">
-        <div class="Box1">
-          <img class="Image" src="queer booth2.jpg" alt="Box1" />
-          <div class="Middle">
-            <a
-              class="Text"
-              href="https://docs.google.com/presentation/d/1af1B8RQm0O1LXo-n_rwJhGNQM5syb7E0SNKWWEjr0NE/present?slide=id.p"
-              target="_blank"
-              >Augmented Reality:
-              <br />
-              Queer Booth</a
+      <div class="header_2">
+        <div class="dropdown" style="float: right">
+          <button class="dropdown_btn">Work</button>
+          <div class="dropdown_list">
+            <a href="whatsapp-subgroup.html"
+              ><span class="bold">WhatsApp</span> Subgroup</a
+            ><br />
+            <a href="queer-booth-augmented-reality.html"
+              ><span class="bold">Queer Booth</span> Augmented Reality</a
+            ><br />
+            <a href="goalgirls-member-database.html"
+              ><span class="bold">GOALGIRLS</span> Member Database</a
+            ><br />
+            <a href="sports-bro-editorial-design.html"
+              ><span class="bold">Sports Bro</span> Editorial Design</a
             >
           </div>
         </div>
-        <div class="Box2">
-          <img class="Image" src="Sports Bro2.jpg" alt="Box1" />
-          <div class="Middle">
-            <a
-              class="Text"
-              href="https://docs.google.com/presentation/d/1DiNsW8PISNn1nfzCd83IDNBkEISyIshqwLPOC6G0Wfw/present?slide=id.p"
-              target="_blank"
-              >Editorial Design:
-              <br />
-              Sports Magazine
-            </a>
-          </div>
+      </div>
+    </div>
+    <!-- end header -->
+
+    <!-- projects -->
+    <div class="projects">
+      <div class="project project_1">
+        <div class="project_img">
+          <a href="whatsapp-subgroup.html">
+            <img
+              class="img"
+              src="whatsapp_iterations_v2.png"
+              alt="whatsapp subgroup"
+          /></a>
         </div>
-      </section>
-      <section class="Boxes2">
-        <div class="Box3">
-          <img class="Image" src="co creagency.jpg" alt="Box1" />
-          <div class="Middle">
-            <div class="Text">
-             Members Database:
-              <br />
-              Co-creagency (Goalgirls)
-              <br />
-              <b>(In Progress)</b>
+      </div>
+
+      <div class="project project_2">
+        <div class="project_img">
+          <a href="queer-booth-augmented-reality.html">
+            <img
+              class="img"
+              src="queer booth header.png"
+              alt="queer booth mobile screens"
+          /></a>
+        </div>
+      </div>
+
+      <div class="project project_3">
+        <div class="project_img">
+          <a href="goalgirls-member-database.html">
+            <img class="img" src="goalgirls header.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="project project">
+        <div class="project_img">
+          <a href="sports-bro-editorial-design.html">
+            <img class="img" src="sports bro header.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end projects -->
+
+    <!-- about -->
+
+    <div class="about_me" id="about_me">
+      <div class="about_text">
+        <button onclick="myFunction() ">
+          <div class="about_title">
+            <a class="about_title_font" href="#footer">About Me +</a>
+          </div>
+        </button>
+        <div id="about_desc" style="display: none">
+          <div class="about_desc_wrap">
+            <div>
+              <img src="amanda_low.png" alt="amanda low" />
+            </div>
+            <div class="about_desc_2">
+              Hi I'm Amanda. I'm a UX designer with a background in digital
+              marketing.
+              <div class="about_desc_space">
+                With 8 years experience in online fashion, beauty, and wellness,
+                I'm fascinated by all aspects of user experience. I aim to
+                create sutainable solutions by combining design thinking with
+                tech.
+              </div>
+              Code by me.
             </div>
           </div>
         </div>
-        <div class="Box4">
-          <img class="Image" src="Whatsapp2.jpg" alt="Box1"
-          />
-          <div class="Middle">
-          <a class="Text"
-            href="https://medium.com/@amanda.low/creating-whatsapp-subgroups-ux-case-study-624f8e48cb63"
-            target="_blank"
-          > Add a feature:
-          <br />
-          WhatsApp Subgroups
-            </a>
-          </div>
-            
-             
-          </div>
+      </div>
+
+      <div class="contact">
+        <button onclick="someFunction() ">
+          <span class="contact_title"
+            ><a class="about_title_font" href="#footer">Email +</a></span
+          >
+        </button>
+        <br />
+        <div id="contact_email" style="display: none">
+          amanda.r.low@outlook.com
         </div>
-      </section>
+      </div>
     </div>
 
-    <section id="Contact">
-      <br />
-      <div>
-        <p class="LetsConnect">CONTACT</p>
-        <p class="emailaddress">amanda.r.low@outlook.com</p>
-      </div>
-      <br />
-      <br />
-      <br />
+    <!-- end about -->
 
-      <div class="Social">
-        <div>
-          <a class="Tooltip" href="mailto:amanda.r.low@outlook.com">
-            <img alt="Email" src="Email.png" width="30px" height="30px" />
-            <span class="Tooltiptext">Email</span>
-          </a>
-        </div>
-
+    <!-- footer -->
+    <div class="footer" id="footer">
+      <div class="footer_icons">
         <a
-          class="Tooltip"
+          class="footer_img"
           href="https://www.linkedin.com/in/amanda-r-low/"
           target="_blank"
         >
-          <img alt="Linkedin" src="linkedin.png" width="30px" height="30px" />
-          <span class="Tooltiptext">LinkedIn</span>
+          <img
+            class="footer_icon footer_icon_1"
+            src="linkedin logo.png"
+            alt=""
+            width="24px"
+            height="24px"
+          />
         </a>
         <a
-          class="Tooltip"
+          class="footer_img"
           href="https://medium.com/@amanda.low"
           target="_blank"
         >
-          <img alt="Medium" src="Medium.png" width="30px" height="30px" />
-          <span class="Tooltiptext">Medium</span>
+          <img
+            class="footer_icon footer_icon_2"
+            src="medium logo.png"
+            alt=""
+            width="24px"
+            height="24px"
+          />
         </a>
-        <a class="Tooltip" href="https://github.com/amanda-low" target="_blank">
-          <img alt="Github" src="Github.png" width="30px" height="30px" />
-          <span class="Tooltiptext">Github</span>
+        <a
+          class="footer_img"
+          href="https://github.com/amanda-low"
+          target="_blank"
+        >
+          <img
+            class="footer_icon footer_icon_3"
+            src="github logo.png"
+            alt=""
+            width="24px"
+            height="24px"
+          />
+        </a>
+
+        <a
+          class="footer_img"
+          href="https://www.instagram.com/theamandalow/"
+          target="_blank"
+        >
+          <img
+            class="footer_icon footer_icon_2"
+            src="instagram logo.png"
+            alt=""
+            style="width: 22px; height: 22px"
+          />
         </a>
       </div>
-      <br />
-      <p class="Copyright">© Copyright Amanda Low 2020</p>
-    </section>
+    </div>
+
+    <!-- End Footer  -->
+
+    <script src="script.js"></script>
   </body>
 </html>
-
