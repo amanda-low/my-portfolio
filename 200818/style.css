@@ -6,6 +6,7 @@ html {
   font-size: 10px;
   font-weight: 300;
   color: #3f4241;
+  height: 100%;
 }
 
 /* <<<<<<<<<<<<<<<<< Burger Menu >>>>>>>>>>>>>>>> */
@@ -142,6 +143,7 @@ body {
   color: #3f4241;
   margin-left: 140px;
   margin-right: 140px;
+  height: 100%;
 }
 
 /* <<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>> */
@@ -150,7 +152,7 @@ body {
   display: grid;
   /* grid-gap: 20px; */
   grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 110px;
   /* margin-left: 100px;
   margin-right: 100px; */
@@ -445,39 +447,38 @@ html {
 }
 
 @media (min-width: 768px) {
+  .footer {
+    margin-top: 40px;
+  }
 
-.footer {
-  margin-top: 40px;
-}
+  /* ---------------------------------- Sub page --------------------------------- */
 
-/* ---------------------------------- Sub page --------------------------------- */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+  }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto auto auto auto auto auto auto auto;
-  grid-gap: 10px;
-}
+  .bold {
+    font-weight: 600;
+  }
 
-.bold {
-  font-weight: 600;
-}
+  .italic {
+    font-style: italic;
+  }
 
-.italic {
-  font-style: italic;
-}
+  .list_style_none {
+    list-style: none;
+  }
+  .center {
+    justify-content: center;
+  }
 
-.list_style_none {
-  list-style: none;
-}
-.center {
-  justify-content: center;
-}
-
-.list_none {
-  list-style-type: none;
-}
-/* .header_img,
+  .list_none {
+    list-style-type: none;
+  }
+  /* .header_img,
 .header_texts,
 .method_img,
 .method_texts,
@@ -490,40 +491,40 @@ html {
   border: solid grey 0.5px;
 } */
 
-.header_image,
-.method_image,
-.iterations_image {
-  /* background-image: url(header_img.png); */
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
+  .header_image,
+  .method_image,
+  .iterations_image {
+    /* background-image: url(header_img.png); */
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 
-/* .method_img {
+  /* .method_img {
   background-image: url(https://source.unsplash.com/random/1280x800?v=2);
 } */
-/* .iterations_img {
+  /* .iterations_img {
   background-image: url(https://source.unsplash.com/random/1280x800?v=3);
 } */
 
-.insights_img {
-  background-image: url(https://source.unsplash.com/random/1280x800?v=4);
-}
+  .insights_img {
+    background-image: url(https://source.unsplash.com/random/1280x800?v=4);
+  }
 
-.prototype_img {
-  background-image: url(https://source.unsplash.com/random/1280x800?v=5);
-}
+  .prototype_img {
+    background-image: url(https://source.unsplash.com/random/1280x800?v=5);
+  }
 
-.header_img:hover .img_overlay {
-  opacity: 100%;
-}
+  .header_img:hover .img_overlay {
+    opacity: 100%;
+  }
 
-/* .header_img:hover {
+  /* .header_img:hover {
   opacity: 50%;
 } */
 
-/* .img_text {
+  /* .img_text {
   color: rgba(0, 0, 0, 0);
   font-size: 6rem;
   font-weight: 600;
@@ -534,126 +535,124 @@ html {
   -webkit-text-stroke-color: white;
 } */
 
-.header_texts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-  align-content: center;
-}
-
-.main_title {
-  font-size: 3rem;
-}
-
-.main_subtitle {
-  font-size: 2rem;
-}
-
-.subtitle_link {
-  text-decoration: underline;
-  color: #3f4241;
-}
-
-.desc_link {
-  color: #3f4241;
-}
-
-.subtitle:hover {
-  font-weight: 600;
-}
-
-.desc_title {
-  font-size: 2.5rem;
-}
-
-.desc {
-  font-size: 1.6rem;
-}
-
-.header_desc {
-  font-size: 2rem;
-}
-
-.method_texts,
-.insights_texts,
-.iterations_texts {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px;
-  align-content: center;
-}
-
-.method_title {
-  font-size: 2.5rem;
-}
-
-.method_desc {
-  font-size: 1.5rem;
-}
-
-.prototype {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.prototype_title {
-  font-size: 3rem;
-  justify-self: center;
-}
-
-/* ipad */
-@media (max-width: 1279px) {
-  .header_texts,
-  .method_texts,
-  .iterations_texts,
-  .insights_texts,
-  .about_me {
-    grid-template-columns: 1fr;
+  .header_texts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    align-content: center;
   }
-}
 
-/* iphone 6/7/8 */
-@media (max-width: 767px) {
   .main_title {
     font-size: 3rem;
   }
+
   .main_subtitle {
-    font-size: 1.7rem;
-  }
-  .desc_title {
     font-size: 2rem;
   }
+
+  .subtitle_link {
+    text-decoration: underline;
+    color: #3f4241;
+  }
+
+  .desc_link {
+    color: #3f4241;
+  }
+
+  .subtitle:hover {
+    font-weight: 600;
+  }
+
+  .desc_title {
+    font-size: 2.5rem;
+  }
+
   .desc {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
-  .prototype_title {
-    font-size: 3rem;
+
+  .header_desc {
+    font-size: 2rem;
   }
-  .about_desc_wrap {
+
+  .method_texts,
+  .insights_texts,
+  .iterations_texts {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    align-content: center;
+  }
+
+  .method_title {
+    font-size: 2.5rem;
+  }
+
+  .method_desc {
+    font-size: 1.5rem;
+  }
+
+  .prototype {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  .about_desc_2 {
-    margin-top: 20px;
-  }
-
-  .contact {
-    margin-top: 20px;
-  }
-}
-
-/* iphone 5 */
-@media (max-width: 374px) {
-  .main_title {
-    font-size: 2.5rem;
-  }
   .prototype_title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    justify-self: center;
+  }
+
+  /* ipad */
+  @media (max-width: 1279px) {
+    .header_texts,
+    .method_texts,
+    .iterations_texts,
+    .insights_texts,
+    .about_me {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* iphone 6/7/8 */
+  @media (max-width: 767px) {
+    .main_title {
+      font-size: 3rem;
+    }
+    .main_subtitle {
+      font-size: 1.7rem;
+    }
+    .desc_title {
+      font-size: 2rem;
+    }
+    .desc {
+      font-size: 1.7rem;
+    }
+    .prototype_title {
+      font-size: 3rem;
+    }
+    .about_desc_wrap {
+      grid-template-columns: 1fr;
+    }
+
+    .about_desc_2 {
+      margin-top: 20px;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+  }
+
+  /* iphone 5 */
+  @media (max-width: 374px) {
+    .main_title {
+      font-size: 2.5rem;
+    }
+    .prototype_title {
+      font-size: 2.5rem;
+    }
   }
 }
-
 /* ---------------------------------- End Sub page --------------------------------- */
-
-/* ---------------------------------- Sub page - Queer Booth --------------------------------- */
