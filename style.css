@@ -456,7 +456,6 @@ html {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50vh auto 50vh auto 50vh auto 50vh auto auto auto auto auto auto auto auto auto;
     grid-gap: 10px;
   }
 
@@ -501,13 +500,6 @@ html {
     object-fit: cover;
   }
 
-  /* .method_img {
-  background-image: url(https://source.unsplash.com/random/1280x800?v=2);
-} */
-  /* .iterations_img {
-  background-image: url(https://source.unsplash.com/random/1280x800?v=3);
-} */
-
   .insights_img {
     background-image: url(https://source.unsplash.com/random/1280x800?v=4);
   }
@@ -519,21 +511,6 @@ html {
   .header_img:hover .img_overlay {
     opacity: 100%;
   }
-
-  /* .header_img:hover {
-  opacity: 50%;
-} */
-
-  /* .img_text {
-  color: rgba(0, 0, 0, 0);
-  font-size: 6rem;
-  font-weight: 600;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
-} */
 
   .header_texts {
     display: grid;
@@ -635,11 +612,9 @@ html {
     .about_desc_wrap {
       grid-template-columns: 1fr;
     }
-
     .about_desc_2 {
       margin-top: 20px;
     }
-
     .contact {
       margin-top: 20px;
     }
