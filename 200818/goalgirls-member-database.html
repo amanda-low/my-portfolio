@@ -7,23 +7,39 @@
     <title>AL UX Design | GOALGIRLS Member Database</title>
   </head>
   <body>
-    <!-- header -->
-    <div class="burger_menu">
-      <button class="burger_btn">
-        <div class="burger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </button>
-      <div class="burger_list">
-        <a href="#">WhatsApp Subgroup</a>
-        <a href="#">Member Database</a>
-        <a href="#">Augmented Reality</a>
-        <a href="#">Editorial Design</a>
-        <a href="#">Contact</a>
+    <!-- Burger Menu -->
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <li>Work:</li>
+          <blockquote>
+            <a href="whatsapp-subgroup.html"><li>WhatsApp Subgroups</li></a>
+            <a href="queer-booth-augmented-reality.html"
+              ><li>Queer Booth Augmented Reality</li></a
+            >
+            <a href="goalgirls-member-database.html"
+              ><li>GOALGIRLS Member Database</li></a
+            >
+            <a href="sports-bro-editorial-design.html"
+              ><li>Sports Bro Editorial Design</li></a
+            >
+          </blockquote>
+          <a href="#footer"><li>About Me / Email</li></a>
+        </ul>
       </div>
-    </div>
+    </nav>
+
+    <!-- End Burger Menu -->
+
+    <!-- header -->
 
     <div class="header">
       <div class="header_1">
@@ -95,7 +111,7 @@
           <p class="desc">
             <span class="bold">GOALGIRLS</span> is a Berlin creative agency,
             founded in 2017 by sisters Helena and Kaddie Rothe. Their focus is
-            female driven and
+            <span class="bold">female</span> driven and
             <span class="bold">culturally aware projects</span> with brands such
             as Bumble, Netflix, Casper, and ARMEDANGELS in their portfolio.
             <br /><br />
