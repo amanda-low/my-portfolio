@@ -585,6 +585,14 @@ html {
     justify-self: center;
   }
 
+  .back_to_top {
+    display: grid;
+    margin: 20px;
+  }
+  .up_arrow {
+    justify-self: center;
+  }
+
   /* ipad */
   @media (max-width: 1279px) {
     .header_texts,
