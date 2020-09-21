@@ -473,7 +473,7 @@ html {
 }
 
 .main_title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .main_subtitle {
@@ -494,7 +494,7 @@ html {
 }
 
 .desc_title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .desc {
@@ -561,7 +561,7 @@ html {
       object-fit: cover;
     }
     .main_title {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     .main_subtitle {
       font-size: 1.7rem;
