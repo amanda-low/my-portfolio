@@ -610,7 +610,7 @@ html {
       font-size: 2rem;
     }
     .desc {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
     .prototype_title {
       font-size: 3rem;
@@ -626,11 +626,11 @@ html {
     }
   }
 
-  @media (orientation-landscape) and (max-width: 767px) {
+  @media (orientation: landscape) and (max-width: 767px) {
     .header_image,
     .method_image,
     .iterations_image {
-      width: 100vw;
+      width: 100%;
       height: auto;
       object-fit: cover;
     }
