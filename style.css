@@ -53,9 +53,6 @@ html {
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -92,25 +89,15 @@ html {
   background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   position: absolute;
   width: 300px;
@@ -134,9 +121,6 @@ html {
   font-size: 20px;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -192,11 +176,6 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
 }
-
-/* .dropdown_arrow {
-  font-size: 1.5rem;
-  color: #3f4241;
-} */
 
 .dropdown {
   position: relative;
@@ -381,20 +360,6 @@ html {
 
 /* <<<<<<<<<<<<<<<<< End Footer >>>>>>>>>>>>>>>> */
 
-/* @media (max-width: 1439px) {
-  .header_empty {
-    display: none;
-  }
-} */
-
-/* @media (max-width: 1000px) {
-  .projects {
-    margin-left: 0;
-    margin-right: 0;
-    justify-self: center;
-  }
-} */
-
 @media (min-width: 1280px) {
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -449,11 +414,6 @@ html {
     margin-top: 3vh;
   }
 }
-
-/* @media (min-width: 768px) {
-  .footer {
-    margin-top: 40px;
-  } */
 
 /* ---------------------------------- Sub page --------------------------------- */
 
