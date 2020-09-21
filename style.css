@@ -626,6 +626,16 @@ html {
     }
   }
 
+  @media (orientation-landscape) and (max-width: 767px) {
+    .header_image,
+    .method_image,
+    .iterations_image {
+      width: 100vw;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+
   /* iphone 5 */
   @media (max-width: 374px) {
     .main_title {
