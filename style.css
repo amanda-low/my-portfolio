@@ -631,7 +631,7 @@ html {
     .method_image,
     .iterations_image {
       width: 100vw;
-      height: 70vh;
+      height: auto;
       object-fit: cover;
     }
   }
