@@ -283,6 +283,7 @@ body {
   display: grid;
   grid-template-columns: 25% 1fr;
   margin-top: 20px;
+  text-align: left;
 }
 
 .about_desc_space {
