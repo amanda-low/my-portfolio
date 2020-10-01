@@ -58,3 +58,6 @@ scrollToTopButton.onclick = function (e) {
   e.preventDefault();
   scrollToTop();
 };
+
+myVid = document.getElementById("lofi-vid");
+myVid.muted = true;
