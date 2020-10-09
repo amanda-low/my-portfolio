@@ -8,7 +8,11 @@
     <title>AL UX Design</title>
   </head>
   <body>
-    <!-- #include virtual="header.html" -->
+    <!-- header -->
+
+    <div include-html="header.html"></div>
+
+    <!-- end header -->
 
     <!-- projects -->
     <div class="projects">
@@ -51,6 +55,17 @@
       </div>
     </div>
 
+    <!-- end projects -->
+
+    <!-- footer -->
+
+    <div include-html="footer.html"></div>
+
+    <!-- end footer -->
+
     <script src="script.js"></script>
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>
