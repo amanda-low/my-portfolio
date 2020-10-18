@@ -452,7 +452,7 @@ ul {
 }
 
 .img_border {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #3f4241;
 }
 
 .img_desc {
@@ -491,9 +491,9 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px;
-  /* padding: 40px; */
+
   align-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .main_title {
@@ -521,8 +521,13 @@ ul {
   font-size: 2.2rem;
 }
 
+.center {
+  justify-self: center;
+}
+
 .desc {
   font-size: 1.6rem;
+  text-align: justify;
 }
 
 .header_desc {
@@ -535,8 +540,14 @@ ul {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   align-content: center;
+}
+
+.center_text {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  margin-bottom: 60px;
 }
 
 .method_title {
@@ -567,6 +578,7 @@ ul {
 
 /* ipad */
 @media (max-width: 1279px) {
+  .center_text,
   .header_texts,
   .method_texts,
   .iterations_texts,
