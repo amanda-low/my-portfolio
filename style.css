@@ -29,13 +29,13 @@ html {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #3f4241;
 
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: white;
 }
 
 #menuToggle input {
@@ -101,7 +101,8 @@ html {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 100vw;
+  height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -119,7 +120,13 @@ html {
 
 #menu li {
   padding: 10px 0;
-  font-size: 20px;
+}
+
+.burger_header {
+  font-size: 2rem;
+}
+.burger_work {
+  font-size: 1.7rem;
 }
 
 #menuToggle input:checked ~ ul {
@@ -162,6 +169,7 @@ body {
 
 .header_name_1 {
   font-weight: 600;
+  font-size: 3.5rem;
 }
 
 .header_title {
@@ -173,13 +181,24 @@ body {
 }
 .header_2 {
   display: grid;
-  grid-template-columns: 1fr 20% 20% 20%;
+  grid-template-columns: 1fr 20% 20% 15%;
   text-align: end;
   align-items: center;
   color: #3f4241;
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
   /* justify-self: end; */
+}
+
+.header_2_1:hover {
+  opacity: 70%;
+}
+.header_2_2:hover {
+  opacity: 70%;
+}
+
+.header_2_3:hover {
+  opacity: 70%;
 }
 
 .dropdown_btn {
@@ -256,9 +275,9 @@ body {
   object-fit: cover;
 }
 
-.project_img:hover {
+/* .project_img:hover {
   opacity: 70%;
-}
+} */
 
 .project_img img {
   width: 100%;
@@ -275,10 +294,82 @@ body {
 } */
 .about_overlay {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 40px;
   right: 40px;
   font-weight: 500;
+}
+
+.project_overlay_1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+  border: 1px solid;
+}
+
+.project_overlay_2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+  border: 1px solid;
+}
+
+.project_overlay_3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+  border: 1px solid;
+}
+
+.overlay_text_1 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+}
+
+.overlay_text_2 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+}
+
+.overlay_text_3 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+}
+
+.project_1_container:hover .project_overlay_1 {
+  opacity: 1;
+}
+
+.project_2_container:hover .project_overlay_2 {
+  opacity: 1;
+}
+
+.project_3_container:hover .project_overlay_3 {
+  opacity: 1;
 }
 
 /* <<<<<<<<<<<<<<<<< End Projects >>>>>>>>>>>>>>>> */
@@ -366,6 +457,10 @@ body {
 .footer {
   display: grid;
   margin-top: 30px;
+}
+
+.footer_email {
+  font-size: 2rem;
 }
 
 .footer_icons {
@@ -658,6 +753,9 @@ ul {
     .contact {
       margin-top: 20px;
     }
+    .overlay_mobile {
+      font-size: 1.7rem;
+    }
   }
 
   @media (orientation: landscape) and (max-width: 767px) {
@@ -677,6 +775,9 @@ ul {
     }
     .prototype_title {
       font-size: 2.5rem;
+    }
+    .overlay_mobile {
+      font-size: 1.4rem;
     }
   }
 }
