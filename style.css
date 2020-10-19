@@ -166,8 +166,14 @@ body {
   opacity: 70%;
 }
 .header_2 {
-  justify-self: end;
+  display: grid;
+  grid-template-columns: 1fr 15% 15% 15%;
+  text-align: end;
   align-items: center;
+  color: #3f4241;
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+  /* justify-self: end; */
 }
 
 .dropdown_btn {
