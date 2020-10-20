@@ -541,6 +541,19 @@ body {
   .about_desc_2 {
     margin-top: 3vh;
   }
+  .about_overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .overlay_mobile {
+    font-size: 1.6rem;
+  }
+
+  .header_name_1 {
+    font-size: 2.5rem;
+  }
 }
 
 /* ---------------------------------- Sub page --------------------------------- */
@@ -626,7 +639,7 @@ ul {
 }
 .title_texts {
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 30% 1fr;
 }
 
 .main_title {
@@ -734,7 +747,7 @@ ul {
       height: 40vh;
       object-fit: cover;
     }
-    .main_title {
+    /* .main_title {
       font-size: 2.5rem;
     }
     .main_subtitle {
@@ -757,9 +770,7 @@ ul {
     }
     .contact {
       margin-top: 20px;
-    }
-    /* .overlay_mobile {
-      font-size: 1.7rem; */
+    } */
   }
 }
 
@@ -773,17 +784,14 @@ ul {
   }
 }
 
-/* iphone 5 */
+/* iphone 5
 @media (max-width: 374px) {
   .main_title {
     font-size: 2.5rem;
   }
   .prototype_title {
     font-size: 2.5rem;
-  }
-  .overlay_mobile {
-    font-size: 1.4rem;
-  }
-}
+
+} */
 
 /* ---------------------------------- End Sub page --------------------------------- */
