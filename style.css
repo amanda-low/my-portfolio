@@ -577,6 +577,10 @@ body {
 
 /* ---------------------------------- Sub page --------------------------------- */
 
+.img_placeholder {
+  width: 400px;
+  height: 400px;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr;
