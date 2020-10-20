@@ -290,8 +290,9 @@ body {
 }
 
 /* .about_container {
-  position: relative;
+  background-color:#E5E5E5;
 } */
+
 .about_overlay {
   position: absolute;
   top: 20px;
@@ -321,7 +322,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   background-color: white;
   border: 1px solid #3f4241;
 }
@@ -358,6 +359,10 @@ body {
   top: 40px;
   left: 40px;
   right: 40px;
+}
+
+.about_container:hover {
+  background-color: #e5e5e5;
 }
 
 .project_1_container:hover .project_overlay_1 {
@@ -621,7 +626,7 @@ ul {
 }
 .title_texts {
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 40% 1fr;
 }
 
 .main_title {
@@ -753,32 +758,32 @@ ul {
     .contact {
       margin-top: 20px;
     }
-    .overlay_mobile {
-      font-size: 1.7rem;
-    }
-  }
-
-  @media (orientation: landscape) and (max-width: 767px) {
-    .header_image,
-    .method_image,
-    .iterations_image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-  }
-
-  /* iphone 5 */
-  @media (max-width: 374px) {
-    .main_title {
-      font-size: 2.5rem;
-    }
-    .prototype_title {
-      font-size: 2.5rem;
-    }
-    .overlay_mobile {
-      font-size: 1.4rem;
-    }
+    /* .overlay_mobile {
+      font-size: 1.7rem; */
   }
 }
+
+@media (orientation: landscape) and (max-width: 767px) {
+  .header_image,
+  .method_image,
+  .iterations_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* iphone 5 */
+@media (max-width: 374px) {
+  .main_title {
+    font-size: 2.5rem;
+  }
+  .prototype_title {
+    font-size: 2.5rem;
+  }
+  .overlay_mobile {
+    font-size: 1.4rem;
+  }
+}
+
 /* ---------------------------------- End Sub page --------------------------------- */
