@@ -13,12 +13,18 @@
 
     <!-- end header -->
 
-    <!-- projects -->
+    <!-- Title -->
 
     <div class="header_texts">
-      <div class="img_placeholder img_border"></div>
+      <div class="">
+        <img
+          src="whatsapp title.png"
+          alt="whatsapp screens"
+          class="img_block"
+        />
+      </div>
       <div class="desc">
-        <span class="bold header_name_1">Whatsapp</span>
+        <span class="bold header_name_1">WhatsApp Subgroup</span>
         <span class="main"></span> <br /><br /><br />
 
         <div class="title_texts">
@@ -55,187 +61,279 @@
       </div>
     </div>
 
+    <!-- End Title -->
+
+    <!-- Problem -->
+
     <div class="header_texts">
       <div class="desc">
         <span class="main_title bold">Problem</span> <br /><br />
 
-        The Queer Booth app is planned to be relaunched, however, the Photo
-        Booth design, technology, and categories are now outdated. A redesign
-        will ensure a successful relaunch and help the app to remain
-        competitive.<br /><br />
-        Our task was to do a complete overhaul of Queer Booth, including
-        creating a more modern look for the UI, updating the Photo Booth with
-        Augmented Reality (AR) filters, and finding a way to better represent
-        the increasingly diverse LGBTQ+ community.
+        WhatsApp group chats are useful for broadcasting information, however,
+        the larger the group gets, the more simultaneous conversations can
+        become confusing. Designing a subgroup chat feature would help to sort
+        conversation topics so that users are not frustrated by irrelevant
+        information. <br /><br />
+
+        I aimed to integrate the new feature seamlessly into the user flow, in
+        line with the existing WhatsApp UI design. <br /><br />
+
+        This was Project 4 (Add a Feature) of the Ironhack UX/UI Bootcamp. The
+        ideas for the hypothetical new features were thought up by fellow
+        students. I worked alone on the user research, analysis, prototyping,
+        testing and UI design.
+      </div>
+
+      <div class="">
         <br /><br />
-        I worked alongside with
-        <a class="desc_link" href="https:medium.com/@hydears" target="_blank">
-          Hanna Hong</a
+
+        <blockquote>
+          <span class="main_subtitle">Add a feature</span> <br /><br />
+          <span class="main_title green"
+            >Subgrouping chats by topic in WhatsApp group chats</span
+          >
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- End Problem -->
+
+    <!-- Research -->
+
+    <div class="header_texts">
+      <div class="desc">
+        <span class="main_title bold">Research</span> <br /><br />
+        <span class="bold">Experiences</span> <br /><br />
+
+        First I interviewed some WhatsApp users on their experiences with group
+        chats. Reasons that users used group chats included: keeping in touch
+        with friends and family, working on university projects, keeping up with
+        hobbies e.g. a dance class, organising vacations, and organising events
+        e.g. a wine tasting event. <br /><br />
+
+        <span class="bold">Pain Points</span> <br /><br />
+
+        Regardless of the purpose of the group, all users had one pain point in
+        common: Irrelevant information. Users receive mobile notifications for
+        messages received, yet when they opened the group chat they often
+        received information that was not relevant to them. As a result, they
+        muted notifications or simply stopped reading the group chat.
+        <br /><br />
+      </div>
+      <div>
+        <br /><br />
+        <blockquote class="">
+          <span class="main_title green"
+            >"I wake up to 70 notifications on my phone, and people expect you
+            to read everything in the chat." </span
+          ><br /><br />
+          <span class="desc italic">- User Interview</span>
+        </blockquote>
+        <br /><br />
+        <span class="desc">
+          <span class="bold">Desires</span> <br /><br />
+
+          Besides creating a subgroup chat, other desires users had included:
+          being able to highlight important information within the main group,
+          making it easier to search chats, and the ability to connect group
+          chat appointments to a Gmail calendar.</span
         >
-        on the user research, analysis, prototyping, testing and UI design.
-      </div>
-      <div>
-        <div class="img_placeholder img_border"></div>
       </div>
     </div>
-    <div class="method_img">
-      <img class="method_image" src="whatsapp user flow.png" alt="" />
+
+    <!-- End Research -->
+
+    <div class="">
+      <img class="" src="whatsapp user flow.png" alt="" width="100%" />
+      <figcaption class="img_desc">User Flow - Option 3</figcaption>
     </div>
-    <div class="method_texts">
-      <div class="main_title">Method</div>
-      <div>
-        <div class="desc_title">Define User Flow</div>
-        <br />
-        <div class="desc">
-          The new feature should be integrated so as to not interrupt the
-          <span class="bold">existing user flow</span>. It should be simple, to
-          cater to the wide user demographic, and intuitive. <br /><br />
-          I researched and user-tested the
-          <span class="bold">existing features</span> related to the group chat
-          to find ways to add seamlessly to the flow.
-        </div>
-      </div>
-      <div>
-        <div class="desc_title">Rapid Prototyping</div>
-        <br />
-        <div class="desc">
-          To assess the usability of possible solutions, I user-tested with
-          <span class="bold">lo-fi prototypes</span> focusing on what users
-          found intuitive, or not.
-        </div>
-      </div>
-    </div>
-    <div class="iterations_img">
-      <img class="iterations_image" src="whatsapp lo fi prototype.png" alt="" />
-    </div>
-    <div class="iterations_texts">
-      <div class="main_title">Ideation</div>
-      <div>
-        <div class="desc_title">Create Subgroup Trigger</div>
-        <br /><br />
-        <div class="desc">
-          Initial ideas to trigger the creation of a subgroup include:
-          <ul>
-            <li>Adding a subgroup button within the main chat</li>
-            <li>Forwarding a message to a subgroup</li>
-            <li>
-              Have an AI function that suggests moving a new conversation topic
-              to a subgroup
-            </li>
-          </ul>
-          After user testing it became clear that forwarding, by
-          <span class="bold">long-pressing</span>
-          on a message, was the most intuitive option.
-        </div>
-      </div>
-      <div>
-        <div class="desc_title">Subgroup Button</div>
-        <br /><br />
-        <div class="desc">
-          As it was a new feature, I first considered placing the "Create
-          Subgroup" button somewhere more prominent, with a new design. However
-          realising that this feature should eventually become a normal part of
-          the menu, I placed it underneath the already existing "My Status"
-          button and created an icon in a similar style.
-        </div>
-      </div>
+    <br /><br /><br /><br />
+    <!-- Subgroup Trigger -->
+
+    <div class="center_text desc">
       <div></div>
       <div>
-        <div class="desc_title">Visibility In Main Groupchat</div>
-        <br /><br />
-        <div class="desc">
-          This was one of the trickiest features to find a solution. The
-          subgroup chat had to be visible in the main chat, yet not interrupt
-          the conversation nor take up too much space.
-          <br /><br />
-          In order to make it intuitive, I took inspiration from the WhatsApp
-          and Facebook Messenger contacts lists, which uses the group profile
-          picture as the placeholder. Further testing showed that most users
-          instantly recognised the purpose of the
-          <span class="bold">subgroup chat list</span>. Similar to Faceboook,
-          the chat list would be scrollable from left to right, should multiple
-          subgroups exist.
-        </div>
+        <span class="main_title bold">Subgroup Trigger </span> <br /><br />
+        <span class="bold">User Flow</span> <br /><br />
+        The next step was to define where in the user flow the trigger for the
+        subgroup should be. The new feature should be integrated seamlessly into
+        the existing user flow, and be easy to find - catering to the wide user
+        demographic. Ideas I had after speaking to users were:
+        <ol class="numbered_list">
+          <li>Adding a subgroup button within the main group chat</li>
+          <li>
+            Using AI to suggest that certain messages should be moved to a group
+            chat
+          </li>
+          <li>Forwarding messages from the main chat to a subgroup</li>
+        </ol>
+        I then tested these ideas with a lo-fi prototype and it became clear
+        that the most intuitive for users was
+        <span class="bold">option 3</span>. Users felt that forwarding a message
+        was the easiest option to comprehend as it was already part of their
+        user flow. <br /><br />
+        <span class="bold">Long-Press Gesture</span> <br /><br />
+        Long-pressing on any chat message will bring up a menu, with options to
+        star, reply, forward, copy, delete a message and more. A known feature
+        in other messaging apps such as Facebook Messenger and Telegram, using
+        this as a subgroup trigger would require the least barrier to entry for
+        the user.
       </div>
+      <div></div>
+    </div>
+
+    <!-- End Subgroup Trigger -->
+
+    <div class="">
+      <img class="" src="whatsapp lo fi.png" alt="" width="100%" />
+      <figcaption class="img_desc">
+        Lo-fi Prototype - Long-Press Gesture
+      </figcaption>
+    </div>
+    <br /><br />
+
+    <div class="center_text desc">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Subgroup Visibility -->
+
+    <div class="header_texts desc">
       <div>
-        <div class="desc_title">Visibility in Chat List</div>
+        <span class="main_title bold">Subgroup Visibility </span> <br /><br />
+        <span class="bold">User Flow</span> <br /><br />
+        After selecting “Forward” from the menu, the next page is a list of
+        suggested contacts to send the message to. Since the subgroup could only
+        contain members from the main group, the “Create Subgroup” option had to
+        be on this page. <br /><br />
+
+        As my research showed that users would rather be completely excluded
+        from certain conversations than have to receive notifications, I also
+        included the option to choose who from the main group would be included
+        in the subgroup. Users may choose “Select All” or select people
+        individually. <br /><br />
+        As it was a new feature, I first considered placing the "Create
+        Subgroup" button somewhere more prominent, with a new design. However
+        realising that this feature should eventually become a normal part of
+        the menu, I situated it as an option to the already existing "My Status"
+        button. Inspired by the “My Status” icon, and an old-school desktop
+        folder icon, I created a hybrid
+        <span class="bold">subgroup icon</span>.
+      </div>
+      <div class="">
+        <img
+          src="whatsapp subgroup icon.png"
+          class="img_block img_border"
+          alt=""
+        />
         <br /><br />
-        <div class="desc">
-          Initially, I wanted subgroup chats to show as another individual chat
-          in the chats list, however users found this too messy during testing.
-          Many users have multiple active chats, adding to the already long list
-          became confusing. The solution I came up with was a stacked profile
-          picture, showing that there is more than one conversation there,
-          without taking up more space.
-        </div>
+        <figcaption class="img_desc">Subgroup Icon</figcaption>
       </div>
     </div>
 
-    <div class="iterations_img">
-      <img class="iterations_image" src="whatsapp hi fi screens.png" alt="" />
-    </div>
-    <div class="insights_texts">
-      <div class="main_title">Insights</div>
+    <div class="header_texts desc">
       <div>
-        <div class="desc_title">Testing With Non-Users</div>
-        <br /><br />
-        <div class="desc">
-          As an app used by many on a daily basis, many people have strong likes
-          and dislikes with using WhatsApp, which became apparent during user
-          testing. <br /><br />
-          Had there been the timeframe to find people who had not already used
-          WhatsApp, it would have been interesting to compare the different
-          experiences.
-        </div>
+        <img
+          src="whatsapp subgroup title, scrollbar.png"
+          class="img_block"
+          alt=""
+        />
+        <figcaption class="img_desc">Title Format & Subgroup Bar</figcaption>
       </div>
       <div>
-        <div class="desc_title">The Art Of Blending In</div>
+        <span class="bold">Main Group Chat Visibility</span> <br /><br />
+        Once the recipients are selected and a subgroup title is chosen, the
+        messages are forwarded and the subgroup is created. The subgroup chat
+        has the <span class="bold">title format</span>: “Main Chat Title”/
+        "Subgroup Chat Title” - as a navigation guide for the users. User
+        research indicated that users wanted the messaging experience of the
+        subgroup to be identical to the main group, so rather than changing the
+        font or background colour, only the page header appears changed.
         <br /><br />
-        <div class="desc">
-          Even simple looking UIs pack in a lot of detail efficiently, and the
-          art to adding a new feature is not to add to the clutter. Rather than
-          adding a new button in order to create a subgroup, I used the already
-          existing forward function. The only thing I added that took up space
-          was "Create Subgroups" button, however I stuck to the already existing
-          style and layout of the page.
-        </div>
+
+        Once you navigate back to the main group, the existence of a subgroup
+        should be visible, as users indicated that they wanted to be able to see
+        which subgroup topics existed - should they want to be invited later. In
+        order to make it intuitive, I took inspiration from the WhatsApp and
+        Facebook Messenger contacts lists, which uses the group profile picture
+        as the placeholder. <br /><br />
+
+        The <span class="bold">subgroup “bar”</span> would be scrollable from
+        left to right, should multiple subgroups exist, and would disappear on
+        scrolling, to not interrupt the conversation.
       </div>
     </div>
 
-    <div class="prototype" id="prototype">
-      <iframe
-        class=""
-        src="https://www.youtube.com/embed/eF7wrgbgGMY"
-        frameborder="0"
-        style="height: 80vh; width: 100%"
-      ></iframe>
-      <div class="header_texts">
-        <div class="header_text">
-          <div class="main_title">Hi-Fi Prototype</div>
-        </div>
-        <div class="header_desc">
-          <p class="desc_title">User Flow</p>
-          <div class="desc">
-            The final Hi-Fi Prototype shows the user flow:
-            <ol>
-              <li>User writes a message in a group chat</li>
-              <li>User long-represses message to bring up menu</li>
-              <li>User selects all message to forward to subgroup chat</li>
-              <li>User selects "Create Subgroup" button</li>
-              <li>User selects all participants</li>
-              <li>User creates subgroup name</li>
-              <li>Subgroup chat is created</li>
-              <li>
-                In the chats list, the subgroup chat is now indicated behind the
-                main group chat
-              </li>
-            </ol>
-          </div>
-        </div>
+    <div class="header_texts desc">
+      <div>
+        <span class="bold">Chat List Visibility</span> <br /><br />
+        Once you navigate back to the main chat list, the existence of a
+        subgroup should also be visible there. I prototyped adding this as
+        another line entry in the chat list, however, users found this messy and
+        confusing, as many already had a long list of personal and group chats.
+        <br /><br />
+
+        Inspired by a “Group Player” icon where user icons are stacked on top of
+        each other, I decided to use to stack the group and subgroup profile
+        pictures. This indicated a subgroup conversation without taking up
+        additional space. <br /><br />
+        <span class="main_title bold">UI </span> <br /><br />
+        The brief for the Hi-fi prototype was a pixel-perfect clone of the
+        WhatsApp UI, and recreating all icons. This required analysing the
+        atomic design, breaking down the common colours, shapes, symbols, and
+        formats. I soon realised that what I thought would be a simple clone,
+        would take a bit more of my time. Mobile apps, and in particular
+        messaging apps, pack in a lot of information and detail onto a small
+        screen.
+      </div>
+      <div class="">
+        <img src="whatsapp subgroup chat list.png" class="img_block" alt="" />
+        <figcaption class="img_desc">Stacked Group Icon</figcaption>
       </div>
     </div>
+    <!-- End Subgroup Visibility -->
 
-    <!-- end project -->
+    <!-- UI -->
+
+    <img src="whatsapp ui.png" alt="" class="img_block" />
+    <figcaption class="img_desc">Hi-fi Prototype Screens</figcaption>
+    <br /><br />
+
+    <!-- End UI -->
+
+    <!-- Deliverable -->
+    <span class="main_title bold" id="prototype"> Deliverable </span>
+    <br /><br /><br />
+    <iframe
+      class=""
+      src="https://www.youtube.com/embed/eF7wrgbgGMY"
+      frameborder="0"
+      style="height: 80vh; width: 100%"
+    ></iframe>
+    <br /><br /><br /><br />
+
+    <!-- End Delivereable -->
+
+    <!-- Takeaways -->
+    <div class="center_text desc">
+      <div></div>
+      <div>
+        <span class="main_title bold">Takeaways </span> <br /><br />
+        As a frequently used, well-known app, many people have strong opinions
+        on WhatsApp, which became apparent during user testing. Had there been
+        the timeframe to find people who had not already used WhatsApp, it would
+        have been interesting to compare the different experiences. <br /><br />
+        Given more time on this project, I would have found a way to indicate in
+        the chat list different notification symbols for both messages from the
+        main group chat, and the subgroup chat. Perhaps this could have been
+        indicated by a new message symbol of a different colour.
+      </div>
+      <div></div>
+    </div>
+
+    <!-- End Takeaways -->
 
     <!-- back to top -->
     <div class="back_to_top">
@@ -244,8 +342,6 @@
       /></a>
     </div>
     <!-- back to top end-->
-
-    <!-- about -->
 
     <!-- footer -->
 
