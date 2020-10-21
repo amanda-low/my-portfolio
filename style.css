@@ -603,6 +603,9 @@ body {
 
 /* End Numbered List STyle */
 
+.pink {
+  color: #e01d71;
+}
 .green {
   color: #00a88c;
 }
