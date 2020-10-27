@@ -177,6 +177,10 @@ body {
 }
 
 .header_name_1 {
+  font-size: 4rem;
+}
+
+.header_name_project {
   font-size: 3.5rem;
 }
 @media screen and (max-width: 1279px) {
@@ -302,20 +306,19 @@ body {
   background-color: #d0d3d9;
 }
 
-/* .about_container {
-  background-color:#E5E5E5;
-} */
+.overlay_mobile {
+  font-size: 2.5rem;
+}
 
 .about_overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  /* font-weight: 500; */
-}
-
-.overlay_mobile {
-  font-size: 2.5rem;
+  bottom: 0;
+  transition: 0.5s ease;
+  border: solid 1px #3f4241;
+  opacity: 0;
 }
 
 .project_overlay_1 {
@@ -357,13 +360,6 @@ body {
   border: 1px solid #3f4241;
 }
 
-.overlay_text {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-}
-
 @media screen and (max-width: 1024px) {
   .overlay_text {
     top: 5px;
@@ -392,16 +388,28 @@ body {
   right: 40px;
 }
 
+.about_container_text {
+  padding: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .about_container_text {
+    padding: 10px;
+  }
+}
+
 .about_container,
 .project_1_container,
 .project_2_container,
 .project_3_container {
   background-color: #fafafa;
 }
-
 .about_container:hover {
   background-color: white;
-  border: solid 1px #3f4241;
+}
+
+.about_container:hover .about_overlay {
+  opacity: 1;
 }
 
 .project_1_container:hover .project_overlay_1 {
@@ -649,7 +657,7 @@ body {
 
 @media (max-width: 375px) {
   .header_name_1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .overlay_mobile {
     font-size: 1.8rem;
@@ -658,7 +666,7 @@ body {
 
 @media (max-width: 320px) {
   .header_name_1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
   .overlay_mobile {
     font-size: 1.6rem;
