@@ -372,13 +372,13 @@ body {
   right: 40px;
 }
 
-.project_0 {
-  width: 540px;
-  height: 400px;
-  background-color: #fafafa;
+.about_container {
+  background-color: #e5e5e5;
 }
+
 .about_container:hover {
   background-color: white;
+  border: solid 1px #3f4241;
 }
 
 .project_1_container:hover .project_overlay_1 {
