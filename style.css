@@ -152,12 +152,11 @@ body {
 
 .header {
   display: grid;
-  /* grid-gap: 20px; */
+
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
-  margin-bottom: 110px;
-  /* margin-left: 100px;
-  margin-right: 100px; */
+  margin-bottom: 70px;
+
   text-decoration: none;
 }
 
@@ -168,7 +167,6 @@ body {
 }
 
 .header_name_1 {
-  font-weight: 600;
   font-size: 3.5rem;
 }
 
@@ -385,6 +383,15 @@ body {
 
 /* <<<<<<<<<<<<<<<<< About Me/Contact >>>>>>>>>>>>>>>> */
 
+.about_nav {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.about_title {
+  font-size: 5rem;
+}
+
 .about_me {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -459,6 +466,17 @@ body {
   margin-top: 20px;
 }
 
+.center_text_about {
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+}
+
+.about_block {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+}
 /* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>> */
