@@ -372,8 +372,11 @@ body {
   right: 40px;
 }
 
-.about_container {
-  background-color: #e5e5e5;
+.about_container,
+.project_1_container,
+.project_2_container,
+.project_3_container {
+  background-color: #fafafa;
 }
 
 .about_container:hover {
@@ -402,8 +405,20 @@ body {
   margin-bottom: 30px;
 }
 
+.about_title_1 {
+  font-size: 32px;
+}
 .about_title {
-  font-size: 40px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_title_1 {
+    font-size: 26px;
+  }
+  .about_title {
+    font-size: 22px;
+  }
 }
 
 .about_me {
@@ -453,14 +468,6 @@ body {
   padding: 0px;
   margin: 0px;
   outline: none;
-}
-
-.about_title_font {
-  text-decoration: none;
-  color: #3f4241;
-}
-.about_title:hover {
-  opacity: 50%;
 }
 
 .contact_title:hover {
