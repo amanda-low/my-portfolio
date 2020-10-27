@@ -167,7 +167,16 @@ body {
 }
 
 .header_name_1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
   font-size: 3.5rem;
+  grid-column-gap: 1rem;
+}
+
+@media screen and (max-width: 1279px) {
+  .header_name_1 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .header_title {
@@ -363,8 +372,13 @@ body {
   right: 40px;
 }
 
+.project_0 {
+  width: 540px;
+  height: 400px;
+  background-color: #fafafa;
+}
 .about_container:hover {
-  background-color: #e5e5e5;
+  background-color: white;
 }
 
 .project_1_container:hover .project_overlay_1 {
@@ -389,7 +403,7 @@ body {
 }
 
 .about_title {
-  font-size: 5rem;
+  font-size: 40px;
 }
 
 .about_me {
@@ -471,6 +485,12 @@ body {
   grid-template-columns: 15% 1fr 15%;
 }
 
+@media screen and (max-width: 767px) {
+  .center_text_about {
+    grid-template-columns: 1fr;
+  }
+}
+
 .about_block {
   display: grid;
   grid-template-columns: 35% 1fr;
@@ -483,11 +503,11 @@ body {
 
 .footer {
   display: grid;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .footer_email {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .footer_icons {
@@ -592,6 +612,7 @@ body {
 
   .header_name_1 {
     font-size: 2.5rem;
+    grid-template-columns: 1fr;
   }
 
   .about_about {
