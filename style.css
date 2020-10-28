@@ -625,12 +625,12 @@ body {
     visibility: hidden;
   }
 
-  .about_overlay {
+  /* .about_overlay {
     position: absolute;
     top: 10px;
     left: 10px;
     right: 10px;
-  }
+  } */
 
   .overlay_mobile {
     font-size: 1.7rem;
