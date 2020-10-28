@@ -183,9 +183,12 @@ body {
 .header_name_project {
   font-size: 3.5rem;
 }
-@media screen and (max-width: 1279px) {
+
+
+@media screen and (max-width: 1024px) {
   .header_name_home {
     grid-template-columns: 1fr;
+
   }
 }
 
@@ -559,20 +562,17 @@ body {
 @media screen and (max-width: 1024px) {
   .footer {
     grid-template-columns: 1fr;
-    justify-content: center;
+    text-align: center;
   }
-  .footer_email {
-    align-self: center;
   }
-}
+  
+
 
 .footer_email {
   font-size: 1.8rem;
 }
 
 .footer_icons {
-  justify-self: center;
-  align-items: center;
   /* margin-top: 1vh; */
   margin-bottom: 3vh;
 }
