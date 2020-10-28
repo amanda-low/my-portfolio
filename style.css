@@ -307,7 +307,7 @@ body {
 }
 
 .overlay_mobile {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .about_overlay {
@@ -447,18 +447,19 @@ body {
 }
 
 .about_title_1 {
-  font-size: 32px;
-}
-.about_title {
-  font-size: 44px;
+  font-size: 42px;
 }
 
+.about_title_2 {
+  font-size: 26px;
+}
 @media screen and (max-width: 767px) {
   .about_title_1 {
-    font-size: 26px;
-  }
-  .about_title {
     font-size: 30px;
+  }
+  .about_title_2 {
+    font-size: 20px;
+  }
   }
 }
 
