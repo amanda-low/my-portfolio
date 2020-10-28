@@ -552,7 +552,18 @@ body {
 
 .footer {
   display: grid;
-  margin-top: 40px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .footer_email {
+    align-self: center;
+  }
 }
 
 .footer_email {
