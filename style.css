@@ -366,6 +366,11 @@ body {
     left: 5px;
     right: 5px;
   }
+  .overlay_text_1,
+  .overlay_text_2,
+  .overlay_text_3 {
+    opacity: 0;
+  }
 }
 .overlay_text_1 {
   position: absolute;
@@ -624,13 +629,6 @@ body {
   .about_about {
     visibility: hidden;
   }
-
-  /* .about_overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-  } */
 
   .overlay_mobile {
     font-size: 1.7rem;
