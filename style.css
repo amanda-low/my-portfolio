@@ -369,7 +369,7 @@ body {
   .overlay_text_1,
   .overlay_text_2,
   .overlay_text_3 {
-    opacity: 0;
+    display: none;
   }
 }
 .overlay_text_1 {
