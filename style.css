@@ -435,6 +435,24 @@ body {
   padding-right: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+  .project_1_container:hover .project_overlay_1 {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project_2_container:hover .project_overlay_2 {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project_3_container:hover .project_overlay_3 {
+    background-color: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .about_container_text {
     padding: 10px;
