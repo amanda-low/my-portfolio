@@ -494,9 +494,9 @@ body {
 
 .about_me {
   display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 10px;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
-  margin-top: 70px;
 }
 
 .about_text button {
@@ -647,7 +647,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .about_me,
   .contact {
     text-align: center;
   }
@@ -950,8 +949,7 @@ ul {
   .header_texts,
   .method_texts,
   .iterations_texts,
-  .insights_texts,
-  .about_me {
+  .insights_texts {
     grid-template-columns: 1fr;
   }
 
