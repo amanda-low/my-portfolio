@@ -400,12 +400,6 @@ body {
   .overlay_text_3 {
     display: none;
   }
-
-  .project_overlay_1,
-  .project_overlay_2,
-  .project_overlay_3 {
-    background-color: none;
-  }
 }
 
 .overlay_text_1 {
