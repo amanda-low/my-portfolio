@@ -587,26 +587,29 @@ body {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1024px) {
   .footer {
     grid-template-columns: 1fr;
     text-align: center;
+    grid-row-gap: 4vh;
   }
 }
 
 .footer_email {
   font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 100px;
 }
 
-.footer_icons {
-  /* margin-top: 1vh; */
-  margin-bottom: 3vh;
+.footer_2 {
+  text-align: center;
+  font-size: 1.6rem;
 }
-
 .footer_icon {
   margin-right: 1rem;
 }
@@ -655,10 +658,6 @@ body {
 
   .contact {
     text-align: center;
-  }
-
-  .contact {
-    margin-top: 20px;
   }
 
   .about_desc_2 {
