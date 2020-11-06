@@ -505,18 +505,19 @@ body {
 }
 
 .about_title_1 {
-  font-size: 42px;
+  font-size: 3vw;
 }
 
 .about_title_2 {
-  font-size: 32px;
+  font-size: 2.6vw;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 800px) {
   .about_title_1 {
-    font-size: 30px;
+    font-size: 7vw;
   }
   .about_title_2 {
-    font-size: 20px;
+    font-size: 6vw;
   }
 }
 
