@@ -173,13 +173,13 @@ body {
 }
 
 .header_name_home1 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
 
 .header_name_home2 {
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 
 .header_name_1 {
@@ -191,9 +191,22 @@ body {
 .header_name_2 {
   font-size: 2vw;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 800px) {
+  .header_name_home1 {
+    font-size: 4.5vw;
+  }
   .header_name_home2 {
-    display: block;
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_name_home1 {
+    font-size: 7vw;
+  }
+  .header_name_home2 {
+    font-size: 7vw;
   }
 }
 
@@ -226,7 +239,7 @@ body {
   text-align: end;
   align-items: center;
   color: #3f4241;
-  font-size: 2rem;
+  font-size: 1.5vw;
   font-family: "Nunito Sans", sans-serif;
   /* justify-self: end; */
 }
@@ -842,8 +855,15 @@ ul {
   margin-bottom: 60px;
 }
 .title_texts {
+  font-size: 2rem;
   display: grid;
   grid-template-columns: 30% 1fr;
+}
+
+@media screen and (max-width: 375px) {
+  .title_texts {
+    font-size: 1.6rem;
+  }
 }
 
 .main_title {
