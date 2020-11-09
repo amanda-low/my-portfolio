@@ -477,7 +477,7 @@ body {
   .project_2_container .project_overlay_2 {
     background-color: transparent;
   }
-  .project_3_container:hover .project_overlay_3 {
+  .project_3_container .project_overlay_3 {
     background-color: transparent;
   }
 }
