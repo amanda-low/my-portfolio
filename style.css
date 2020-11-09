@@ -889,6 +889,7 @@ ul {
 
 .desc_link {
   color: #3f4241;
+  text-decoration-thickness: 0.5px;
 }
 
 .subtitle:hover {
