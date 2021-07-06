@@ -93,3 +93,22 @@ function includeHTML() {
     }
   }
 }
+
+// Access case study wth password 
+
+function checkPassword() {
+  var password = document.getElementById("passwordBox");
+  var passwordText = password.value;
+  if (passwordText == "Ber1in") {
+  return true;
+  } 
+
+  alert("Password is incorrect");
+  return false;
+  }
+
+  function handleEnter(e) {
+    if(e.keyCode === 13) {
+      compare()
+    }
+  }

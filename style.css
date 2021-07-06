@@ -149,10 +149,15 @@ html {
 body {
   text-decoration: none;
   color: #3f4241;
-  margin-left: 140px;
-  margin-right: 140px;
   height: 100%;
+  /* width: 1200px;
+  margin-left: auto;
+  margin-right: auto; */
 }
+
+
+
+
 
 /* <<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>> */
 
@@ -173,23 +178,23 @@ body {
 }
 
 .header_name_home1 {
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
 
 .header_name_home2 {
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .header_name_1 {
-  font-size: 3vw;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
 .header_name_2 {
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -211,13 +216,13 @@ body {
 }
 
 .header_name_project {
-  font-size: 2.5vw;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
 .project_desc {
-  font-size: 1.8vw;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -438,7 +443,7 @@ body {
   padding-left: 4vw;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .header_name_1 {
     font-size: 4.5vw;
   }
@@ -518,11 +523,11 @@ body {
 }
 
 .about_title_1 {
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 .about_title_2 {
-  font-size: 2.6vw;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -612,10 +617,17 @@ body {
 }
 
 .about_block {
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: 35% 1fr;
-  grid-template-rows: auto;
-  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  grid-column-gap: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .about_block {
+    grid-template-columns: 1fr;
+  }
 }
 /* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
 
@@ -624,8 +636,8 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  padding-bottom: 70px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -664,6 +676,11 @@ body {
   /* .projects {
     grid-template-columns: 1fr 1fr;
   } */
+  body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #menuToggle {
     display: none;
   }
@@ -1022,3 +1039,35 @@ ul {
 } */
 
 /* ---------------------------------- End Sub page --------------------------------- */
+/*  */
+
+
+/* -------------------------------- Access Case Study ------------------------------ */
+
+.password {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  text-align: center;
+  font-size: 14px;
+}
+.button {
+  border: none;
+  color: white;
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.button_font {
+  font-family: "Raleway", sans-serif;
+  font-weight: 00;
+}
+
+
+
+

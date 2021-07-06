@@ -1,1 +1,8 @@
+<Files admin.php>
+AuthName "Dialog prompt"
+Authtype Basic
+AuthName "restricted area"
+AuthUserFile amandalow.design/queer-booth-augmented-reality.html/.htpasswd
+Require valid-user
+</Files>
 
