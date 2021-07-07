@@ -779,6 +779,10 @@ body {
   color: #00a88c;
 }
 
+.dark_green {
+ color:#148b3e;
+}
+
 .purple {
   color: #d068f6;
 }
@@ -1040,6 +1044,21 @@ ul {
 
 /* ---------------------------------- End Sub page --------------------------------- */
 /*  */
+
+
+/* ---------------------------------- Progress Bar --------------------------------- */
+
+.progress {
+  margin-top: 20px;
+  text-align: center;
+}
+.progress_bar {
+  justify-self: center;
+max-width: 100%;
+height: auto;
+
+}
+/* ---------------------------------- End Progress Bar --------------------------------- */
 
 
 /* -------------------------------- Access Case Study ------------------------------ */
