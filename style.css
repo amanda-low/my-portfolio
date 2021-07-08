@@ -513,6 +513,19 @@ body {
   opacity: 1;
 }
 
+.zoom {
+  height: auto;
+  overflow: hidden;
+}
+
+.zoom img {
+  transition: transform .5s ease;
+}
+
+.zoom:hover img {
+  transform:scale(1.5)
+}
+
 /* <<<<<<<<<<<<<<<<< End Projects >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< About Me/Contact >>>>>>>>>>>>>>>> */
