@@ -155,10 +155,6 @@ body {
   margin-right: auto; */
 }
 
-
-
-
-
 /* <<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>> */
 
 .header {
@@ -519,11 +515,11 @@ body {
 }
 
 .zoom img {
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .zoom:hover img {
-  transform:scale(1.5)
+  transform: scale(1.5);
 }
 
 /* <<<<<<<<<<<<<<<<< End Projects >>>>>>>>>>>>>>>> */
@@ -793,7 +789,7 @@ body {
 }
 
 .dark_green {
- color:#148b3e;
+  color: #148b3e;
 }
 
 .purple {
@@ -1058,7 +1054,6 @@ ul {
 /* ---------------------------------- End Sub page --------------------------------- */
 /*  */
 
-
 /* ---------------------------------- Progress Bar --------------------------------- */
 
 .progress {
@@ -1067,12 +1062,10 @@ ul {
 }
 .progress_bar {
   justify-self: center;
-max-width: 100%;
-height: auto;
-
+  max-width: 100%;
+  height: auto;
 }
 /* ---------------------------------- End Progress Bar --------------------------------- */
-
 
 /* ---------------------------------- Read More Button --------------------------------- */
 .read_more_button {
@@ -1080,15 +1073,13 @@ height: auto;
 }
 
 .read_more {
+  width: 100px;
+  text-align: center;
+  background-color: #fafafa;
+  border: solid 1px;
+  border-color: #3f4241;
 
-width: 100px;
-text-align: center;
- background-color: #FAFAFA;
- border: solid 1px ;
- border-color: #3f4241;
-
- padding: 15px 32px;
-
+  padding: 15px 32px;
 }
 
 .read_more_text {
@@ -1107,18 +1098,16 @@ text-align: center;
 /* ----------------------------------- Picture Scroll Box ------------------------------------ */
 
 .picture_scroll {
-
-height: 400px;
-object-fit: cover;
+  height: 400px;
+  object-fit: cover;
   overflow: scroll;
 }
 
 .picture_size {
- width: 100%;
+  width: 100%;
 }
 
 /* ----------------------------------- End Picture Scroll Box ------------------------------------ */
-
 
 /* -------------------------------- Access Case Study ------------------------------ */
 
@@ -1126,7 +1115,7 @@ object-fit: cover;
   margin-top: 40vh;
   margin-left: auto;
   margin-right: auto;
-  width: 40em;
+  /* width: 40em; */
   text-align: center;
   font-size: 14px;
 }
@@ -1138,14 +1127,9 @@ object-fit: cover;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
 
 .button_font {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
 }
-
-
-
-
