@@ -649,7 +649,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 100px;
+  margin-top: 160px;
   padding-bottom: 70px;
 }
 
@@ -939,7 +939,7 @@ ul {
 }
 
 .desc {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: justify;
 }
 
@@ -1074,10 +1074,41 @@ height: auto;
 /* ---------------------------------- End Progress Bar --------------------------------- */
 
 
+/* ---------------------------------- Read More Button --------------------------------- */
+.read_more_button {
+  display: grid;
+}
+
+.read_more {
+
+width: 100px;
+text-align: center;
+ background-color: #FAFAFA;
+ border: solid 1px ;
+ border-color: #3f4241;
+
+ padding: 15px 32px;
+
+}
+
+.read_more_text {
+  color: #3f4241;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.password_required {
+  font-size: 1.4rem;
+}
+
+/* ---------------------------------- End Read More Button --------------------------------- */
+
+
 /* -------------------------------- Access Case Study ------------------------------ */
 
 .password {
-  margin-top: 10vh;
+  margin-top: 40vh;
   margin-left: auto;
   margin-right: auto;
   width: 40em;
@@ -1097,7 +1128,7 @@ height: auto;
 
 .button_font {
   font-family: "Raleway", sans-serif;
-  font-weight: 00;
+  font-weight: 200;
 }
 
 
