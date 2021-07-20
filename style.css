@@ -174,13 +174,13 @@ body {
 }
 
 .header_name_home1 {
-  font-size: 2vw;
+  font-size: 40px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
 
 .header_name_home2 {
-  font-size: 2vw;
+  font-size: 40px;
 }
 
 .header_name_1 {
@@ -240,7 +240,7 @@ body {
   text-align: end;
   align-items: center;
   color: #3f4241;
-  font-size: 1.5vw;
+  font-size: 30px;
   font-family: "Nunito Sans", sans-serif;
   /* justify-self: end; */
 }
@@ -545,6 +545,9 @@ body {
   }
   .about_title_2 {
     font-size: 6vw;
+  }
+  .about_nav {
+    font-size: 18px;
   }
 }
 
