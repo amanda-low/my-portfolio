@@ -1097,6 +1097,11 @@ ul {
 
 /* ----------------------------------- Picture Scroll Box ------------------------------------ */
 
+.picture_title {
+  text-align: right;
+  font-size: 14px;
+}
+
 .picture_scroll {
   height: 400px;
   object-fit: cover;
