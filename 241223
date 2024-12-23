@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Amanda Low UX | Work</title>
+  </head>
+  <body>
+
+   <div class="column_1">
+
+   </div> 
+   <div class="column_2">
+    <!-- header -->
+
+    <div include-html="header.html"></div>
+
+    <!-- end header -->
+    <div class="about_nav">WORK</div>
+
+    <!-- projects -->
+    <div class="projects">
+      <div class="project project_0">
+        <div class="project_img project_1_container">
+          <a href="afilio.html">
+            <div class="zoom">
+            <img
+              class="img"
+              src="afilio_start_page.png"
+              alt="queer booth mobile screens"
+            /></div>
+            <div class="project_overlay_1">
+              <div class="overlay_text_1 desc_link">
+                <span class="header_name_project"
+                  >Afilio</span
+                ><br><br>
+                <span class="desc bold">Care Level Dashboard</span>
+                <br /><br /><br><br>
+                <div class="project_desc">
+                 
+                <span class="">
+                  Task: Design a dashboard to <br>
+                  guide users through the process <br>
+                  of applying for a care level.</span>
+                  </div><br /><br />
+                </blockquote>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="project project_2">
+        <div class="project_img project_1_container">
+          <a href="queer-booth-augmented-reality.html">
+            <img
+              class="img"
+              src="queer booth start page.png"
+              alt="queer booth mobile screens"
+            />
+            <div class="project_overlay_1">
+              <div class="overlay_text_1 desc_link">
+                <span class="header_name_project"
+                  >Queer Booth
+                  </span
+                ><br><br>
+                <span class="desc bold">Social Entertainment App</span>
+                <br /><br /><br><br>
+                <div>
+                  <span class="project_desc"
+                    >Task: Redesign app for relaunch <br>
+                    using AR, focusing on LGBTQ+ <br>
+                    representation and inclusivity.</span
+                  ></div><br /><br />
+                </blockquote>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="project project_1">
+        <div class="project_img project_2_container">
+          <a href="whatsapp-subgroup.html">
+            <img
+              class="img"
+              src="whatsapp start page.png"
+              alt="whatsapp subgroup"
+            />
+            <div class="project_overlay_2">
+              <div class="overlay_text_2 desc_link">
+                <span class="header_name_project">WhatsApp
+                  
+                </span><br><br>
+                <span class="desc bold">Subgroups</span>
+                <br /><br /><br><br>
+                <div>
+                  <span class="project_desc"
+                    >Task: Design a subgroup chat <br>
+                    feature to categorise <br>
+                    conversation topics.</span
+                  ><br /><br />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="project project_3">
+        <div class="project_img project_3_container">
+          <a href="goalgirls-member-database.html">
+            <img class="img" src="goalgirls start page.png" alt="" />
+            <div class="project_overlay_3">
+              <div class="overlay_text_3 desc_link">
+                
+                <span class="header_name_project">Goalgirls</span><br><br>
+                <span class="desc bold">Agency
+                  Database</span>
+        
+                <br /><br /><br><br>
+                <div>
+                  <span class="project_desc"
+                    >Task: Design and build a member <br>
+                    database to promote creative <br>
+                    community skillsets.</span
+                  ><br /><br />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end projects -->
+
+    <!-- footer -->
+
+    <div include-html="footer.html"></div>
+
+    <!-- end footer -->
+
+    <script src="script.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</div>
+<div class="col_3"></div>
+</html>
