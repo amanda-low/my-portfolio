@@ -1,14 +1,11 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Amanda Low UX | Work</title>
   </head>
-  <body>
+  <body data-new-gr-c-s-check-loaded="14.1215.0" data-gr-ext-installed="" cz-shortcut-listen="true">
 
    <div class="column_1">
 
@@ -16,7 +13,71 @@
    <div class="column_2">
     <!-- header -->
 
-    <div include-html="header.html"></div>
+    <div>
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+  
+  
+    <!-- Burger Menu -->
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html" class="burger_header"><li>Home</li></a>
+          <li class="burger_header">Work:</li>
+          <blockquote>
+            <div class="burger_work">
+              <a href="afilio.html"><li>Afilio: Care Level Dashboard</li></a>
+              <a href="queer-booth-augmented-reality.html"><li>Queer Booth: AR Redesign</li></a>
+              <a href="whatsapp-subgroup.html"><li>WhatsApp: Subgroups</li></a>
+              <a href="goalgirls-member-database.html"><li>Goalgirls: Agency Database</li></a>
+            </div>
+          </blockquote>
+          <a href="about.html"><li class="burger_header">About</li></a>
+          <a href="210708 Amanda Low UX - CV.pdf"><li class="burger_header">CV</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- End Burger Menu -->
+
+    <!--  header -->
+
+    <div class="header">
+      <div class="header_1">
+        <a class="header_name" href="index.html"><span class="header_name_home">
+            <span class="header_name_home1">AMANDA LOW </span>
+            <span class="header_name_home2">UX DESIGN</span></span>
+        </a>
+      </div>
+
+      <div class="header_2">
+        <div></div>
+
+        <div class="header_2_1">
+          <a class="header_link menu_hide" href="index.html">WORK</a>
+        </div>
+        <div class="header_2_2">
+          <a class="header_link menu_hide" href="about.html">ABOUT</a>
+        </div>
+        <div class="header_2_3">
+          <a href="210708 Amanda Low UX - CV.pdf" target="_blank" class="header_link menu_hide">CV</a>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+  
+
+</div>
 
     <!-- end header -->
     <div class="about_nav">WORK</div>
@@ -27,26 +88,20 @@
         <div class="project_img project_1_container">
           <a href="afilio.html">
             <div class="zoom">
-            <img
-              class="img"
-              src="afilio_start_page.png"
-              alt="queer booth mobile screens"
-            /></div>
+            <img class="img" src="afilio_start_page.png" alt="queer booth mobile screens"></div>
             <div class="project_overlay_1">
               <div class="overlay_text_1 desc_link">
-                <span class="header_name_project"
-                  >Afilio</span
-                ><br><br>
+                <span class="header_name_project">Afilio</span><br><br>
                 <span class="desc bold">Care Level Dashboard</span>
-                <br /><br /><br><br>
+                <br><br><br><br>
                 <div class="project_desc">
                  
                 <span class="">
                   Task: Design a dashboard to <br>
                   guide users through the process <br>
                   of applying for a care level.</span>
-                  </div><br /><br />
-                </blockquote>
+                  </div><br><br>
+                
               </div>
             </div>
           </a>
@@ -56,26 +111,18 @@
       <div class="project project_2">
         <div class="project_img project_1_container">
           <a href="queer-booth-augmented-reality.html">
-            <img
-              class="img"
-              src="queer booth start page.png"
-              alt="queer booth mobile screens"
-            />
+            <img class="img" src="queer booth start page.png" alt="queer booth mobile screens">
             <div class="project_overlay_1">
               <div class="overlay_text_1 desc_link">
-                <span class="header_name_project"
-                  >Queer Booth
-                  </span
-                ><br><br>
+                <span class="header_name_project">Queer Booth
+                  </span><br><br>
                 <span class="desc bold">Social Entertainment App</span>
-                <br /><br /><br><br>
+                <br><br><br><br>
                 <div>
-                  <span class="project_desc"
-                    >Task: Redesign app for relaunch <br>
+                  <span class="project_desc">Task: Redesign app for relaunch <br>
                     using AR, focusing on LGBTQ+ <br>
-                    representation and inclusivity.</span
-                  ></div><br /><br />
-                </blockquote>
+                    representation and inclusivity.</span></div><br><br>
+                
               </div>
             </div>
           </a>
@@ -85,24 +132,18 @@
       <div class="project project_1">
         <div class="project_img project_2_container">
           <a href="whatsapp-subgroup.html">
-            <img
-              class="img"
-              src="whatsapp start page.png"
-              alt="whatsapp subgroup"
-            />
+            <img class="img" src="whatsapp start page.png" alt="whatsapp subgroup">
             <div class="project_overlay_2">
               <div class="overlay_text_2 desc_link">
                 <span class="header_name_project">WhatsApp
                   
                 </span><br><br>
                 <span class="desc bold">Subgroups</span>
-                <br /><br /><br><br>
+                <br><br><br><br>
                 <div>
-                  <span class="project_desc"
-                    >Task: Design a subgroup chat <br>
+                  <span class="project_desc">Task: Design a subgroup chat <br>
                     feature to categorise <br>
-                    conversation topics.</span
-                  ><br /><br />
+                    conversation topics.</span><br><br>
                 </div>
               </div>
             </div>
@@ -113,7 +154,7 @@
       <div class="project project_3">
         <div class="project_img project_3_container">
           <a href="goalgirls-member-database.html">
-            <img class="img" src="goalgirls start page.png" alt="" />
+            <img class="img" src="goalgirls start page.png" alt="">
             <div class="project_overlay_3">
               <div class="overlay_text_3 desc_link">
                 
@@ -121,13 +162,11 @@
                 <span class="desc bold">Agency
                   Database</span>
         
-                <br /><br /><br><br>
+                <br><br><br><br>
                 <div>
-                  <span class="project_desc"
-                    >Task: Design and build a member <br>
+                  <span class="project_desc">Task: Design and build a member <br>
                     database to promote creative <br>
-                    community skillsets.</span
-                  ><br /><br />
+                    community skillsets.</span><br><br>
                 </div>
               </div>
             </div>
@@ -140,7 +179,46 @@
 
     <!-- footer -->
 
-    <div include-html="footer.html"></div>
+    <div>
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+  
+  
+    <!-- about -->
+    <div class="footer" id="footer">
+      <div>
+        <span class="footer_email raleway">amanda.r.low@outlook.com</span>
+      </div>
+      <div class="footer_2 raleway">Code by Amanda Low</div>
+      <div class="contact">
+        <div class="footer_icons">
+          <a class="footer_img" href="https://www.linkedin.com/in/amanda-r-low/" target="_blank">
+            <img class="footer_icon footer_icon_1" src="linkedin logo.png" alt="" width="24px" height="24px">
+          </a>
+          <a class="footer_img" href="https://medium.com/@amanda.low" target="_blank">
+            <img class="footer_icon footer_icon_2" src="medium logo.png" alt="" width="24px" height="24px">
+          </a>
+          <a class="footer_img" href="https://github.com/amanda-low" target="_blank">
+            <img class="footer_icon footer_icon_3" src="github logo.png" alt="" width="24px" height="24px">
+          </a>
+
+          <a class="footer_img" href="https://www.instagram.com/theamandalow/" target="_blank">
+            <img class="footer_icon footer_icon_2" src="instagram logo.png" alt="" style="width: 22px; height: 22px">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!-- footer -->
+
+    <!-- End Footer  -->
+  
+
+</div>
 
     <!-- end footer -->
 
@@ -148,7 +226,8 @@
     <script>
       includeHTML();
     </script>
-  </body>
+  
 </div>
 <div class="col_3"></div>
-</html>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
