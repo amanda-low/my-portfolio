@@ -11,14 +11,103 @@ html {
   scroll-behavior: smooth;
 }
 
-.raleway {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
+
 
 /* <<<<<<<<<<<<<<<<< Back to top >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Back to top end >>>>>>>>>>>>>>>> */
+
+
+/* <<<<<<<<<<<<<<<<< Start Typography >>>>>>>>>>>>>>>> */
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-family: Raleway;
+}
+
+
+.desktop-headline-XL {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.body-XXL {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.header_name {
+  text-decoration: none;
+  color: #3f4241;
+  font-size: 2rem;
+}
+
+
+
+
+.header_name_home2 {
+  font-size: 40px;
+}
+
+
+/* <<<<<<<<<<<<<<<<< End Typography >>>>>>>>>>>>>>>> */
+
+
+
+/* <<<<<<<<<<<<<<<<< Start Button >>>>>>>>>>>>>>>> */
+.cta {
+  padding: 10px 20px;
+  font-style: "Nunito sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f4241;
+  background-color: #ffffff;
+  border: 1px solid #3f4241;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e6f0ff;
+}
+
+.cta:active {
+  transform: scale(0.98);
+}
+
+/* <<<<<<<<<<<<<<<<< End Button >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Start General >>>>>>>>>>>>>>>> */
+.img_block {
+  width: 100%;
+  height: auto
+  ;
+  object-fit: fill;
+}
+
+.columns-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 80px;
+  margin-bottom: 80px;
+
+}
+
+.ccolumns-2-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.border_radius_1 {
+  border-radius: 8px;
+}
+
+/* <<<<<<<<<<<<<<<<< End General >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Burger Menu >>>>>>>>>>>>>>>> */
 #menuToggle {
@@ -167,21 +256,7 @@ body {
   text-decoration: none;
 }
 
-.header_name {
-  text-decoration: none;
-  color: #3f4241;
-  font-size: 2rem;
-}
 
-.header_name_home1 {
-  font-size: 40px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-}
-
-.header_name_home2 {
-  font-size: 40px;
-}
 
 .header_name_1 {
   font-size: 40px;
@@ -236,7 +311,7 @@ body {
 }
 .header_2 {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
+  grid-template-columns: 1fr auto auto auto auto;
   text-align: end;
   align-items: center;
   color: #3f4241;
@@ -301,6 +376,14 @@ body {
 }
 
 /* <<<<<<<<<<<<<<<<< End Header >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Start Intro >>>>>>>>>>>>>>>> */
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<< End Intro >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Projects >>>>>>>>>>>>>>>> */
 
@@ -531,13 +614,9 @@ body {
   margin-bottom: 30px;
 }
 
-.about_title_1 {
-  font-size: 40px;
-}
 
-.about_title_2 {
-  font-size: 30px;
-}
+
+
 
 @media screen and (max-width: 800px) {
   .about_title_1 {
@@ -832,11 +911,7 @@ ul {
   list-style-type: none;
 }
 
-.img_block {
-  width: 100%;
-  height: auto;
-  object-fit: fill;
-}
+
 
 .img_border {
   border: 0.3px solid #3f4241;

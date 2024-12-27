@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Amanda Low UX | Work</title>
+    <title>Amanda Low | Home</title>
   </head>
   <body data-new-gr-c-s-check-loaded="14.1215.0" data-gr-ext-installed="" cz-shortcut-listen="true">
 
@@ -55,8 +55,8 @@
     <div class="header">
       <div class="header_1">
         <a class="header_name" href="index.html"><span class="header_name_home">
-            <span class="header_name_home1">AMANDA LOW </span>
-            <span class="header_name_home2">UX DESIGN test test</span></span>
+            <span class="desktop-headline-XL">AMANDA LOW </span>
+            <span class="header_name_home2">DESIGN</span></span>
         </a>
       </div>
 
@@ -69,9 +69,13 @@
         <div class="header_2_2">
           <a class="header_link menu_hide" href="about.html">ABOUT</a>
         </div>
+        <div class="header_2_2">
+          <a class="header_link menu_hide" href="https://www.linkedin.com/in/amanda-r-low/" target="_blank">LINKEDIN</a>
+        </div>
         <div class="header_2_3">
           <a href="210708 Amanda Low UX - CV.pdf" target="_blank" class="header_link menu_hide">CV</a>
         </div>
+        
       </div>
     </div>
     <!-- end header -->
@@ -80,9 +84,37 @@
 </div>
 
     <!-- end header -->
-    <div class="about_nav">WORK</div>
+    
+    
+    <!-- Start intro -->
 
-    <!-- projects -->
+
+    <div class="columns-2-1">
+      
+
+      <div>
+        <span class="desktop-headline-XL"> UX • UI • Product Design • E-commerce </span>
+
+         
+  
+        <br /><br /><br /><br />
+        <span class="body-XXL">
+         I'm a product designer at HelloFresh in Berlin with 5 years experience. I'm a product designer at HelloFresh in Berlin with 5 years experience. I'm a product designer at HelloFresh in Berlin with 5 years experience. </span>
+        
+         <br /><br /><br /><br />
+         <button class="cta">Learn more</button>
+      </div>
+    
+
+      <div class="circle-image">
+        <img src="Amanda Low About.png" alt="" class="img_block border_radius_1"/>
+      </div>
+
+    </div>
+
+    <!-- End intro -->
+
+    <!-- Start projects -->
     <div class="projects">
       <div class="project project_0">
         <div class="project_img project_1_container">
@@ -175,7 +207,7 @@
       </div>
     </div>
 
-    <!-- end projects -->
+    <!-- End projects -->
 
     <!-- footer -->
 
