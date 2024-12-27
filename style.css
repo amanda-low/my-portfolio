@@ -34,6 +34,13 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+.desktop-headline-LG {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
 .body-XXL {
   font-size: 28px;
   line-height: 32px;
@@ -58,7 +65,7 @@ html {
 
 
 /* <<<<<<<<<<<<<<<<< Start Button >>>>>>>>>>>>>>>> */
-.cta {
+.button-secondary {
   padding: 10px 20px;
   font-style: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -71,23 +78,34 @@ html {
   transition: all 0.3s ease;
 }
 
-.cta:hover {
+.button-secondary:hover {
   background-color: #e6f0ff;
 }
 
-.cta:active {
+.button-secondary:active {
   transform: scale(0.98);
+}
+
+
+.button-tertiary {
+  display: inline-block; /* Make it behave like a button */
+  padding: 10px 20px; /* Padding for the button */
+  font-style: "Nunito sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3f4241; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners for the button */
+}
+
+.button-tertiary:hover {
+  background-color: #e6e6e6; /* Darker shade on hover */
 }
 
 /* <<<<<<<<<<<<<<<<< End Button >>>>>>>>>>>>>>>> */
 
-/* <<<<<<<<<<<<<<<<< Start General >>>>>>>>>>>>>>>> */
-.img_block {
-  width: 100%;
-  height: auto
-  ;
-  object-fit: fill;
-}
+/* <<<<<<<<<<<<<<<<< Start Layout >>>>>>>>>>>>>>>> */
+
 
 .columns-2-1 {
   display: grid;
@@ -96,18 +114,64 @@ html {
   margin-bottom: 80px;
 
 }
+.columns-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 80px;
+  margin-bottom: 80px;
 
-.ccolumns-2-1 {
-  display: flex;
-  flex-direction: row;
 }
 
+
+@media screen and (max-width: 600px) {
+  .columns-2-1,
+  .columns-1-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columns-2-1 {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<< End Layout >>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<<<< Start Images >>>>>>>>>>>>>>>> */
 
 .border_radius_1 {
   border-radius: 8px;
 }
 
-/* <<<<<<<<<<<<<<<<< End General >>>>>>>>>>>>>>>> */
+.img_block {
+  width: 100%;
+  height: auto
+  ;
+  object-fit: fill;
+}
+
+
+.img-background {
+  position: relative;
+  width: 100%; /* Full width */
+  padding-bottom: 100%; /* Height matches width to create a square */
+  background-color: #e6e6e6; /* Background color of the square */
+  overflow: hidden; /* Hide overflow if needed */
+  border-radius: 8px;
+}
+
+.img-floating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+  max-width: 90%; /* Responsive image size */
+  max-height: 90%; /* Responsive image size */
+}
+/* <<<<<<<<<<<<<<<<< End Images >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Burger Menu >>>>>>>>>>>>>>>> */
 #menuToggle {
@@ -377,13 +441,7 @@ body {
 
 /* <<<<<<<<<<<<<<<<< End Header >>>>>>>>>>>>>>>> */
 
-/* <<<<<<<<<<<<<<<<< Start Intro >>>>>>>>>>>>>>>> */
 
-
-
-
-
-/* <<<<<<<<<<<<<<<<< End Intro >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Projects >>>>>>>>>>>>>>>> */
 
@@ -701,11 +759,7 @@ body {
   grid-template-columns: 15% 1fr 15%;
 }
 
-@media screen and (max-width: 767px) {
-  .center_text_about {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .about_block {
   margin-top: 40px;
@@ -715,11 +769,7 @@ body {
   grid-column-gap: 80px;
 }
 
-@media screen and (max-width: 800px) {
-  .about_block {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* <<<<<<<<<<<<<<<<< End About Me/Contact >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>> */
