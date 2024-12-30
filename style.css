@@ -26,7 +26,6 @@ html {
   font-family: Raleway;
 }
 
-
 .desktop-headline-XL {
   font-size: 40px;
   line-height: 48px;
@@ -41,23 +40,50 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+.desktop-headline-MD {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
 .body-XXL {
   font-size: 28px;
   line-height: 32px;
 }
 
-.header_name {
+.body-XL {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.body-LG {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.body-MD {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-bold {
+  font-weight: 500;
+}
+
+.body-SM {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link   {
   text-decoration: none;
   color: #3f4241;
-  font-size: 2rem;
 }
 
 
 
 
-.header_name_home2 {
-  font-size: 40px;
-}
 
 
 /* <<<<<<<<<<<<<<<<< End Typography >>>>>>>>>>>>>>>> */
@@ -69,17 +95,19 @@ html {
   padding: 10px 20px;
   font-style: "Nunito sans", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
+  text-decoration: none;
   color: #3f4241;
   background-color: #ffffff;
   border: 1px solid #3f4241;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-right: 8px;
 }
 
 .button-secondary:hover {
-  background-color: #e6f0ff;
+  opacity: 70%;
 }
 
 .button-secondary:active {
@@ -92,15 +120,16 @@ html {
   padding: 10px 20px; /* Padding for the button */
   font-style: "Nunito sans", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #3f4241; /* Text color */
   text-decoration: none; /* Remove underline */
   border-radius: 5px; /* Rounded corners for the button */
 }
 
 .button-tertiary:hover {
-  background-color: #e6e6e6; /* Darker shade on hover */
+  opacity: 70%;
 }
+
 
 /* <<<<<<<<<<<<<<<<< End Button >>>>>>>>>>>>>>>> */
 
@@ -378,9 +407,6 @@ body {
   grid-template-columns: 1fr auto auto auto auto;
   text-align: end;
   align-items: center;
-  color: #3f4241;
-  font-size: 30px;
-  font-family: "Nunito Sans", sans-serif;
   /* justify-self: end; */
 }
 
