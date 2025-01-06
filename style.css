@@ -88,7 +88,48 @@ html {
 
 /* <<<<<<<<<<<<<<<<< End Typography >>>>>>>>>>>>>>>> */
 
+/* <<<<<<<<<<<<<<<<< Start Layout >>>>>>>>>>>>>>>> */
 
+
+.columns-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 80px;
+  margin-bottom: 80px;
+
+}
+.columns-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 80px;
+  margin-bottom: 80px;
+
+}
+
+.columns-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin-bottom: 80px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .columns-2-1,
+  .columns-1-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columns-2-1 {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<< End Layout >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Start Button >>>>>>>>>>>>>>>> */
 .button-secondary {
@@ -133,41 +174,7 @@ html {
 
 /* <<<<<<<<<<<<<<<<< End Button >>>>>>>>>>>>>>>> */
 
-/* <<<<<<<<<<<<<<<<< Start Layout >>>>>>>>>>>>>>>> */
 
-
-.columns-2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 80px;
-  margin-bottom: 80px;
-
-}
-.columns-1-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 80px;
-  margin-bottom: 80px;
-
-}
-
-
-@media screen and (max-width: 600px) {
-  .columns-2-1,
-  .columns-1-2 {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 600px) {
-  .columns-2-1 {
-    flex-direction: column-reverse;
-  }
-}
-
-
-
-
-/* <<<<<<<<<<<<<<<<< End Layout >>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<< Start Images >>>>>>>>>>>>>>>> */
 
