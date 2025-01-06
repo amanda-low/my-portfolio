@@ -198,6 +198,12 @@ html {
   object-fit: fill;
 }
 
+.img-circle {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;;
+}
 .img-container {
   display: flex;
   justify-content: center;
