@@ -88,10 +88,18 @@ html {
   color: #3f4241;
 }
 
+.link:hover{
+  opacity: 70%;
+}
+
 .link-bold {
   text-decoration: none;
   color: #3f4241;
   font-weight: 400;
+}
+
+.link-bold:hover{
+  opacity: 70%;
 }
 
 
@@ -138,12 +146,22 @@ html {
 
 @media screen and (max-width: 600px) {
   .columns-2-1,
-  .columns-1-2 {
+  .columns-1-2,
+  .columns-1-1 {
     grid-template-columns: 1fr;
   }
+  .item-1 {
+    order: 2;
+  }
+  .item-2 {
+    order: 1;
+  }
 }
+
 @media screen and (max-width: 600px) {
-  .columns-2-1 {
+  .columns-2-1,
+  .columns-1-2,
+  .columns-1-1 {
     flex-direction: column-reverse;
   }
 }
@@ -155,23 +173,23 @@ html {
 
 /* <<<<<<<<<<<<<<<<< Start Button >>>>>>>>>>>>>>>> */
 .button-secondary {
-  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark grey text for contrast */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  border-radius: 8px; /* 8px border radius */
   font-style: "Nunito sans", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #3f4241;
-  background-color: #ffffff;
-  border: 1px solid #3f4241;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-right: 8px;
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+
+
 .button-secondary:hover {
-  opacity: 70%;
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
 }
+
 
 .button-secondary:active {
   transform: scale(0.98);
@@ -194,6 +212,7 @@ html {
 }
 
 
+
 /* <<<<<<<<<<<<<<<<< End Button >>>>>>>>>>>>>>>> */
 
 
@@ -208,25 +227,25 @@ html {
   width: 100%;
   height: auto
   ;
-  object-fit: fill;
 }
 
 .img-circle {
-  width: auto;
-  height: auto;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
-  overflow: hidden;;
+  overflow: hidden;
 }
 
 .img-circle img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .img-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
 
 .img-container img {
