@@ -115,6 +115,10 @@ html {
 
 /* <<<<<<<<<<<<<<<<< Start Layout >>>>>>>>>>>>>>>> */
 
+.line-break {
+  white-space: pre;
+}
+
 
 .columns-2-1 {
   display: grid;
