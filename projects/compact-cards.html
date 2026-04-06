@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card Accessibility - Amanda Low</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Manrope:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="header__logo">Amanda Low</a>
+    <nav class="nav">
+      <a href="../index.html" class="nav__link">Work</a>
+      <a href="../about.html" class="nav__link">About</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" class="nav__link" target="_blank">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container container--narrow">
+        <div class="case-nav">
+          <a href="../index.html" class="back-link">&larr; Back to Work</a>
+        </div>
+        <span class="case-hero__company">HelloFresh</span>
+        <h1 class="case-hero__title">Product Card Accessibility</h1>
+        <p>Designing HelloFresh's first accessible, multi-brand product card.</p>
+
+        <div class="case-meta">
+          <div class="case-meta__item">
+            <span class="case-meta__label">Role</span>
+            <span class="case-meta__value">Product Designer (Design Systems & Accessibility)</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Timeline</span>
+            <span class="case-meta__value">Q1-Q2 2025</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Scope</span>
+            <span class="case-meta__value">iOS, Android | Factor across 7 markets</span>
+          </div>
+          <div class="case-meta__item case-meta__item--full">
+            <span class="case-meta__label">Ownership</span>
+            <div class="stepper-pills">
+              <span class="stepper-pills__step stepper-pills__step--active">Discovery</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Definition</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Design</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Development</span>
+              <span class="stepper-pills__step">Deployment</span>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="case-image-full">
+      <div class="container">
+        <img src="../images/product-card-variants.png" alt="Product card component showing all variants across states and brands">
+      </div>
+    </section>
+
+    <article class="container container--narrow">
+      <section class="case-section">
+        <h2 class="case-section__title">Overview</h2>
+        <div class="case-section__content">
+          <h3>The Context</h3>
+          <p>This work was part of a complete revamp of the HelloFresh mobile app Store experience. The product card is the highest-impact component in the Store: every customer uses it to make decisions and select their meals.</p>
+          <p>For the first time, we needed a component that worked across <strong>both mealkit brands</strong> (HelloFresh, Green Chef) <strong>and Ready-to-Eat brands</strong> (Factor)—each with fundamentally different product attributes.</p>
+
+          <h3>My Contribution</h3>
+          <p>I collaborated with the HelloFresh Design System team to deliver a fully modular product card component. This was:</p>
+          <ul>
+            <li>The first component supporting mealkit + Ready-to-Eat multi-brand</li>
+            <li>The first design-led accessibility implementation at HelloFresh</li>
+            <li>Built using Object-Oriented UX (OOUX) principles</li>
+          </ul>
+          <p>I also led knowledge sharing with the design team on accessibility from design to delivery.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">The Multi-Brand Challenge</h2>
+        <div class="case-section__content">
+          <h3>Different Products, Different Attributes</h3>
+          <p>Previously, multi-brand components only needed to work across mealkit brands—which share the same product attributes. Factor (Ready-to-Eat) changed everything:</p>
+
+          <h3>Mealkit Products</h3>
+          <ul>
+            <li>Cooking time and prep time</li>
+            <li>Recipe steps and ingredients</li>
+            <li>Serving size customization</li>
+            <li>Spice level indicators</li>
+            <li>Dietary tags (vegetarian, gluten-free)</li>
+          </ul>
+
+          <h3>Ready-to-Eat Products</h3>
+          <ul>
+            <li>No cooking required</li>
+            <li>Protein and calorie focus</li>
+            <li>Different dietary attributes</li>
+            <li>Subscription add-on options</li>
+            <li>Bulk buy variations</li>
+          </ul>
+
+          <h3>OOUX: Object-Oriented UX</h3>
+          <p>To solve this complexity, I used Object-Oriented UX to map all product types and their attributes. This involved:</p>
+          <ul>
+            <li><strong>Object mapping:</strong> Identifying all product types (meals, add-ons, subscriptions) and their relationships</li>
+            <li><strong>Attribute prioritization:</strong> Aligning with product on Jobs to be Done to determine what information is essential vs. optional</li>
+            <li><strong>Modular design:</strong> Creating a component architecture that could flex based on content type</li>
+          </ul>
+
+          <div class="case-image">
+            <img src="../images/product-card-ooux-ui.png" alt="OOUX object mapping showing meal cards and add-on cards with their attributes">
+            <p class="case-image__caption">OOUX object mapping: defining product card structure for meals and add-ons</p>
+          </div>
+
+          <div class="case-image">
+            <img src="../images/product-card-ooux-prioritization.png" alt="Attribute prioritization matrix showing JTBD alignment">
+            <p class="case-image__caption">Attribute prioritization aligned with Jobs to be Done research</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">Accessibility from Design to Development</h2>
+        <div class="case-section__content">
+          <h3>EAA Compliance</h3>
+          <p>The European Accessibility Act (EAA) — Directive (EU) 2019/882 — becomes fully applicable on <strong>June 28, 2025</strong>. This meant our designs had to meet WCAG 2.1 AA standards.</p>
+          <p>This project became HelloFresh's first design-led accessibility implementation and audit initiative.</p>
+
+          <h3>Design Annotations</h3>
+          <p>Using the Stark Figma plugin, I annotated every component with:</p>
+          <ul>
+            <li>Alt-text for images</li>
+            <li>ARIA labels for interactive elements</li>
+            <li>Reading order (based on OOUX prioritization)</li>
+            <li>Focus order for keyboard navigation</li>
+          </ul>
+
+          <div class="case-image">
+            <img src="../images/product-card-a11y-annotations.png" alt="Product card accessibility annotations showing alt-text, ARIA labels, and reading order">
+          </div>
+
+          <h3>Text Resizing</h3>
+          <p>Content must work at 200% text size without breaking layout. After discovering our truncation approach wouldn't maintain meaning, I benchmarked Lieferando's solution—switching to vertical layout at larger sizes.</p>
+
+          <h3>UX Writing Collaboration</h3>
+          <p>Worked with UX Writing to ensure alt-text and ARIA labels conveyed meaning accurately. Adjustments were made directly in Figma, following our established collaboration workflow.</p>
+
+          <h3>Knowledge Sharing</h3>
+          <p>I created a presentation for the design team: <em>"Product Cards Accessibility: From Design to Development"</em>—documenting the process, tools, and learnings so the approach could be replicated on future projects.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">Rollout & Validation</h2>
+        <div class="case-section__content">
+          <h3>Factor Launch</h3>
+          <p>The product card component launched on <strong>Factor (Ready-to-Eat)</strong> with a controlled rollout across 7 markets: US, CA, DE, NL, BE, SE, and DK.</p>
+
+          <h3>HelloFresh Experiment</h3>
+          <p>On HelloFresh, we tested a compact card variant. Results showed positive lift for prospects but negative impact for active customers—the change disrupted established browsing patterns. The experiment was rolled back.</p>
+
+          <h3>What's Next</h3>
+          <p>A new design iteration is underway, informed by experiment insights. The OOUX foundation and accessibility process established here will carry forward.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">The Solution</h2>
+        <div class="case-section__content">
+          <p>The final component is a modular system with <strong>50+ variants</strong> covering all states and brand configurations:</p>
+
+          <ul>
+            <li><strong>Product types:</strong> Meals, add-ons, subscription add-ons</li>
+            <li><strong>States:</strong> Default, selected, paired, customized, discounted</li>
+            <li><strong>Price variants:</strong> Standard, surcharge, surcharge promo, bulk buy</li>
+            <li><strong>Brand configurations:</strong> HelloFresh, Factor, Green Chef</li>
+          </ul>
+
+          <h3>Design Specifications</h3>
+          <p>UI optimized for 360px width devices (based on user device analysis). Key specs included:</p>
+          <ul>
+            <li>Character limits for all text elements to prevent truncation issues</li>
+            <li>Image aspect ratio 1:1, size 140x140px on mobile</li>
+            <li>Touch targets meeting accessibility minimums</li>
+            <li>Color contrast ratios meeting WCAG AA</li>
+          </ul>
+
+          <h3>Design System Collaboration</h3>
+          <p>Worked closely with the Zest Design System team to ensure the component met design system standards and could be maintained long-term.</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">Results & Impact</h2>
+        <div class="case-section__content">
+          <ul>
+            <li><strong>Component live</strong> on Factor across 7 markets (US, CA, DE, NL, BE, SE, DK)</li>
+            <li><strong>First accessible product card</strong> at HelloFresh with full WCAG 2.1 AA annotations</li>
+            <li><strong>First mealkit + RTE multi-brand component</strong>—establishing patterns for future cross-brand work</li>
+            <li><strong>Accessibility process established:</strong> design annotations → development handoff → testing workflow</li>
+            <li><strong>Knowledge shared</strong> with design team via presentation and documentation</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2 class="case-section__title">Reflection</h2>
+        <div class="case-section__content">
+          <h3>What I Learned</h3>
+          <p><strong>OOUX enables accessibility.</strong> The attribute prioritization exercise I did for UX design directly informed the reading order and focus order for screen readers. Good information architecture supports both visual and non-visual users.</p>
+
+          <p><strong>Process documentation matters.</strong> By documenting the accessibility workflow, I created a repeatable process for the team. The presentation has been referenced on subsequent projects.</p>
+
+          <p><strong>Experiment insights are valuable even when rolled back.</strong> The HelloFresh experiment showed that information density matters more than we assumed. Users need dietary tags and descriptions to evaluate products—they can't make decisions without them. This validated our OOUX prioritization and is informing the next iteration.</p>
+        </div>
+      </section>
+
+      <div class="case-nav case-nav--bottom">
+        <a href="../index.html" class="back-link">&larr; Back to Work</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Amanda Low</p>
+      <div class="social-links">
+        <a href="mailto:amanda.r.low@outlook.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/amanda-r-low/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" class="lightbox__img">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    </button>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

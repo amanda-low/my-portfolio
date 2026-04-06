@@ -1,9 +1,10 @@
-# Cart Revamp: Redesigning HelloFresh's Cart for Transparency, Flexibility & Scale
+# Cart Revamp: Building Trust at Checkout
 
 **Role:** Product Designer (UX & Design)
-**Timeline:** 3-4 months
-**Scope:** Global rollout across iOS, Android, Web | HelloFresh + white-label brands
-**Impact:** Shipped globally with directionally positive results and +11.6% engagement with new delivery controls
+**Timeline:** Q3–Q4 2025
+**Scope:** iOS, Android, Web | All brands (8)
+
+![Before and after comparison of HelloFresh cart across devices](../images/cart-revamp-comparison.png)
 
 ---
 
@@ -28,12 +29,14 @@ Our pricing pain point interviews revealed deeper issues around trust and transp
 - Missing context about surcharges and add-ons created friction
 - Many users wanted to see an itemized breakdown of costs
 
-> *"I just want to know what I'm getting and what I'm paying for. When things show up that I don't remember adding, it makes me question everything."*
-> — User interview participant
+> *"I think I have to dig too far in to know my prices. Why don't all meals have a price? It's not communicated well. I feel a little unhappy about that."*
+> — Prospective customer, pricing pain point interview
 
-### My Contribution
+### My Role
 
-I contributed to the research plan and partnered with our UX Researcher to conduct pricing pain point interviews. I owned the design variations, led stakeholder alignment on what to test vs. ship as baseline, and coordinated across iOS, Android, and Web platforms.
+A new cross-discipline team was formed in Q1 2022 to own the frontend cart experience. Due to my previous work on price clarity, I was asked to join as the lead product designer. After completing delivery of the Autosave initiative in Q1 2024, I commenced work on Cart Revamp in Q2 2024.
+
+I led usability testing, collaborated with a UX research partner on user interviews, and compiled UX principles to inform the design vision and iterations. I worked with a product owner and engineers to deliver design iterations incrementally for maximum impact. Design delivery included a design system composite for all meal kit brands, collaboration with a UX writer, and documentation of meal selection price logic, display rules, and handover guidelines. Support for engineering delivery included copy localization and UA testing.
 
 ---
 
@@ -59,11 +62,11 @@ I drew from several research sources to build a complete picture:
 - Context for *why* items appear matters significantly
 - Labels like "Paired with [meal name]" dramatically reduced confusion
 
-[IMAGE PLACEHOLDER: User journey map showing emotional highs and lows across the cart experience, with pain points around pricing clarity highlighted]
+![User journey map showing emotional highs and lows across the cart experience](../images/cart-revamp-journey-map.png)
 
 ### Key Insight
 
-The cart wasn't just a checkout step—it was a moment of truth where users either felt confident in their decision or started questioning their subscription value.
+The cart wasn't just a step toward checkout—it was a moment of truth where users either felt confident in their decision or started questioning their subscription value.
 
 ---
 
@@ -88,19 +91,18 @@ Working with Product and Engineering, we identified what should ship to everyone
 
 Research showed users were confused when items appeared in their cart unexpectedly. By adding labels like "Paired with Chicken Parmigiana," "Free Breakfast for Life," or "Subscribed to 1 per week," we provided immediate context that reduced friction and support inquiries.
 
-[IMAGE PLACEHOLDER: Before/after comparison showing add-on items with and without contextual labels]
+![Before and after comparison showing add-on items with contextual labels](../images/cart-revamp-labels.png)
 
 **Why show savings from benefits only?**
 
 We scoped the savings display to show subscription benefits (loyalty rewards, free items) rather than item-level discounts. This was partly a technical constraint—the backend couldn't easily surface item-level discount data—but also a strategic choice. Benefit savings reinforced subscription value, which aligned with retention goals. We planned to expand to full price breakdown in the 2026 pricing roadmap.
 
-[IMAGE PLACEHOLDER: Savings accordion design showing "$X saved!" with expandable details]
 
 **Why in-cart delivery edit without skip/pause?**
 
 Users wanted delivery flexibility, but adding skip/pause controls to the cart introduced complexity and risk. We scoped to date changes only—solving the core need (rescheduling) without the baggage of skip/cancel decisions that warranted separate UX consideration.
 
-[IMAGE PLACEHOLDER: Edit delivery drawer design showing date selection]
+![Edit delivery drawer showing date selection](../images/cart-revamp-delivery.png)
 
 ### Prototyping & Testing
 
@@ -110,29 +112,6 @@ I created prototypes for usability testing to validate the design direction. Key
 - The savings accordion generated positive emotional responses ("Oh nice, I didn't realize I was saving that much!")
 - Delivery editing felt natural and reduced perceived friction
 - No confusion about the new cart structure
-
----
-
-## Navigating Constraints
-
-### Technical Constraints
-
-The savings display was limited to subscription benefits because item-level discount data wasn't available from the existing backend. Rather than delay the project, we scoped to what was achievable now and documented the fuller vision for future work.
-
-### Cross-Team Dependencies
-
-This project required coordination across:
-- **Cart Experience Squad** — owned the user-facing cart
-- **Cart Foundation Squad** — owned the underlying data layer
-- **Product Analytics** — experiment setup and metrics definition
-- **Platform teams** — iOS, Android, and Web implementation
-
-### Stakeholder Alignment
-
-A key challenge was aligning on what to test vs. ship as default. Through collaborative sessions with PM and Analytics, we agreed:
-- Core enhancements (clickable items, labels, structure) would ship to everyone
-- Savings display and delivery edit would be tested as variations
-- We'd evaluate based on both financial metrics *and* behavioral signals
 
 ---
 
@@ -155,7 +134,11 @@ A collapsible section showing "$X saved!" with a link to the wallet drawer for d
 ### 4. In-Cart Delivery Reschedule
 An "Edit" button opens a drawer to change delivery date without leaving the cart. Quick, contextual, and non-disruptive.
 
-[IMAGE PLACEHOLDER: Full cart screen showing all four features in context]
+### White-label Mealkit Rollout and UI2
+
+The design system had just introduced brand tokens, allowing one design to serve multiple brands simultaneously. The cart was one of the first features to leverage this—after validating on HelloFresh, Cart Revamp was rolled out to Chefs Plate, Green Chef, and EveryPlate on web in Q4 2024.
+
+The Cart Revamp experiment on app in Q3 2024 also coincided with UI2—HelloFresh's rebrand introducing minimalist typography and a refined color palette. Since UI2 was also being tested, we ran a 2x2 experiment: control and variant for both UI1 and UI2, isolating the cart changes from the visual refresh. UI2 was rolled out on HelloFresh in Q2 2025.
 
 ---
 
@@ -203,20 +186,7 @@ While the financial metrics weren't statistically significant, we made the decis
 
 5. **Prior research validation** — Insights from the Loyalty rewards rollout showed that savings visibility drives engagement. This experiment reinforced that pattern.
 
----
-
-## Impact
-
-**Shipped to:**
-- Platforms: iOS, Android, Web
-- Markets: Global (HelloFresh + white-label brands)
-- Set as new baseline configuration
-
-**Measured outcomes:**
-- +11.6% engagement with delivery controls
-- +3.6% engagement with savings visibility
-- Increased delivery modifications (more flexibility used)
-- Zero negative impact across global markets
+*Shipped globally across iOS, Android, and Web for HelloFresh and white-label brands.*
 
 ---
 
@@ -224,9 +194,13 @@ While the financial metrics weren't statistically significant, we made the decis
 
 ### What Worked
 
-Scoping the experiment carefully paid off. By separating "what we're confident about" (core enhancements) from "what we need to validate" (savings, delivery edit), we shipped user value quickly while still generating learnings.
+**Rigorous discovery shaped the entire project.** A clear problem definition from research gave me confidence to navigate design iterations efficiently—and to advocate for features like in-cart delivery editing that directly addressed user pain points.
 
-The decision to roll out despite non-significant financial results was the right call. Sometimes the absence of negative signal, combined with positive behavioral data and research-backed confidence, is enough to move forward.
+**Foundational e-commerce knowledge informed the information architecture.** Benchmarking analysis revealed that a standard checkout follows two distinct steps: reviewing the order, then confirming it. As a subscription service, HelloFresh combines both into a single screen—but the underlying jobs-to-be-done remain. The Cart Revamp design reflects this: clear order review at the top, confirmation actions anchored at the bottom, each serving its distinct purpose within a unified experience.
+
+**Close collaboration with the design system team was essential.** Working alongside them ensured the cart was truly modular and scalable—not just across brands, but resilient to visual changes like the UI2 rebrand. This relationship became a foundation for future multi-brand and accessibility initiatives.
+
+**Scoping strategically paid off.** By separating "what we're confident about" from "what needs validation," we shipped user value quickly while generating learnings. Rolling out despite non-significant financial metrics was the right call—behavioral data, zero downside risk, and research confidence justified the decision.
 
 ### What I'd Do Differently
 
@@ -236,13 +210,3 @@ The decision to roll out despite non-significant financial results was the right
 
 **Deeper delivery analysis:** 11.6% engagement with delivery editing is promising, but I'd want to understand conversion—how many of those users actually changed their date, and did that reduce missed deliveries?
 
----
-
-## Credits
-
-This project was a true cross-functional effort:
-- **Product Analytics** — Experiment design and measurement
-- **Cart Experience Squad** — Implementation and iteration
-- **Cart Foundation Squad** — Backend architecture
-- **UX Research** — User interviews and usability testing
-- **Platform Teams** — iOS, Android, Web coordination

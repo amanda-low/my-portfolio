@@ -6,7 +6,7 @@
   <title>Amanda Low - Product Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Manrope:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,63 +15,54 @@
     <nav class="nav">
       <a href="index.html" class="nav__link nav__link--active">Work</a>
       <a href="about.html" class="nav__link">About</a>
-      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" class="nav__link" target="_blank">CV</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Amanda Low is a product designer. She designs human-centered experiences that bridge digital products and service ecosystems. Currently focused on making complex systems simple and delightful.</h1>
-      </div>
-    </section>
-
     <section class="work">
       <div class="work__grid">
 
-        <a href="projects/cart-revamp.html" class="work__item fade-in">
+        <a href="projects/cart-revamp.html" class="work__item work__item--featured fade-in">
           <div class="work__image">
-            <img src="images/cart-revamp-hero.jpg" alt="HelloFresh cart revamp project">
+            <img src="images/cart-revamp-hero.png" alt="HelloFresh cart redesign showing mobile, tablet, and desktop views">
           </div>
           <div class="work__info">
-            <span class="work__category">Product Design</span>
-            <h2 class="work__title">HelloFresh Cart Revamp</h2>
-            <p class="work__description">Redesigning the cart for transparency, flexibility, and scale—shipped globally with +11.6% engagement.</p>
+            <h2 class="work__title">Building Trust at Checkout</h2>
+            <p class="work__description">A checkout redesign shipped globally across 8 brands, driving +11.6% engagement with new delivery controls.</p>
           </div>
         </a>
 
-        <a href="projects/project-1.html" class="work__item fade-in">
+        <a href="projects/ai-illustration.html" class="work__item fade-in">
           <div class="work__image">
-            <img src="images/project-1-hero.jpg" alt="Healthcare service redesign project">
+            <img src="images/ai-illustration-hero.png" alt="2D flat illustrations compared to new 3D clay-style illustrations">
           </div>
           <div class="work__info">
-            <span class="work__category">Service Design</span>
-            <h2 class="work__title">Healthcare Service Redesign</h2>
-            <p class="work__description">Reimagining the patient journey from appointment booking to follow-up care, reducing wait times by 40%.</p>
+            <h2 class="work__title">Scaling Illustrations with AI</h2>
+            <p class="work__description">How AI tools helped audit 382 illustrations across 40 teams and establish scalable migration workflows.</p>
           </div>
         </a>
 
-        <a href="projects/project-2.html" class="work__item fade-in">
+        <a href="projects/compact-cards.html" class="work__item fade-in">
           <div class="work__image">
-            <img src="images/project-2-hero.jpg" alt="Financial app redesign project">
+            <img src="images/product-card-a11y-hero.png" alt="Product card accessibility annotations showing ARIA labels, alt text, and reading order">
           </div>
           <div class="work__info">
-            <span class="work__category">UX Design</span>
-            <h2 class="work__title">Financial Planning App</h2>
-            <p class="work__description">Designing an intuitive mobile experience that helps young professionals build healthy financial habits.</p>
+            <h2 class="work__title">Product Card Accessibility</h2>
+            <p class="work__description">Designing HelloFresh's first accessible, multi-brand product card.</p>
           </div>
         </a>
 
-        <a href="projects/project-3.html" class="work__item fade-in">
+        <div class="work__item work__item--coming-soon fade-in">
           <div class="work__image">
-            <img src="images/project-3-hero.jpg" alt="City transit experience project">
+            <img src="images/mobile-search-hero.png" alt="Mobile search screens showing recipe search with keyboard and empty state illustrations">
           </div>
           <div class="work__info">
-            <span class="work__category">Service Design</span>
-            <h2 class="work__title">City Transit Experience</h2>
-            <p class="work__description">End-to-end service design for a metropolitan transit system, improving accessibility and rider satisfaction.</p>
+            <h2 class="work__title">Mobile Search</h2>
+            <p class="work__description">Designing mobile search with AI-assisted workflows—from vision to shipped MVP.</p>
+            <span class="work__coming-soon">Case study coming soon</span>
           </div>
-        </a>
+        </div>
 
       </div>
     </section>
@@ -81,12 +72,17 @@
     <div class="footer__inner">
       <p class="footer__copy">&copy; 2026 Amanda Low</p>
       <div class="social-links">
-        <a href="https://linkedin.com/in/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener">Twitter</a>
-        <a href="https://dribbble.com/" class="social-link" target="_blank" rel="noopener">Dribbble</a>
+        <a href="mailto:amanda.r.low@outlook.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/amanda-r-low/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox__img" src="" alt="">
+  </div>
 
   <script src="js/main.js"></script>
 </body>

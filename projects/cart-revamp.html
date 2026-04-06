@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart Revamp - Amanda Low</title>
+  <title>Building Trust at Checkout - Amanda Low</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Manrope:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -15,16 +15,19 @@
     <nav class="nav">
       <a href="../index.html" class="nav__link">Work</a>
       <a href="../about.html" class="nav__link">About</a>
-      <a href="../contact.html" class="nav__link">Contact</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" class="nav__link" target="_blank">CV</a>
     </nav>
   </header>
 
   <main>
     <section class="case-hero">
       <div class="container container--narrow">
-        <a href="../index.html" class="back-link">&larr; Back to Work</a>
-        <h1 class="case-hero__title">Cart Revamp</h1>
-        <p>Redesigning HelloFresh's cart for transparency, flexibility, and scale—shipped globally with +11.6% engagement with new delivery controls.</p>
+        <div class="case-nav">
+          <a href="../index.html" class="back-link">&larr; Back to Work</a>
+        </div>
+        <span class="case-hero__company">HelloFresh</span>
+        <h1 class="case-hero__title">Building Trust at Checkout</h1>
+        <p>A checkout redesign shipped globally across 8 brands, driving +11.6% engagement with new delivery controls.</p>
 
         <div class="case-meta">
           <div class="case-meta__item">
@@ -33,254 +36,355 @@
           </div>
           <div class="case-meta__item">
             <span class="case-meta__label">Timeline</span>
-            <span class="case-meta__value">3-4 months</span>
+            <span class="case-meta__value">Q2-Q3 2024</span>
           </div>
           <div class="case-meta__item">
             <span class="case-meta__label">Scope</span>
-            <span class="case-meta__value">iOS, Android, Web | HelloFresh + white-label brands</span>
+            <span class="case-meta__value">iOS, Android, Web | 8 brands globally</span>
           </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Methods</span>
-            <span class="case-meta__value">User Research, Prototyping, A/B Testing, Cross-platform Design</span>
+          <div class="case-meta__item case-meta__item--full">
+            <span class="case-meta__label">Ownership</span>
+            <div class="stepper-pills">
+              <span class="stepper-pills__step stepper-pills__step--active">Discovery</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Definition</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Design</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Development</span>
+              <span class="stepper-pills__step stepper-pills__step--active">Deployment</span>
+            </div>
           </div>
         </div>
+
+        </div>
+    </section>
+
+    <section class="case-image-full">
+      <div class="container">
+        <img src="../images/cart-revamp-hero.png" alt="Cart Redesign design across mobile, tablet, and desktop devices">
       </div>
     </section>
 
     <article class="container container--narrow">
       <section class="case-section">
-        <h2 class="case-section__title">Overview</h2>
-        <div class="case-section__content">
+                <div class="case-section__content">
           <h3>The Challenge</h3>
-          <p>The HelloFresh cart had become a friction point. Through pricing research and user interviews, we uncovered three recurring pain points:</p>
-
-          <ul>
-            <li><strong>"I want to know why certain add-ons are in my cart."</strong> — Users were confused by items appearing without context</li>
-            <li><strong>"Show me how much I'm saving—it makes me feel good about my order."</strong> — Subscription benefits weren't visible</li>
-            <li><strong>"I want more flexibility with my delivery without multiple steps."</strong> — Changing delivery required leaving the cart</li>
-          </ul>
-
-          <p>Beyond user frustrations, the cart was a critical business touchpoint—where customers make pause and cancel decisions. With Factor integration on the roadmap, we needed a scalable foundation.</p>
-
-          <h3>The Price Perception Problem</h3>
-          <p>Our pricing pain point interviews revealed deeper issues around trust and transparency. Users felt uncertain about what they were paying for. Surprise charges led to distrust. Missing context about surcharges created friction.</p>
-
-          <blockquote>
-            <p>"I just want to know what I'm getting and what I'm paying for. When things show up that I don't remember adding, it makes me question everything."</p>
-            <cite>— User interview participant</cite>
+          <blockquote class="inline-quote">
+            <p>"Grocery users have a variety of unique options that are often not available for other online retailers. [...] Checkout optimization needs to be at the forefront to ensure Checkout is as smooth as possible to avoid unnecessary abandonments."</p>
+            <cite>— <a href="https://baymard.com/blog/grocery-site-ux-launch" target="_blank" rel="noopener">Baymard Institute</a></cite>
           </blockquote>
+          <p>The first version of the editable cart launched in Q2 2022, but editing was limited to quantities only—users couldn't view product details or modify attributes like customizations from the cart. As meal selection options grew more complex, the cart struggled to keep up. Without centralized frontend ownership, new features were displayed poorly or not at all.</p>
 
-          <h3>My Contribution</h3>
-          <p>I contributed to the research plan and partnered with our UX Researcher to conduct pricing pain point interviews. I owned the design variations, led stakeholder alignment on what to test vs. ship as baseline, and coordinated across iOS, Android, and Web platforms.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Research & Discovery</h2>
-        <div class="case-section__content">
-          <p>I synthesized insights from multiple research streams to build a complete picture:</p>
-
-          <h3>Price Clarity Research</h3>
-          <ul>
-            <li>Users struggle to understand their total cost and what's included</li>
-            <li>Transparency about pricing builds trust and reduces anxiety</li>
-            <li>Savings visibility reinforces value perception and justifies the subscription</li>
-          </ul>
-
-          <h3>User Interview Themes</h3>
-          <ul>
-            <li>Frustration with unexpected charges and surcharges</li>
-            <li>Strong desire to see itemized breakdown of costs</li>
-            <li>Positive emotional response when seeing discounts and savings</li>
-            <li>Confusion about what add-ons are in cart and why</li>
-          </ul>
-
-          <h3>Usability Testing Insights</h3>
-          <ul>
-            <li>Users want clear explanation of additional fees</li>
-            <li>Context for <em>why</em> items appear matters significantly</li>
-            <li>Labels like "Paired with [meal name]" dramatically reduced confusion</li>
-          </ul>
-
-          <div class="case-image">
-            <img src="../images/cart-revamp-journey-map.jpg" alt="User journey map showing emotional highs and lows across the cart experience">
-            <p class="case-image__caption">User journey map highlighting pain points around pricing clarity</p>
+          <div class="feature-timeline__wrapper">
+            <table class="feature-timeline feature-timeline--horizontal">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="feature-timeline__name">Pair a meal with sides or desserts</span>
+                    <span class="feature-timeline__date">Q2 2022</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__name">Subscribe to add-ons</span>
+                    <span class="feature-timeline__date">Q2 2023</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__name">Promotions on surcharge meals</span>
+                    <span class="feature-timeline__date">Q3 2023</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__name">Drop ship delivery from other brands</span>
+                    <span class="feature-timeline__date">Q4 2023</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/cart-revamp-pairing-after.png" alt="Meal card with Paired badge" class="feature-timeline__img"></td>
+                  <td><img src="../images/cart-revamp-addon-after.png" alt="Add-on with subscription checkbox" class="feature-timeline__img"></td>
+                  <td><img src="../images/cart-revamp-surcharge-after.png" alt="Meal card with promotional surcharge pricing" class="feature-timeline__img"></td>
+                  <td><img src="../images/cart-revamp-dropship-after.png" alt="Product with Ships Separately badge" class="feature-timeline__img"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="feature-timeline__status-label">Cart not updated</span>
+                    <span class="feature-timeline__status feature-timeline__status--no">✗</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__status-label">Cart not updated</span>
+                    <span class="feature-timeline__status feature-timeline__status--no">✗</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__status-label">Cart updated</span>
+                    <span class="feature-timeline__status">✓</span>
+                  </td>
+                  <td>
+                    <span class="feature-timeline__status-label">Cart not updated</span>
+                    <span class="feature-timeline__status feature-timeline__status--no">✗</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <p><strong>Key Insight:</strong> The cart wasn't just a checkout step—it was a moment of truth where users either felt confident in their decision or started questioning their subscription value.</p>
-        </div>
-      </section>
+          <p>Users were building increasingly personalized orders, but the cart wasn't adequately reflecting these changes. Customers experienced confusion about what was actually in their box, why items appeared, and what they would pay.</p>
 
-      <section class="case-section">
-        <h2 class="case-section__title">Design Process</h2>
-        <div class="case-section__content">
-          <h3>Defining the Scope</h3>
-          <p>Working with Product and Engineering, we identified what should ship to everyone versus what needed validation:</p>
+          <p>Beyond user frustrations, the cart was a critical business touchpoint—reviewing their order affected customer pause and cancel decisions. With centralization of the mealkit and ready-to-eat codebases on the roadmap, a scalable, modular cart design was needed to clearly communicate complex orders and ensure seamless purchase decisions.</p>
 
-          <p><strong>Core enhancements (baseline for all):</strong></p>
-          <ul>
-            <li>Clickable food items with links to product details</li>
-            <li>Contextual add-on labels explaining why items are in cart</li>
-            <li>Improved cart structure and information hierarchy</li>
-          </ul>
+          <h3>My role</h3>
+          <p>A new cross-discipline team was formed in Q1 2022 to own the frontend cart experience. Due to my previous work on price clarity, I was asked to join as the lead product designer. After completing delivery of the Autosave initiative in Q1 2024, I commenced work on Cart Redesign in Q2 2024.</p>
 
-          <p><strong>Testable features:</strong></p>
-          <ul>
-            <li>Variation 1: Savings display showing subscription benefits</li>
-            <li>Variation 2: In-cart delivery date editing</li>
-          </ul>
+          <p>I led usability testing, collaborated with a UX research partner on user interviews, and compiled UX principles to inform the design vision and iterations. I worked with a product owner and engineers to deliver design iterations incrementally for maximum impact. Design delivery included a design system composite for all meal kit brands, collaboration with a UX writer, and documentation of meal selection price logic, display rules, and handover guidelines. Support for engineering delivery included copy localization and UA testing.</p>
 
-          <h3>Key Design Decisions</h3>
+          <hr class="section-divider">
 
-          <p><strong>Why contextual add-on labels?</strong></p>
-          <p>Research showed users were confused when items appeared unexpectedly. By adding labels like "Paired with Chicken Parmigiana," "Free Breakfast for Life," or "Subscribed to 1 per week," we provided immediate context that reduced friction and support inquiries.</p>
-
-          <div class="case-image">
-            <img src="../images/cart-revamp-labels.jpg" alt="Before and after comparison of add-on items with contextual labels">
-            <p class="case-image__caption">Before/after: Contextual labels explain why items are in the cart</p>
+          <h3>What users told us</h3>
+          <p class="section-subtitle">The cart wasn't just a step toward checkout—it was a moment of truth where users either felt confident in their decision or started questioning their subscription value.</p>
+          <div class="ux-pillars ux-pillars--two-col">
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">I don't know what I'm paying</h4>
+              <p class="ux-pillar__desc">Price comprehension was breaking the user journey. Unclear pricing was the top UXR pain point, app-wide, in 2023. During usability testing, only 38% of users could correctly calculate the cost of a surcharge meal — some using a calculator to complete the task.</p>
+              <div class="ux-pillar__quote">"I think I have to dig too far in to know my prices. Why don't all meals have a price? It's not communicated well."</div>
+            </div>
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">I don't know what's in my cart</h4>
+              <p class="ux-pillar__desc">In interviews and usability testing, users struggled to distinguish which meals were included in their subscription versus which had surcharges. They didn't understand why items appeared in their cart and found the mixing of included and premium meals confusing and untrustworthy.</p>
+              <div class="ux-pillar__quote">"I don't like that the meals with extra cost are all mixed in with the free meals... It feels like they are trying to trick me."</div>
+            </div>
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">I don't know how much I'm saving</h4>
+              <p class="ux-pillar__desc">In interviews, users wanted to see their savings but had low visibility of benefits applied. Rewards and vouchers were confusing, and the subscription value wasn't reinforced at checkout.</p>
+              <div class="ux-pillar__quote">"Show me I'm saving money. That would feel really good."</div>
+            </div>
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">I want control over my delivery</h4>
+              <p class="ux-pillar__desc">A previous experiment showed customers who used reschedule options were 18% less likely to cancel and ordered 98% more boxes. Users wanted delivery flexibility without leaving the cart flow.</p>
+              <div class="ux-pillar__quote">"How can I change the date of delivery? This is really a request."</div>
+            </div>
           </div>
 
-          <p><strong>Why show savings from benefits only?</strong></p>
-          <p>We scoped savings to subscription benefits rather than item-level discounts. This was partly a technical constraint, but also strategic—benefit savings reinforced subscription value, aligning with retention goals. Full price breakdown was planned for the 2026 pricing roadmap.</p>
-
-          <p><strong>Why in-cart delivery edit without skip/pause?</strong></p>
-          <p>Users wanted delivery flexibility, but adding skip/pause introduced complexity. We scoped to date changes only—solving the core need without the baggage of skip/cancel decisions that warranted separate consideration.</p>
-
-          <div class="case-image">
-            <img src="../images/cart-revamp-delivery.jpg" alt="Edit delivery drawer design showing date selection">
-            <p class="case-image__caption">In-cart delivery editing: change dates without leaving the cart flow</p>
+          <div class="research-carousel">
+            <nav class="research-carousel__nav" aria-label="Carousel navigation">
+              <button class="research-carousel__arrow research-carousel__arrow--prev" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="research-carousel__arrow research-carousel__arrow--next" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+              </button>
+            </nav>
+            <div class="research-carousel__track" role="region" aria-label="Research artifacts" tabindex="0">
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">User Journey Map - Price Pain Points</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-journey-map.jpg" alt="User journey map showing pricing pain points and opportunities during meal selection" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">User Interviews - Price Pain Points</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-interviews.png" alt="UXR insights on pricing pain points - What am I paying for?" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">Usability Testing - Comprehension of Price Per Meal</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-usability-testing.png" alt="Usability testing findings - Cart UI screenshot and recommendations" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">Experiment - Surcharge Price Display</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-pricing-study.png" alt="Experiment insights showing before and after of surcharge price display" class="research-carousel__image">
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section class="case-section">
-        <h2 class="case-section__title">Navigating Constraints</h2>
-        <div class="case-section__content">
-          <h3>Technical Constraints</h3>
-          <p>Savings display was limited to subscription benefits because item-level discount data wasn't available from the backend. Rather than delay, we scoped to what was achievable and documented the fuller vision for future work.</p>
+          <h3>Design Principles</h3>
+          <p>Based on this research, I defined three principles to guide the redesign. The Cart Redesign vision was presented in a company knowledge sharing session at the end of Q1 2024.</p>
 
-          <h3>Cross-Team Dependencies</h3>
-          <p>This project required coordination across Cart Experience Squad, Cart Foundation Squad, Product Analytics, and platform teams for iOS, Android, and Web implementation.</p>
-
-          <h3>Stakeholder Alignment</h3>
-          <p>A key challenge was aligning on what to test vs. ship as default. Through collaborative sessions, we agreed core enhancements would ship to everyone while savings and delivery features would be validated through experimentation.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">The Solution</h2>
-        <div class="case-section__content">
-          <p>The final design introduced four key improvements:</p>
-
-          <h3>1. Clickable Food Items</h3>
-          <p>Every item links to its product detail page, letting users quickly verify what they're getting without leaving the cart.</p>
-
-          <h3>2. Contextual Add-On Labels</h3>
-          <p>Add-ons display clear labels: "Paired with Chicken Parmigiana," "Free Breakfast for Life," "Subscribed to 1 per week."</p>
-
-          <h3>3. Savings Display</h3>
-          <p>A collapsible section showing "$X saved!" with a link to the wallet drawer. Users see their subscription value at the moment of purchase decision.</p>
-
-          <h3>4. In-Cart Delivery Reschedule</h3>
-          <p>An "Edit" button opens a drawer to change delivery date—quick, contextual, and non-disruptive.</p>
-
-          <div class="case-image">
-            <img src="../images/cart-revamp-final.jpg" alt="Full cart screen showing all four features">
-            <p class="case-image__caption">The redesigned cart with all four improvements in context</p>
+          <div class="ux-pillars">
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">Assurance of selections</h4>
+              <p class="ux-pillar__desc">Users should feel secure about what they'll receive in their box. More trust = higher engagement.</p>
+            </div>
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">Modification of selections</h4>
+              <p class="ux-pillar__desc">Users should be able to view and modify all selections during revision in cart, avoiding backwards navigation in the checkout flow.</p>
+            </div>
+            <div class="ux-pillar">
+              <h4 class="ux-pillar__title">Price clarity of selections</h4>
+              <p class="ux-pillar__desc">Costs, discounts, and benefits should be simple to understand. We should not ship system complexity to customers.</p>
+            </div>
           </div>
+
+          <div class="case-image case-image--labeled case-image--zoomable">
+            <div class="case-image__labels case-image__labels--three">
+              <span>Before</span>
+              <span>Vision</span>
+              <span>Iteration</span>
+            </div>
+            <img src="../images/cart-revamp-before-vision.png" alt="Before and vision comparison showing original cart design alongside redesigned experience with annotations" class="zoomable-image">
+          </div>
+
+          <h3>Design Decisions</h3>
+          <h4>How the information hierarchy was determined</h4>
+          <p>The hierarchy followed the two core jobs of any e-commerce cart: review your order, then confirm and pay. But as a subscription service with six editable weeks, the cart needed to consolidate everything into one screen for quick review. Secondary functions—price breakdowns, last-minute edits, and upselling—had to fit around those primary tasks without competing for attention.</p>
+          <h4>Iterations between vision and final</h4>
+          <p>The gap between web and app experiments meant the design evolved as other teams introduced new features. Accessibility requirements drove changes like revising the number stepper component. The UI2 rebrand also required a full color revision across the cart.</p>
+          <h4>Why this treatment for add-on pairing labels?</h4>
+          <p>Placement was tricky—paired add-ons are selected alongside meals, so they could logically appear as child items. But since price clarity was a top pain point, I collaborated with UX writing to keep paired add-ons in their own section. This way, users always knew which items were included in their subscription and which cost extra.</p>
+
+          <h3>Web release</h3>
+          <p>The existing cart used a single-column layout that pushed order totals below the fold for larger baskets, fragmenting the review experience. With a long-term company strategy to increase basket size—expanding add-on offerings and introducing ready-to-eat options—alternatives like a side drawer wouldn't scale. A two-column desktop layout accommodated a larger, more complex cart while keeping order totals visible, and a full-width cross-selling carousel opened up catalogue discovery.</p>
+          <div class="case-image case-image--labeled case-image--wide case-image--zoomable">
+            <div class="case-image__labels case-image__labels--two">
+              <span>Control</span>
+              <span>Variant</span>
+            </div>
+            <img src="../images/cart-revamp-web-experiment.png" alt="Cart redesign web experiment showing control versus variant with two-column layout" class="zoomable-image">
+          </div>
+
+          <p>The primary goal was to validate the new layout without negatively impacting revenue—which the results confirmed. We also included the add-on pairing attribute, as this had the most impact on clarifying why items appeared in the cart. However, we observed a 1% drop in extra meal uptake, traced to a change in style of the upselling banner.</p>
+          <p>After iterating on the banner design, the redesign rolled out across all web markets in December 2024. The first web release focused on high-confidence, low-risk changes: clickable product details (standard e-commerce behavior), the two-column layout, and add-on pairing labels—all shipped in Q4 2024 after experiments confirmed no negative revenue impact.</p>
+
+          <p class="case-image__title">Upselling banner iteration</p>
+          <div class="case-image case-image--side-labels">
+            <div class="case-image__labels">
+              <span>Control</span>
+              <span>Variant</span>
+              <span>Rolled Out</span>
+            </div>
+            <img src="../images/cart-revamp-upsell-iterations.png" alt="Upselling banner iterations: Control with placeholder image, Variants with meal image, Rolled Out with icon only">
+          </div>
+
+          <p>The design system had just introduced brand tokens, allowing one design to serve multiple brands simultaneously. The cart was one of the first features to leverage this—after validating on HelloFresh, Cart Redesign was rolled out to Chefs Plate, Green Chef, and EveryPlate on web in Q4 2024.</p>
+
+          <div class="research-carousel">
+            <nav class="research-carousel__nav" aria-label="Carousel navigation">
+              <button class="research-carousel__arrow research-carousel__arrow--prev" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="research-carousel__arrow research-carousel__arrow--next" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+              </button>
+            </nav>
+            <div class="research-carousel__track" role="region" aria-label="Mealkit brand designs" tabindex="0">
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">HelloFresh</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-mealkit-hellofresh.png" alt="Cart Redesign design for HelloFresh brand" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">EveryPlate</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-mealkit-everyplate.png" alt="Cart Redesign design for EveryPlate brand" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">Chefs Plate</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-mealkit-chefsplate.png" alt="Cart Redesign design for Chefs Plate brand" class="research-carousel__image">
+                </div>
+              </div>
+              <div class="research-carousel__item">
+                <span class="research-carousel__label">Green Chef</span>
+                <div class="research-carousel__image-wrapper">
+                  <img src="../images/cart-revamp-mealkit-greenchef.png" alt="Cart Redesign design for Green Chef brand" class="research-carousel__image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <h3>App release and rebrand</h3>
+          <p>The app experiment launched in Q3 2024, bundling delivery rescheduling, savings display, and Free Item for Life labels for validation. Financial metrics were directionally positive but not statistically significant (+0.23% net revenue, +0.26% order value, -0.39% pause rate). Engagement was strong: 11.6% of users clicked the Edit Delivery Drawer, and savings accordion expansion increased by 3.6%. With no negative impact on any metric, these features rolled out across app and web in Q2 2025.</p>
+          <p>The app experiment also coincided with UI2—HelloFresh's rebrand introducing minimalist typography and a refined color palette. We ran a 2x2 experiment to isolate cart changes from the visual refresh, and UI2 rolled out on HelloFresh alongside the cart features.</p>
+
+          <div class="case-image case-image--labeled case-image--wide case-image--zoomable">
+            <div class="case-image__labels case-image__labels--split">
+              <span>UI1</span>
+              <span class="case-image__label-group">UI2</span>
+            </div>
+            <img src="../images/cart-revamp-app-release.png" alt="Cart Redesign app release showing UI1 and UI2 designs across different iterations" class="zoomable-image">
+          </div>
+
+          <h3>What didn't make the final cut</h3>
+          <p>Price clarity changes—displaying price per meal and total price in the cart footer—were deprioritized due to backend dependencies and a deliberate decision to separate high-risk pricing changes from selection assurance improvements. Similarly, restructuring the cart layout for multiple sellers was deprioritized; instead, a "Ships separately" label was added to the existing layout to provide clarity without the backend lift.</p>
+          <p>We intentionally descoped payment method display. Prior experiments showed that surfacing payment info increased cancellation rates—transparency likely prompted low-intent users to pause or remove payment methods.</p>
+
+          <h3>Forks in the road</h3>
+          <h4>Guarding the checkout experience</h4>
+          <p>As the final step before order confirmation, the cart carries a heavy load: meal selections, upselling, sign-up discounts, and loyalty program (HelloFresh+) information. Requests from other teams to surface new features in the cart come up constantly. Each requires careful negotiation—balancing visibility for the feature against the cart's core job: review and confirm.</p>
+          <h4>Backend dependencies</h4>
+          <p>The cart relies on data from multiple backend teams, each with their own roadmaps. Coordinating releases—and managing conflicting priorities—is an ongoing challenge. Features like minimum order requirements, autosave behavior, and upselling logic all need to work consistently across the editable cart, which means alignment across teams before any change ships.</p>
+
         </div>
       </section>
 
       <section class="case-section">
-        <h2 class="case-section__title">Results</h2>
-        <div class="case-section__content">
-          <p>We ran a controlled experiment with two variations to isolate feature impact.</p>
-
-          <h3>Quantitative Results</h3>
-          <p>Financial metrics were directionally positive but not statistically significant:</p>
-          <ul>
-            <li>Net revenue: +0.23%</li>
-            <li>Net order value: +0.26%</li>
-            <li>Delivered orders: +0.08%</li>
-            <li>Pause rate: -0.39%</li>
-          </ul>
-
-          <h3>Behavioral Signals</h3>
-          <p>The stronger story emerged from user engagement:</p>
-          <ul>
-            <li><strong>11.6%</strong> of users clicked the Edit Delivery Drawer</li>
-            <li><strong>+3.6%</strong> increase in users expanding the savings accordion</li>
-            <li>More delivery modifications observed across all markets</li>
-            <li><strong>No negative impact</strong> on any metric in any market</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Decision to Ship</h2>
-        <div class="case-section__content">
-          <p>While financial metrics weren't statistically significant, we rolled out globally based on:</p>
-
-          <ul>
-            <li><strong>Behavioral evidence:</strong> 11.6% delivery drawer engagement is substantial for a new UI element</li>
-            <li><strong>No downside risk:</strong> Zero negative impact across any market or metric</li>
-            <li><strong>Customer value delivered:</strong> We directly addressed documented pain points</li>
-            <li><strong>Foundation for future:</strong> New architecture supports Factor integration</li>
-            <li><strong>Research validation:</strong> Savings visibility patterns aligned with prior Loyalty rollout insights</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Impact</h2>
-        <div class="case-section__content">
-          <p><strong>Shipped to:</strong> iOS, Android, Web across all global markets (HelloFresh + white-label brands)</p>
-
-          <ul>
-            <li><strong>+11.6%</strong> engagement with delivery controls</li>
-            <li><strong>+3.6%</strong> engagement with savings visibility</li>
-            <li>Increased delivery modifications across markets</li>
-            <li>Zero negative impact globally</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Reflection</h2>
-        <div class="case-section__content">
+                <div class="case-section__content">
           <h3>What Worked</h3>
-          <p>Scoping carefully paid off. By separating "what we're confident about" from "what needs validation," we shipped user value quickly while generating learnings. The decision to roll out despite non-significant financial results was right—the absence of negative signal, combined with positive behavioral data and research confidence, was enough to move forward.</p>
+          <h4>Research-driven confidence</h4>
+          <p>Clear problem definition from discovery gave me confidence to advocate for features like in-cart delivery editing and make efficient design decisions throughout.</p>
+          <h4>Strategic scoping and collaboration</h4>
+          <p>Separating high-confidence changes from those needing validation let us ship value quickly. Close work with the design system team ensured the cart was modular across brands and resilient to the UI2 rebrand.</p>
 
           <h3>What I'd Do Differently</h3>
-          <ul>
-            <li><strong>Longer experiment duration:</strong> Financial metrics like retention take time. A longer window might have captured downstream effects.</li>
-            <li><strong>Item-level savings:</strong> The technical constraint left value on the table. I'd push harder for a phased approach to full price transparency.</li>
-            <li><strong>Deeper delivery analysis:</strong> 11.6% engagement is promising, but understanding conversion—did users actually change dates, and did that reduce missed deliveries?—would strengthen the case.</li>
-          </ul>
+          <h4>Push harder on price clarity</h4>
+          <p>Price comprehension was the top UXR pain point, yet we deprioritized most price clarity changes due to backend dependencies. In hindsight, the research evidence was strong enough to justify the coordination cost—I'd advocate more aggressively to sequence these changes into the roadmap.</p>
+          <h4>Earn the upselling placement</h4>
+          <p>The cross-sell section in the cart was out of scope since personalization data wasn't available at the time. Generic recommendations take up valuable real estate without delivering proportional value. I'd push to either make recommendations relevant to the customer—or reconsider whether the section earns its placement at all.</p>
         </div>
       </section>
 
-      <section class="case-section">
-        <h2 class="case-section__title">Credits</h2>
-        <div class="case-section__content">
-          <p>This project was a cross-functional effort with Product Analytics, Cart Experience Squad, Cart Foundation Squad, UX Research, and platform teams across iOS, Android, and Web.</p>
-        </div>
-      </section>
+      <div class="case-nav case-nav--bottom">
+        <a href="../index.html" class="back-link">&larr; Back to Work</a>
+        <a href="ai-illustration.html" class="next-link">Next: Scaling Illustrations with AI &rarr;</a>
+      </div>
     </article>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <p class="footer__copy">&copy; 2026 Amanda Low. All rights reserved.</p>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener">Twitter</a>
-          <a href="https://dribbble.com/" class="social-link" target="_blank" rel="noopener">Dribbble</a>
-        </div>
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Amanda Low</p>
+      <div class="social-links">
+        <a href="mailto:amanda.r.low@outlook.com" class="social-link">Email</a>
+        <a href="https://www.linkedin.com/in/amanda-r-low/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" class="lightbox__img">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Feature Timeline Lightbox -->
+  <div id="feature-timeline-lightbox" class="feature-timeline-lightbox">
+    <button class="feature-timeline-lightbox__close" aria-label="Close">&times;</button>
+    <div class="feature-timeline-lightbox__content"></div>
+  </div>
+
+  <!-- Zoomable Image Lightbox -->
+  <div id="zoomable-lightbox" class="zoomable-lightbox">
+    <button class="zoomable-lightbox__close" aria-label="Close">&times;</button>
+    <div class="zoomable-lightbox__controls">
+      <button class="zoomable-lightbox__zoom zoomable-lightbox__zoom--out" aria-label="Zoom out">−</button>
+      <span class="zoomable-lightbox__zoom-level">100%</span>
+      <button class="zoomable-lightbox__zoom zoomable-lightbox__zoom--in" aria-label="Zoom in">+</button>
+    </div>
+    <div class="zoomable-lightbox__scroll">
+      <div class="zoomable-lightbox__content"></div>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
 </body>

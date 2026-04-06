@@ -23,6 +23,7 @@
 - Navigation links: `0.875rem`, uppercase, letter-spacing `0.08em`
 - Body text: `1rem`, weight 300
 - Bio text: `1.0625rem`
+- Footer: `0.75rem`, uppercase, letter-spacing `0.08em`
 
 ### Text Styles
 
@@ -35,6 +36,8 @@
 | Hero description | Manrope | clamp(0.9rem, 1.8vw, 1.25rem) | 300 | Sentence | - |
 | Body text | Manrope | 1rem | 300 | Sentence | - |
 | Category labels | Manrope | 0.6875rem | 500 | Uppercase | 0.15em |
+| Footer | Manrope | 0.75rem | 300 | Uppercase | 0.08em |
+| Back/Next links | Manrope | 0.6875rem | 500 | Uppercase | 0.1em |
 
 ---
 
@@ -83,12 +86,14 @@
 - Logo on top, navigation below
 - Spacing between logo and nav: `--space-xs`
 - Navigation gap: `--space-xl`
+- Nav items: Work, About, CV, Contact
 
 ### Two-Column Pages (About, Contact)
 - Grid: `1fr 1fr` or `1fr 1.2fr`
 - Left: Large page title at top, content/details at bottom
 - Right: Image or form
 - Gap: `--space-2xl`
+- Contact page (simplified): single column, no form
 
 ### Work Grid
 - Single column layout
@@ -97,6 +102,24 @@
 - Gap between items: `--space-3xl`
 - Image aspect ratio: 4:3
 
+### Case Study Pages
+- Content width: 750px
+- No h2 section titles; h3 as primary headings with descriptive titles
+- Header meta: Role, Timeline, Scope (platform + brands), Ownership stepper
+
+### Case Study Navigation
+- Flex row with space-between
+- Max-width: 750px (matches content width)
+- Left: "← Back to Work"
+- Right: "Next: {Case Study Name} →"
+
+### Research Carousel
+- Full-width: 1200px max
+- Shows 2 images at a time
+- Per-item navigation with peek of adjacent images
+- Titles above images
+- Lightbox with navigation and captions
+
 ---
 
 ## Components
@@ -104,6 +127,7 @@
 ### Navigation
 - Active link: underlined with `text-underline-offset: 4px`
 - Hover: `opacity: 0.5`
+- CV link opens in new tab
 
 ### Buttons
 - Padding: `1rem 2rem`
@@ -118,7 +142,11 @@
 
 ### Images
 - Work images: `object-fit: cover`, scale to 1.05 on hover
-- About photo: natural aspect ratio, aligned with page title
+- About photo: natural aspect ratio, aligned with page title via `margin-top`
+
+### Footer
+- All text uppercase with letter-spacing `0.08em`
+- Links: LinkedIn, Twitter, Dribbble
 
 ---
 
@@ -147,6 +175,21 @@
 - Navigation gap reduces to `--space-lg`
 - Page titles reduce to 2.5rem
 - Work items stack vertically
+
+---
+
+## Content Structure
+
+### Case Studies
+1. **Cart Revamp** (HelloFresh) - Building trust at checkout
+2. **AI Illustration Update** (HelloFresh) - Scaling design migration with AI
+3. **Product Card Component** (HelloFresh) - First accessible multi-brand component
+4. **Mobile Search** (HelloFresh) - AI-assisted design workflows
+
+### Contact Information
+- Location: Berlin, Germany
+- Email: amanda.r.low@outlook.com
+- LinkedIn: https://www.linkedin.com/in/amanda-r-low/
 
 ---
 
