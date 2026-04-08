@@ -15,6 +15,7 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
 - Navigation uses Manrope Light uppercase with letter-spacing 0.08em
 - Active nav link has animated underline
 - Footer text is uppercase
+- Header logo: 1rem desktop (16px), 0.75rem mobile (12px) — slightly larger than nav for minimal aesthetic
 
 ## Color Palette
 - Background: `#FAFAF8` (warm off-white)
@@ -81,9 +82,9 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
 - LinkedIn: https://www.linkedin.com/in/amanda-r-low/
 
 ## Case Studies (in order)
-1. Cart Revamp (HelloFresh)
-2. Smaller Product Cards (HelloFresh)
-3. Mobile Search (HelloFresh)
+1. Building Trust at Checkout (HelloFresh) — `checkout.html`
+2. Scaling Illustrations with AI (HelloFresh) — `ai-illustration.html`
+3. Product Card Accessibility (HelloFresh) — `product-cards.html`
 
 ## Responsive
 - Breakpoint: 768px
@@ -96,15 +97,18 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
 - `cv.pdf` - CV file (to be added)
 - See `STYLEGUIDE.md` for complete documentation
 
+## Image Optimization
+- Max width: 1500px (resized for mobile performance)
+- Transparent PNGs: keep as PNG
+- Non-transparent images: convert to JPG at 85% quality
+- Target total images folder size: ~40MB
+
 ## Key Images
-- `images/cart-revamp-hero.png` - Homepage hero for Cart Revamp (device mockups, transparent background)
-- `images/compact-cards-hero.jpg` - Homepage hero for Compact Cards (device mockups, optimized)
-- `images/cart-revamp-comparison.png` - Full-width comparison image in case study (has Before/After labels)
+- `images/cart-revamp-hero.png` - Homepage hero for Checkout (device mockups, transparent)
+- `images/ai-illustration-hero.png` - Homepage hero for AI Illustration (2D/3D comparison grid)
+- `images/ai-illustration-audit-tool.png` - Audit tool screenshot
+- `images/product-card-a11y-hero.png` - Homepage hero for Product Cards
 - `images/about-photo-1.jpg` - About page photo (cropped 10% from top)
-- `images/mobile-search-hero.jpg` - Homepage hero for Mobile Search (placeholder)
-- `images/mobile-search-benchmarking.jpg` - Competitive analysis (placeholder)
-- `images/mobile-search-vision.jpg` - Vision diagram (placeholder)
-- `images/mobile-search-final.jpg` - Final search UI (placeholder)
 
 ## GitHub
 - Repo: https://github.com/amanda-low/my-portfolio
