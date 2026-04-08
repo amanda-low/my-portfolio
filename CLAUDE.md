@@ -36,6 +36,7 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
 - Work grid images lift up (4px) on hover
 - Buttons lift up (2px) on hover
 - Magnifying glass expand button: always visible at 40% opacity, full opacity on hover
+- Zoomable case study images: zoom-in cursor on hover, slight lift; click opens zoomable lightbox
 
 ## Navigation
 - Work, About, CV (opens PDF in new tab)
@@ -72,6 +73,7 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
   - `.case-section__col-single` - single column matching row column width
 - **Research carousel:** Full-width 1200px, shows 2 images at a time, per-item navigation with peek
 - **Lightbox:** Navigation arrows and captions for carousel images; single images have no navigation
+- **Zoomable images:** All case study images should be zoomable. Add `case-image--zoomable` to the container div and `zoomable-image` class to the img element. Requires `zoomable-lightbox` HTML element at bottom of page (before main.js script). Shows zoom-in cursor on hover; click opens lightbox with zoom controls (+/- buttons, 50%-200% range).
 
 ## Footer
 - All text uppercase with letter-spacing

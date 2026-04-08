@@ -126,7 +126,7 @@
 
           <p>Beyond user frustrations, the cart was a critical business touchpoint—reviewing their order affected customer pause and cancel decisions. With centralization of the mealkit and ready-to-eat codebases on the roadmap, a scalable, modular cart design was needed to clearly communicate complex orders and ensure seamless purchase decisions.</p>
 
-          <h3>My role</h3>
+          <h3>My Role</h3>
           <p>A new cross-discipline team was formed in Q1 2022 to own the frontend cart experience. Due to my previous work on price clarity, I was asked to join as the lead product designer. After completing delivery of the Autosave initiative in Q1 2024, I commenced work on Cart Redesign in Q2 2024.</p>
 
           <p>I led usability testing, collaborated with a UX research partner on user interviews, and compiled UX principles to inform the design vision and iterations. I worked with a product owner and engineers to deliver design iterations incrementally for maximum impact. Design delivery included a design system composite for all meal kit brands, collaboration with a UX writer, and documentation of meal selection price logic, display rules, and handover guidelines. Support for engineering delivery included copy localization and UA testing.</p>
@@ -145,16 +145,6 @@
               <h4 class="ux-pillar__title">I don't know what's in my cart</h4>
               <p class="ux-pillar__desc">In interviews and usability testing, users struggled to distinguish which meals were included in their subscription versus which had surcharges. They didn't understand why items appeared in their cart and found the mixing of included and premium meals confusing and untrustworthy.</p>
               <div class="ux-pillar__quote">"I don't like that the meals with extra cost are all mixed in with the free meals... It feels like they are trying to trick me."</div>
-            </div>
-            <div class="ux-pillar">
-              <h4 class="ux-pillar__title">I don't know how much I'm saving</h4>
-              <p class="ux-pillar__desc">In interviews, users wanted to see their savings but had low visibility of benefits applied. Rewards and vouchers were confusing, and the subscription value wasn't reinforced at checkout.</p>
-              <div class="ux-pillar__quote">"Show me I'm saving money. That would feel really good."</div>
-            </div>
-            <div class="ux-pillar">
-              <h4 class="ux-pillar__title">I want control over my delivery</h4>
-              <p class="ux-pillar__desc">A previous experiment showed customers who used reschedule options were 18% less likely to cancel and ordered 98% more boxes. Users wanted delivery flexibility without leaving the cart flow.</p>
-              <div class="ux-pillar__quote">"How can I change the date of delivery? This is really a request."</div>
             </div>
           </div>
 
@@ -223,12 +213,7 @@
           </div>
 
           <h3>Design Decisions</h3>
-          <h4>How the information hierarchy was determined</h4>
-          <p>The hierarchy followed the two core jobs of any e-commerce cart: review your order, then confirm and pay. But as a subscription service with six editable weeks, the cart needed to consolidate everything into one screen for quick review. Secondary functions—price breakdowns, last-minute edits, and upselling—had to fit around those primary tasks without competing for attention.</p>
-          <h4>Iterations between vision and final</h4>
-          <p>The gap between web and app experiments meant the design evolved as other teams introduced new features. Accessibility requirements drove changes like revising the number stepper component. The UI2 rebrand also required a full color revision across the cart.</p>
-          <h4>Why this treatment for add-on pairing labels?</h4>
-          <p>Placement was tricky—paired add-ons are selected alongside meals, so they could logically appear as child items. But since price clarity was a top pain point, I collaborated with UX writing to keep paired add-ons in their own section. This way, users always knew which items were included in their subscription and which cost extra.</p>
+          <p>The hierarchy followed the two core jobs of any e-commerce cart: review your order, then confirm and pay. As a subscription service with six editable weeks, the cart needed to consolidate everything into one screen. Since price clarity was a top pain point, I kept paired add-ons in their own section so users always knew which items were included versus which cost extra.</p>
 
           <h3>Web release</h3>
           <p>The existing cart used a single-column layout that pushed order totals below the fold for larger baskets, fragmenting the review experience. With a long-term company strategy to increase basket size—expanding add-on offerings and introducing ready-to-eat options—alternatives like a side drawer wouldn't scale. A two-column desktop layout accommodated a larger, more complex cart while keeping order totals visible, and a full-width cross-selling carousel opened up catalogue discovery.</p>
@@ -240,18 +225,7 @@
             <img src="../images/cart-revamp-web-experiment.png" alt="Cart redesign web experiment showing control versus variant with two-column layout" class="zoomable-image">
           </div>
 
-          <p>The primary goal was to validate the new layout without negatively impacting revenue—which the results confirmed. We also included the add-on pairing attribute, as this had the most impact on clarifying why items appeared in the cart. However, we observed a 1% drop in extra meal uptake, traced to a change in style of the upselling banner.</p>
-          <p>After iterating on the banner design, the redesign rolled out across all web markets in December 2024. The first web release focused on high-confidence, low-risk changes: clickable product details (standard e-commerce behavior), the two-column layout, and add-on pairing labels—all shipped in Q4 2024 after experiments confirmed no negative revenue impact.</p>
-
-          <p class="case-image__title">Upselling banner iteration</p>
-          <div class="case-image case-image--side-labels">
-            <div class="case-image__labels">
-              <span>Control</span>
-              <span>Variant</span>
-              <span>Rolled Out</span>
-            </div>
-            <img src="../images/cart-revamp-upsell-iterations.png" alt="Upselling banner iterations: Control with placeholder image, Variants with meal image, Rolled Out with icon only">
-          </div>
+          <p>The primary goal was to validate the new layout without negatively impacting revenue—which the results confirmed. After iterating on the upselling banner to address a small drop in extra meal uptake, the redesign rolled out across all web markets in December 2024.</p>
 
           <p>The design system had just introduced brand tokens, allowing one design to serve multiple brands simultaneously. The cart was one of the first features to leverage this—after validating on HelloFresh, Cart Redesign was rolled out to Chefs Plate, Green Chef, and EveryPlate on web in Q4 2024.</p>
 
@@ -307,16 +281,9 @@
           </div>
 
           <h3>What didn't make the final cut</h3>
-          <p>Price clarity changes—displaying price per meal and total price in the cart footer—were deprioritized due to backend dependencies and a deliberate decision to separate high-risk pricing changes from selection assurance improvements. Similarly, restructuring the cart layout for multiple sellers was deprioritized; instead, a "Ships separately" label was added to the existing layout to provide clarity without the backend lift.</p>
-          <p>We intentionally descoped payment method display. Prior experiments showed that surfacing payment info increased cancellation rates—transparency likely prompted low-intent users to pause or remove payment methods.</p>
+          <p>Price clarity changes and multi-seller layout restructuring were deprioritized due to backend dependencies—we added a "Ships separately" label as a lighter solution. Payment method display was descoped after experiments showed it increased cancellations.</p>
 
-          <h3>Forks in the road</h3>
-          <h4>Guarding the checkout experience</h4>
-          <p>As the final step before order confirmation, the cart carries a heavy load: meal selections, upselling, sign-up discounts, and loyalty program (HelloFresh+) information. Requests from other teams to surface new features in the cart come up constantly. Each requires careful negotiation—balancing visibility for the feature against the cart's core job: review and confirm.</p>
-          <h4>Backend dependencies</h4>
-          <p>The cart relies on data from multiple backend teams, each with their own roadmaps. Coordinating releases—and managing conflicting priorities—is an ongoing challenge. Features like minimum order requirements, autosave behavior, and upselling logic all need to work consistently across the editable cart, which means alignment across teams before any change ships.</p>
-
-        </div>
+                  </div>
       </section>
 
       <section class="case-section">
@@ -328,10 +295,9 @@
           <p>Separating high-confidence changes from those needing validation let us ship value quickly. Close work with the design system team ensured the cart was modular across brands and resilient to the UI2 rebrand.</p>
 
           <h3>What I'd Do Differently</h3>
-          <h4>Push harder on price clarity</h4>
-          <p>Price comprehension was the top UXR pain point, yet we deprioritized most price clarity changes due to backend dependencies. In hindsight, the research evidence was strong enough to justify the coordination cost—I'd advocate more aggressively to sequence these changes into the roadmap.</p>
-          <h4>Earn the upselling placement</h4>
-          <p>The cross-sell section in the cart was out of scope since personalization data wasn't available at the time. Generic recommendations take up valuable real estate without delivering proportional value. I'd push to either make recommendations relevant to the customer—or reconsider whether the section earns its placement at all.</p>
+          <p>Push harder on price clarity. It was the top UXR pain point, but we deprioritized it due to backend dependencies. The research evidence was strong enough to justify the coordination cost.</p>
+          <p>Earn the upselling placement. Generic recommendations take up valuable real estate—I'd push to make them personalized or reconsider the section entirely.</p>
+          <p>Establish guardrails earlier. The cart attracts constant requests from other teams. Clearer criteria upfront for what belongs—and earlier alignment on backend dependencies—would have reduced friction.</p>
         </div>
       </section>
 

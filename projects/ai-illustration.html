@@ -27,7 +27,7 @@
         </div>
         <span class="case-hero__company">HelloFresh</span>
         <h1 class="case-hero__title">Scaling Illustrations with AI</h1>
-        <p>How AI tools helped scale a visual modernization—auditing 382 assets and planning migration across 35 teams.</p>
+        <p>How AI tools helped scale a visual modernization—auditing 382 assets and planning migration across 34 teams.</p>
 
         <div class="case-meta">
           <div class="case-meta__item">
@@ -59,7 +59,7 @@
 
     <section class="case-image-full">
       <div class="container">
-        <img src="../images/ai-illustration-hero.png" alt="Before and after comparison of 2D flat illustrations versus new 3D clay-style illustrations">
+        <img src="../images/ai-illustration-hero.png" alt="Grid comparing 2D flat illustrations with their 3D clay-style replacements: meals, flames, cakes, pancakes, and cupcakes">
       </div>
     </section>
 
@@ -67,7 +67,7 @@
       <section class="case-section">
         <div class="case-section__content">
           <h3>The Challenge</h3>
-          <p>In mid-2025, HelloFresh defined a new 3D illustration style to modernize the brand. But rollout was slow to start. The problem? 35 teams across 8 brands had been storing and implementing their own illustrations. There was no centralized inventory, no clear ownership map, and assets lived in dozens of locations.</p>
+          <p>In mid-2025, HelloFresh defined a new 3D illustration style to modernize the brand. But rollout was slow to start. The problem? 34 teams across 8 brands had been storing and implementing their own illustrations. There was no centralized inventory, no clear ownership map, and assets lived in dozens of locations.</p>
 
           <h3>My Role</h3>
           <p>I was asked to help unblock the migration because of my experience bridging the design-engineering gap while embedded in engineering teams. I had strong relationships with developers and engineering managers, hands-on experience with multi-brand rollouts, and a track record of navigating complexity.</p>
@@ -75,8 +75,8 @@
           <h3>The AI-Assisted Approach</h3>
           <p>The new 3D illustration style had already been established, and new assets could easily be generated with a custom ChatGPT prompt.</p>
 
-          <div class="case-image">
-            <img src="../images/ai-illustration-style.png" alt="Examples of the target 3D illustration style showing food, delivery trucks, and reward icons">
+          <div class="case-image case-image--zoomable">
+            <img src="../images/ai-illustration-style.png" alt="Examples of the target 3D illustration style showing food, delivery trucks, and reward icons" class="zoomable-image">
             <p class="case-image__caption">The target 3D style: friendly, matte clay aesthetic with soft shadows</p>
           </div>
 
@@ -88,12 +88,24 @@
         <div class="case-section__content">
           <h3>What We Found</h3>
           <p>Claude Code searched for image asset file types across the codebase, then helped classify each by content type, content size, location, platform, and team ownership.</p>
-          <p>Out of 382 assets found, Claude identified 211 illustrations in the old 2D style (163 on web, 48 on mobile app) owned by 35 teams in 7 different storage locations. There were also 27 animations in the old 2D style that would need replacing.</p>
+          <p>Out of 382 assets found, Claude identified 211 illustrations in the old 2D style (163 on web, 48 on mobile app) owned by 34 teams in 7 different storage locations. There were also 27 animations in the old 2D style that would need replacing.</p>
 
-          <div class="case-image">
-            <img src="../images/ai-illustration-audit.png" alt="Spreadsheet showing the illustration audit with columns for platform, screen, team owner, content type, and more">
+          <div class="case-image case-image--zoomable">
+            <img src="../images/ai-illustration-audit.png" alt="Spreadsheet showing the illustration audit with columns for platform, screen, team owner, content type, and more" class="zoomable-image">
             <p class="case-image__caption">The audit spreadsheet catalogued every illustration with metadata for prioritization</p>
           </div>
+
+          <h3>Visualizing the Audit</h3>
+          <p>The CSV had the data, but I needed a way to see illustrations alongside their screens—essential for helping teams recreate assets and for reviewing pull requests. Claude suggested an HTML site to share the audit with stakeholders.</p>
+
+          <p>Once built, an unexpected benefit emerged: I could spot misclassifications immediately. Some 3D illustrations had been tagged as 2D; photos had been labeled as illustrations. Since I could customize the UI, I added a review feature so designers could reassign assets from their own teams. What started as a communication tool became an interactive platform for 34 teams to filter, review, and correct the data themselves.</p>
+
+          <div class="case-image case-image--zoomable">
+            <img src="../images/ai-illustration-audit-tool.png" alt="Screenshot of the illustration audit tool showing a grid of assets with filters for team, asset type, platform, and brand, plus a detail panel for reclassifying assets" class="zoomable-image">
+            <p class="case-image__caption">The audit tool: designers could filter by team, spot misclassifications, and reassign asset types</p>
+          </div>
+
+          <p>The site also solved another problem: there had been no central repository. With illustrations scattered across teams and storage locations, maintaining consistency for common states required constant coordination. Now everyone had a single source of truth.</p>
 
           <h3>Prioritization Framework</h3>
           <p>With the audit complete, I planned the cross-team migration effort. Prioritization was based on impact and efficiency, with a small number still to be categorized:</p>
@@ -139,7 +151,7 @@
 
       <div class="case-nav case-nav--bottom">
         <a href="../index.html" class="back-link">&larr; Back to Work</a>
-        <a href="compact-cards.html" class="next-link">Next: Product Card Accessibility &rarr;</a>
+        <a href="product-cards.html" class="next-link">Next: Product Card Accessibility &rarr;</a>
       </div>
     </article>
   </main>
@@ -167,6 +179,19 @@
     <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
       <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
     </button>
+  </div>
+
+  <!-- Zoomable Image Lightbox -->
+  <div id="zoomable-lightbox" class="zoomable-lightbox">
+    <button class="zoomable-lightbox__close" aria-label="Close">&times;</button>
+    <div class="zoomable-lightbox__controls">
+      <button class="zoomable-lightbox__zoom zoomable-lightbox__zoom--out" aria-label="Zoom out">−</button>
+      <span class="zoomable-lightbox__zoom-level">100%</span>
+      <button class="zoomable-lightbox__zoom zoomable-lightbox__zoom--in" aria-label="Zoom in">+</button>
+    </div>
+    <div class="zoomable-lightbox__scroll">
+      <div class="zoomable-lightbox__content"></div>
+    </div>
   </div>
 
   <script src="../js/main.js"></script>
