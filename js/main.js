@@ -38,27 +38,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Scroll-triggered fade-in animations
+  // Elements above the fold appear instantly; elements below animate on scroll
   const fadeElements = document.querySelectorAll('.fade-in');
 
   if (fadeElements.length > 0) {
+    const isAboveFold = (el) => {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight;
+    };
+
+    // Make elements already in viewport visible immediately (no animation)
+    fadeElements.forEach(el => {
+      if (isAboveFold(el)) {
+        el.style.transition = 'none';
+        el.classList.add('visible');
+        // Re-enable transitions after paint
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            el.style.transition = '';
+          });
+        });
+      }
+    });
+
+    // Observe elements below the fold for scroll animation
     const observerOptions = {
       threshold: 0.15,
       rootMargin: '0px 0px -100px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Stagger the animations slightly
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, index * 100);
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => {
+      if (!el.classList.contains('visible')) {
+        observer.observe(el);
+      }
+    });
   }
 
   // Header background on scroll (for inner pages with standard header)
