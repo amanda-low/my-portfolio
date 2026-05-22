@@ -3,87 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amanda Low - Product Designer</title>
+  <meta name="description" content="Product Designer at HelloFresh since 2021.">
+  <title>Amanda Low. Product designer.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Manrope:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/codex-home.css">
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="header__logo">Amanda Low</a>
-    <nav class="nav">
-      <a href="index.html" class="nav__link nav__link--active">Work</a>
-      <a href="about.html" class="nav__link">About</a>
-      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" class="nav__link" target="_blank">CV</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead__inner">
+    <a href="index.html" class="masthead__brand">
+      <span class="masthead__brand-name">Amanda Low</span>
+      <span class="masthead__brand-role">Product designer</span>
+    </a>
+
+    <nav class="masthead__nav" aria-label="Main">
+      <a href="index.html" class="is-active">Work</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="work">
-      <div class="work__grid">
+<main>
 
-        <a href="projects/cart-revamp.html" class="work__item work__item--featured fade-in">
-          <div class="work__image">
-            <img src="images/cart-revamp-hero.png" alt="HelloFresh cart redesign showing mobile, tablet, and desktop views">
-          </div>
-          <div class="work__info">
-            <h2 class="work__title">Building Trust at Checkout</h2>
-            <p class="work__description">A checkout redesign shipped globally across 8 brands, driving +11.6% engagement with new delivery controls.</p>
-          </div>
-        </a>
-
-        <a href="projects/ai-illustration.html" class="work__item fade-in">
-          <div class="work__image">
-            <img src="images/ai-illustration-hero.png" alt="2D flat illustrations compared to new 3D clay-style illustrations">
-          </div>
-          <div class="work__info">
-            <h2 class="work__title">Scaling Illustrations with AI</h2>
-            <p class="work__description">How AI tools helped audit 382 illustrations across 40 teams and establish scalable migration workflows.</p>
-          </div>
-        </a>
-
-        <a href="projects/compact-cards.html" class="work__item fade-in">
-          <div class="work__image">
-            <img src="images/product-card-a11y-hero.png" alt="Product card accessibility annotations showing ARIA labels, alt text, and reading order">
-          </div>
-          <div class="work__info">
-            <h2 class="work__title">Product Card Accessibility</h2>
-            <p class="work__description">Designing HelloFresh's first accessible, multi-brand product card.</p>
-          </div>
-        </a>
-
-        <div class="work__item work__item--coming-soon fade-in">
-          <div class="work__image">
-            <img src="images/mobile-search-hero.png" alt="Mobile search screens showing recipe search with keyboard and empty state illustrations">
-          </div>
-          <div class="work__info">
-            <h2 class="work__title">Mobile Search</h2>
-            <p class="work__description">Designing mobile search with AI-assisted workflows—from vision to shipped MVP.</p>
-            <span class="work__coming-soon">Case study coming soon</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="footer__copy">&copy; 2026 Amanda Low</p>
-      <div class="social-links">
-        <a href="mailto:amanda.r.low@outlook.com" class="social-link">Email</a>
-        <a href="https://www.linkedin.com/in/amanda-r-low/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
-    <img class="lightbox__img" src="" alt="">
+  <div class="snapshot-band">
+    <p class="snapshot snapshot--keyvalue">
+      <span><b>Based in</b> Berlin</span>
+      <span><b>Working in</b> EN, DE</span>
+      <span><b>Currently</b> Product Designer, HelloFresh</span>
+      <span><b>Experience</b> 5 years design, 9 years marketing</span>
+    </p>
   </div>
 
-  <script src="js/main.js"></script>
+  <section class="work" aria-label="Selected work">
+    <header class="work__header">
+      <p class="eyebrow">Selected work</p>
+    </header>
+
+    <ol class="work__list">
+      <li class="project">
+        <a class="project__row" href="projects/checkout.html">
+          <div class="project__text">
+            <p class="project__index">2023, 2024</p>
+            <h3 class="project__title">Building Trust at Checkout</h3>
+            <p class="project__desc">A checkout redesign shipped globally across eight brands. Up 11.6% engagement with new delivery controls, validated on eight million users.</p>
+            <ul class="pills">
+              <li><span class="pill pill--sm">Mobile, Web</span></li>
+              <li><span class="pill pill--sm">Lead designer</span></li>
+              <li><span class="pill pill--sm">8 brands</span></li>
+            </ul>
+          </div>
+          <figure class="project__media">
+            <img src="images/cart-revamp-hero.png" alt="HelloFresh cart redesign showing mobile, tablet, and desktop views">
+          </figure>
+        </a>
+      </li>
+
+      <li class="project">
+        <a class="project__row" href="projects/ai-illustration.html">
+          <div class="project__text">
+            <p class="project__index">2024</p>
+            <h3 class="project__title">Scaling Illustrations with AI</h3>
+            <p class="project__desc">An AI-assisted audit of 382 visual assets across 35 teams, with a migration plan from a 2D library to a unified 3D system.</p>
+            <ul class="pills">
+              <li><span class="pill pill--sm">Cross-platform</span></li>
+              <li><span class="pill pill--sm">AI workflow</span></li>
+              <li><span class="pill pill--sm">8 brands</span></li>
+            </ul>
+          </div>
+          <figure class="project__media">
+            <img src="images/ai-illustration-hero.png" alt="2D flat illustrations compared to new 3D clay-style illustrations">
+          </figure>
+        </a>
+      </li>
+
+      <li class="project">
+        <a class="project__row" href="projects/product-cards.html">
+          <div class="project__text">
+            <p class="project__index">2024</p>
+            <h3 class="project__title">Product Card Accessibility</h3>
+            <p class="project__desc">HelloFresh's first accessible, multi-brand product card. A pattern that scales from one team to all eight brands.</p>
+            <ul class="pills">
+              <li><span class="pill pill--sm">Mobile, Web</span></li>
+              <li><span class="pill pill--sm">Accessibility</span></li>
+              <li><span class="pill pill--sm">8 brands</span></li>
+            </ul>
+          </div>
+          <figure class="project__media">
+            <img src="images/product-card-a11y-hero.png" alt="Product card accessibility annotations showing ARIA labels, alt text, and reading order">
+          </figure>
+        </a>
+      </li>
+
+      <li class="project project--soon">
+        <div class="project__row">
+          <div class="project__text">
+            <p class="project__index">2025</p>
+            <h3 class="project__title">Mobile Search</h3>
+            <p class="project__desc">Mobile search built with AI-assisted workflows. From vision to shipped MVP.</p>
+            <ul class="pills">
+              <li><span class="pill pill--sm">Mobile</span></li>
+              <li><span class="pill pill--sm">AI workflow</span></li>
+            </ul>
+            <span class="project__cta project__cta--disabled">Case study coming soon</span>
+          </div>
+          <figure class="project__media">
+            <img src="images/mobile-search-hero.png" alt="Mobile search screens showing recipe search with keyboard and empty state illustrations">
+          </figure>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__copy">&copy; 2026 Amanda Low</p>
+    <ul class="pills site-footer__pills">
+      <li><button type="button" class="pill pill--invert copy-email" data-email="amanda.r.low@outlook.com" data-default="Email" data-copied="Copied">Email</button></li>
+      <li><a class="pill pill--invert" href="https://www.linkedin.com/in/amanda-r-low/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="pill pill--invert" href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/codex.js"></script>
 </body>
 </html>

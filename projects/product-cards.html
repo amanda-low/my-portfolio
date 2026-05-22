@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HelloFresh's first accessible, multi-brand product card. WCAG 2.1 AA, OOUX, and a 50-variant component library.">
+  <title>Product Card Accessibility — Amanda Low</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/codex-home.css">
+  <link rel="stylesheet" href="../css/codex-case.css">
+</head>
+<body>
+
+<header class="masthead" role="banner">
+  <div class="masthead__inner">
+    <a href="../index.html" class="masthead__brand">
+      <span class="masthead__brand-name">Amanda Low</span>
+      <span class="masthead__brand-role">Product designer</span>
+    </a>
+    <nav class="masthead__nav" aria-label="Main">
+      <a href="../index.html" class="is-active">Work</a>
+      <a href="../about.html">About</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================ CASE HEADER ================ -->
+  <section class="case-header">
+    <div class="case-header__inner">
+      <a href="../index.html" class="back">← Back to work</a>
+      <p class="eyebrow">HelloFresh · Design Systems & Accessibility · 2025–2026</p>
+      <h1 class="case-header__title">Product Card Accessibility.</h1>
+      <p class="case-header__sub">Designing HelloFresh's first accessible, multi-brand product card. WCAG 2.1 AA, OOUX, and a 50-variant component library.</p>
+
+      <p class="snapshot snapshot--keyvalue case-header__meta">
+        <span><b>Role</b> Product Designer, Design Systems & Accessibility</span>
+        <span><b>Timeline</b> Q2 2025, ongoing</span>
+        <span><b>Scope</b> iOS, Android, Factor across 7 markets</span>
+        <span><b>Stage</b> Design, Development, Deployment</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================ HERO IMAGE ================ -->
+  <div class="case-hero">
+    <figure class="case-hero__inner">
+      <img src="../images/product-card-a11y-hero.png" alt="Product card accessibility annotations showing ARIA labels, alt text, and reading order">
+    </figure>
+  </div>
+
+  <!-- ================ 01 THE CHALLENGE ================ -->
+  <section class="band" id="challenge">
+    <div class="band__inner">
+      <p class="eyebrow">01 · The challenge</p>
+      <h2 class="section__title">A core component, two product worlds.</h2>
+
+      <div class="prose">
+        <p class="lede">This work was part of a larger store UI update to improve browsability for a growing assortment. The existing product card had grown unwieldy. New elements added over the years without revisiting the layout left it with inconsistent aesthetics and a height that required scrolling to see a single card on smaller devices.</p>
+        <p>As the core component of the store, where every meal added to an order starts, it needed a redesign. The company was consolidating its brand platforms, meaning all new components had to work across brands from the start. This was the first release to span both mealkit and ready-to-eat, each with fundamentally different product attributes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 02 MY ROLE ================ -->
+  <section class="band" id="role">
+    <div class="band__inner">
+      <p class="eyebrow">02 · My role</p>
+      <h2 class="section__title">Picked up mid-project, with the right context.</h2>
+
+      <div class="prose">
+        <p class="lede">I replaced another designer mid-project, picking up after usability testing had already validated a horizontal card layout over a grid layout.</p>
+        <p>I was brought in because of my previous work on the checkout, where I'd redesigned cart line items to surface product card attributes. That work gave me deep familiarity with the meal selection variants and which information best helped customers make decisions.</p>
+        <p>I partnered with the Design System team to create a modular, accessible product card using Object-Oriented UX principles, ensuring the component met design system standards and could be maintained long-term. This was HelloFresh's first design-led accessibility implementation, and I ran knowledge-sharing sessions so the team could replicate the approach on future projects.</p>
+      </div>
+
+      <figure class="case-figure">
+        <p class="case-figure__labels case-figure__labels--2">
+          <span>Prototype A · horizontal</span>
+          <span>Prototype B · grid</span>
+        </p>
+        <img src="../images/product-cards-usability-testing.jpg" alt="Usability testing results comparing horizontal card layout (Prototype A) versus grid layout (Prototype B)">
+        <figcaption>Usability testing validated the horizontal layout before I joined.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 03 OOUX ================ -->
+  <section class="band" id="ooux">
+    <div class="band__inner">
+      <p class="eyebrow">03 · Object-Oriented UX</p>
+      <h2 class="section__title">Different products, different attributes.</h2>
+
+      <p class="lede">Previously, multi-brand components only needed to work across mealkit brands, which share the same product attributes. Factor (Ready-to-Eat) changed everything.</p>
+
+      <div class="pillars pillars--2">
+        <article class="pillar">
+          <h3 class="pillar__title">Mealkit products</h3>
+          <ul class="pillar__list">
+            <li>Cooking time and prep time</li>
+            <li>Recipe steps and ingredients</li>
+            <li>Serving size customisation</li>
+            <li>Spice level indicators</li>
+            <li>Dietary tags (vegetarian, gluten-free)</li>
+          </ul>
+        </article>
+        <article class="pillar">
+          <h3 class="pillar__title">Ready-to-Eat products</h3>
+          <ul class="pillar__list">
+            <li>No cooking required</li>
+            <li>Protein and calorie focus</li>
+            <li>Different dietary attributes</li>
+            <li>Subscription add-on options</li>
+            <li>Bulk buy variations</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="prose">
+        <p>To solve this complexity, I used Object-Oriented UX to map all product types and their attributes.</p>
+      </div>
+
+      <div class="pillars pillars--3">
+        <article class="pillar">
+          <h3 class="pillar__title">Object mapping</h3>
+          <p class="pillar__body">Identifying all product types (meals, add-ons, subscriptions) and their relationships.</p>
+        </article>
+        <article class="pillar">
+          <h3 class="pillar__title">Attribute prioritisation</h3>
+          <p class="pillar__body">Aligning with product on Jobs to be Done to determine what information is essential versus optional.</p>
+        </article>
+        <article class="pillar">
+          <h3 class="pillar__title">Modular design</h3>
+          <p class="pillar__body">A component architecture that flexes based on content type.</p>
+        </article>
+      </div>
+
+      <div class="research-grid">
+        <figure class="research-grid__item">
+          <p class="research-grid__label">Object mapping · Meals and add-ons</p>
+          <img src="../images/product-card-ooux-ui.png" alt="OOUX object mapping showing meal cards and add-on cards with their attributes">
+        </figure>
+        <figure class="research-grid__item">
+          <p class="research-grid__label">Attribute prioritisation · JTBD alignment</p>
+          <img src="../images/product-card-ooux-prioritization.png" alt="Attribute prioritization matrix showing JTBD alignment">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 04 EAA + ACCESSIBILITY ================ -->
+  <section class="band" id="accessibility">
+    <div class="band__inner">
+      <p class="eyebrow">04 · Accessibility, by design</p>
+      <h2 class="section__title">EAA on the calendar, design at the centre.</h2>
+
+      <div class="prose">
+        <p class="lede">The European Accessibility Act (EAA), Directive (EU) 2019/882, became fully applicable on June 28, 2025. Our designs had to meet WCAG 2.1 AA standards. The deadline shaped the project timeline and made accessibility a core requirement from the start.</p>
+        <p>To understand what this meant in practice, I audited the existing meal selection experience using VoiceOver on my iPhone and MacBook. Learning the gestures and keyboard controls helped me grasp the gap between the visible UI and how screen readers actually interpret elements. It was eye-opening, and shaped every decision that followed.</p>
+      </div>
+
+      <div class="prose">
+        <p>Screen readers don't follow visual layout. They read elements in the order they appear in the code. Without deliberate structuring, this may not match the order users actually need. I used the OOUX attribute prioritisation to define reading order, ensuring screen reader users received information in the same hierarchy as sighted users. Product name first, then key attributes, then price.</p>
+        <p>WCAG requires content to work at 200% text size, and device analytics showed users browse on screens as small as 360px. Rather than truncating text, which cuts off meaning for users who need larger text or smaller devices, I defined character limits for every element and benchmarked Lieferando's approach of switching to vertical layouts at larger sizes.</p>
+        <p>Alt-text and ARIA labels aren't just technical metadata. They're the entire experience for screen reader users. I collaborated with UX Writing to ensure labels conveyed meaning, not just described elements. "Select Chicken Teriyaki", not "Button".</p>
+      </div>
+
+      <figure class="case-figure">
+        <img src="../images/product-card-a11y-annotations.jpg" alt="Product card accessibility annotations showing alt-text, ARIA labels, and reading order">
+        <figcaption>Annotations covering alt-text, ARIA labels, focus, and reading order.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 05 COMPONENT LIBRARY ================ -->
+  <section class="band" id="library">
+    <div class="band__inner">
+      <p class="eyebrow">05 · The component library</p>
+      <h2 class="section__title">A modular system with 50+ variants.</h2>
+
+      <div class="prose">
+        <p>The final component is a modular system covering every state and brand configuration. One source of truth for both mealkit and ready-to-eat surfaces.</p>
+      </div>
+
+      <figure class="case-figure">
+        <img src="../images/product-card-variants.png" alt="Product card component showing all variants across states and brands">
+        <figcaption>The complete product card library. 50+ variants across states, brands, and product types.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 06 KNOWLEDGE SHARING ================ -->
+  <section class="band" id="sharing">
+    <div class="band__inner">
+      <p class="eyebrow">06 · Knowledge sharing</p>
+      <h2 class="section__title">A repeatable process for the team.</h2>
+
+      <div class="prose">
+        <p>I presented my process and recommendations to the UX design and research team, covering VoiceOver testing, annotation workflows, and WCAG requirements. I followed up with one-on-one mentoring sessions to help designers apply accessible design practices to their own projects.</p>
+      </div>
+
+      <div class="research-grid research-grid--2col">
+        <figure class="research-grid__item">
+          <p class="research-grid__label">200% text resizing</p>
+          <img src="../images/product-cards-a11y-presentation.jpg" alt="Slide from accessibility presentation showing the 200% text resizing rule with a mobile app example">
+        </figure>
+        <figure class="research-grid__item">
+          <p class="research-grid__label">Quiz · Global disability stat</p>
+          <img src="../images/product-cards-a11y-quiz.jpg" alt="Slide from accessibility presentation with quiz about the percentage of people globally with a significant disability">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 07 SHIPPING + RESULTS ================ -->
+  <section class="band" id="ship">
+    <div class="band__inner">
+      <p class="eyebrow">07 · Shipping</p>
+      <h2 class="section__title">Factor live in 7 markets, HelloFresh in iteration.</h2>
+
+      <ul class="stat-grid">
+        <li>
+          <p class="stat-grid__num">50+</p>
+          <p class="stat-grid__label">Component variants across brands and states</p>
+        </li>
+        <li>
+          <p class="stat-grid__num">7</p>
+          <p class="stat-grid__label">Markets live on Factor<span>US, CA, DE, NL, BE, SE, DK</span></p>
+        </li>
+        <li>
+          <p class="stat-grid__num">2</p>
+          <p class="stat-grid__label">Brand platforms (Mealkit, Ready-to-Eat)</p>
+        </li>
+        <li>
+          <p class="stat-grid__num">Q2 '26</p>
+          <p class="stat-grid__label">Next HelloFresh experiment planned</p>
+        </li>
+      </ul>
+
+      <div class="prose">
+        <p class="lede">In Q4 2025, the product card component launched on Factor across seven markets. We rolled out without an experiment because Factor's outdated UI could no longer support new features. Updating it was a prerequisite for planned platform improvements.</p>
+        <p>In Q1 2026, we A/B tested the new card on HelloFresh. Mixed results led us to iterate. We rolled back with a plan to re-test. I'm currently working on the next iteration, with a new experiment planned for Q2 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 08 REFLECTIONS ================ -->
+  <section class="band" id="reflections">
+    <div class="band__inner">
+      <p class="eyebrow">08 · Reflections</p>
+      <h2 class="section__title">What I'd take into the next round.</h2>
+
+      <div class="ship">
+        <article class="ship__col">
+          <p class="ship__label">What worked</p>
+          <ul class="ship__list">
+            <li>OOUX enables accessibility. The attribute prioritisation I did for UX design directly informed the reading order and focus order for screen readers. Good IA supports both visual and non-visual users.</li>
+            <li>Process documentation matters. By documenting the accessibility workflow, I created a repeatable process for the team. The presentation has been referenced on subsequent projects.</li>
+          </ul>
+        </article>
+        <article class="ship__col">
+          <p class="ship__label">What I'd do differently</p>
+          <ul class="ship__list">
+            <li>Experiment insights are valuable even when rolled back. The HelloFresh experiment showed that information density matters more than we assumed. Users need dietary tags and descriptions to evaluate products. They can't make decisions without them.</li>
+            <li>That validated the OOUX prioritisation and is informing the next iteration. I'd protect the density signal earlier next time, even at the cost of visual restraint.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ BOTTOM NAV ================ -->
+  <nav class="case-bottom-nav" aria-label="Case study navigation">
+    <div class="case-bottom-nav__inner">
+      <a class="back" href="../index.html">← Back to work</a>
+      <a class="next" href="checkout.html">Next case study, Building Trust at Checkout →</a>
+    </div>
+  </nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__copy">&copy; 2026 Amanda Low</p>
+    <ul class="pills site-footer__pills">
+      <li><button type="button" class="pill pill--invert copy-email" data-email="amanda.r.low@outlook.com" data-default="Email" data-copied="Copied">Email</button></li>
+      <li><a class="pill pill--invert" href="https://www.linkedin.com/in/amanda-r-low/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="pill pill--invert" href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/codex.js"></script>
+</body>
+</html>

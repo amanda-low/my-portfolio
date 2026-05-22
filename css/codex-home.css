@@ -1,0 +1,526 @@
+/* ============================================================
+   Codex design system — Homepage
+   Radically minimal. White surface, black ink. Typography is the
+   visual weight. Pills for interaction, no shadows, no gradients.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --c-surface: #FFFFFF;
+  --c-text:    #000000;
+  --c-muted:   #6B7280;
+  --c-line:    #000000;
+  --c-faint:   #E5E7EB;
+  --c-invert:  #FFFFFF;
+
+  --font: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --r-pill: 9999px;
+  --r-card: 16px;
+
+  --s-4: 4px;
+  --s-8: 8px;
+  --s-12: 12px;
+  --s-16: 16px;
+  --s-24: 24px;
+  --s-32: 32px;
+  --s-48: 48px;
+  --s-64: 64px;
+  --s-96: 96px;
+  --s-128: 128px;
+
+  --gutter: clamp(20px, 5vw, 64px);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--c-text);
+  background: var(--c-surface);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+ul, ol { list-style: none; }
+button { font: inherit; cursor: pointer; }
+
+::selection { background: var(--c-text); color: var(--c-invert); }
+
+/* ============================================================
+   Eyebrows and shared microtype
+   ============================================================ */
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-text);
+}
+
+.eyebrow--invert { color: var(--c-invert); }
+
+/* ============================================================
+   Pills (the only interactive shape)
+   ============================================================ */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-8);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-8);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 16px;
+  border: 1px solid var(--c-text);
+  border-radius: var(--r-pill);
+  color: var(--c-text);
+  background: transparent;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.pill--sm {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-color: var(--c-text);
+  color: var(--c-text);
+}
+
+a.pill:hover,
+button.pill:hover { background: var(--c-text); color: var(--c-invert); }
+
+button.pill {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 16px;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+/* Copy-email pill — text swaps to "Copied", width stays put */
+.copy-email {
+  min-width: 78px;
+  justify-content: center;
+}
+
+.copy-email.is-copied {
+  background: var(--c-text);
+  color: var(--c-invert);
+  border-color: var(--c-text);
+}
+
+.copy-email.pill--invert.is-copied {
+  background: var(--c-invert);
+  color: var(--c-text);
+  border-color: var(--c-invert);
+}
+
+.pill--invert {
+  border-color: var(--c-invert);
+  color: var(--c-invert);
+}
+
+a.pill--invert:hover,
+button.pill--invert:hover {
+  background: var(--c-invert);
+  color: var(--c-text);
+  border-color: var(--c-invert);
+}
+
+/* ============================================================
+   Masthead — editorial header, three columns
+   ============================================================ */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--c-surface);
+  border-bottom: 1px solid var(--c-line);
+  padding: 0 var(--gutter);
+}
+
+.masthead__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-32);
+  padding: var(--s-16) 0;
+  min-height: 72px;
+}
+
+/* Brand wordmark — tracked uppercase, stacked with role */
+.masthead__brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--c-text);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.masthead__brand-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.masthead__brand-role {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--c-muted);
+}
+
+/* Status — center column, live indicator */
+.masthead__meta {
+  display: flex;
+  justify-content: center;
+}
+
+.masthead__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-8);
+  padding: 6px 14px;
+  border: 1px solid var(--c-text);
+  border-radius: var(--r-pill);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--c-text);
+  white-space: nowrap;
+}
+
+.masthead__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c-text);
+  animation: codexPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes codexPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.85); }
+}
+
+/* Navigation — pill row, right aligned */
+.masthead__nav {
+  display: flex;
+  gap: var(--s-4);
+  background: var(--c-surface);
+  border: 1px solid var(--c-text);
+  border-radius: var(--r-pill);
+  padding: 4px;
+}
+
+.masthead__nav a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-text);
+  padding: 6px 16px;
+  border-radius: var(--r-pill);
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.masthead__nav a:hover {
+  background: var(--c-text);
+  color: var(--c-invert);
+}
+
+.masthead__nav a.is-active {
+  background: var(--c-text);
+  color: var(--c-invert);
+}
+
+/* ============================================================
+   Hero — display type, no image
+   ============================================================ */
+.hero {
+  padding: clamp(64px, 12vw, 160px) var(--gutter) clamp(64px, 10vw, 128px);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-32);
+}
+
+.hero__title {
+  font-size: clamp(48px, 9vw, 144px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--c-text);
+  margin-top: var(--s-8);
+}
+
+.hero__bio {
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 720px;
+  color: var(--c-text);
+}
+
+/* ============================================================
+   Snapshot — key/value strip under the masthead
+   ============================================================ */
+.snapshot-band {
+  border-bottom: 1px solid var(--c-line);
+  padding: 0 var(--gutter);
+}
+
+.snapshot {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px 24px;
+  padding: 20px 0;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--c-text);
+  white-space: nowrap;
+}
+
+.snapshot span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.snapshot b {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+
+@media (max-width: 768px) {
+  .snapshot { font-size: 13px; gap: 8px 16px; }
+}
+
+/* ============================================================
+   Work — alternating rows, large project tiles
+   ============================================================ */
+.work {
+  padding: clamp(32px, 5vw, 64px) var(--gutter) clamp(64px, 10vw, 128px);
+}
+
+.work__header {
+  max-width: 1200px;
+  margin: 0 auto clamp(32px, 5vw, 56px);
+}
+
+.work__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(48px, 8vw, 96px);
+}
+
+.project { position: relative; }
+
+.project__row {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(24px, 4vw, 64px);
+  align-items: stretch;
+  padding-top: clamp(32px, 5vw, 56px);
+  border-top: 1px solid var(--c-line);
+}
+
+.project:first-child .project__row {
+  padding-top: 0;
+  border-top: none;
+}
+
+.project:nth-child(even) .project__row {
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.project:nth-child(even) .project__text { order: 2; }
+.project:nth-child(even) .project__media { order: 1; }
+
+.project__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-16);
+  padding-bottom: var(--s-24);
+  align-self: center;
+}
+
+.project__index {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+
+.project__title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--c-text);
+}
+
+.project__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--c-text);
+  max-width: 520px;
+}
+
+.project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-8);
+  margin-top: var(--s-8);
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 20px;
+  border: 1px solid var(--c-text);
+  border-radius: var(--r-pill);
+  color: var(--c-text);
+  transition: background 0.15s ease, color 0.15s ease, gap 0.2s ease;
+}
+
+.project__row:hover .project__cta {
+  background: var(--c-text);
+  color: var(--c-invert);
+  gap: 14px;
+}
+
+.project__cta--disabled {
+  border-color: var(--c-faint);
+  color: var(--c-muted);
+  cursor: not-allowed;
+}
+
+.project__row:hover .project__cta--disabled {
+  background: transparent;
+  color: var(--c-muted);
+  gap: var(--s-8);
+}
+
+/* Media frame — uniform 3:2 for editorial consistency */
+.project__media {
+  border-radius: var(--r-card);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 2;
+}
+
+.project__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project__row:hover .project__media img {
+  transform: scale(1.02);
+}
+
+.project--soon .project__row { cursor: default; }
+.project--soon .project__row:hover .project__media img { transform: none; }
+
+/* ============================================================
+   Footer — black surface, single row
+   ============================================================ */
+.site-footer {
+  background: var(--c-text);
+  color: var(--c-invert);
+  padding: var(--s-32) var(--gutter);
+}
+
+.site-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-24);
+}
+
+.site-footer__copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 900px) {
+  .masthead__inner {
+    gap: var(--s-16);
+    padding: var(--s-12) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .masthead__inner { min-height: 64px; }
+  .masthead__brand-name { font-size: 12px; letter-spacing: 0.16em; }
+  .masthead__brand-role { font-size: 10px; letter-spacing: 0.14em; }
+  .masthead__nav { padding: 3px; }
+  .masthead__nav a { font-size: 12px; padding: 5px 12px; }
+
+  .hero__title { letter-spacing: -0.02em; }
+
+  .project__row,
+  .project:nth-child(even) .project__row {
+    grid-template-columns: 1fr;
+    gap: var(--s-24);
+  }
+
+  .project:nth-child(even) .project__text,
+  .project:nth-child(even) .project__media { order: initial; }
+
+  .project__media { aspect-ratio: 3 / 2; }
+
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-16);
+  }
+}

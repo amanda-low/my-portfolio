@@ -3,283 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scaling Illustrations with AI - Amanda Low</title>
+  <meta name="description" content="An AI-assisted audit of 382 visual assets across 34 teams, with a migration plan from a 2D library to a unified 3D system.">
+  <title>Scaling Illustrations with AI — Amanda Low</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Manrope:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/codex-home.css">
+  <link rel="stylesheet" href="../css/codex-case.css">
 </head>
 <body>
-  <header class="header">
-    <a href="../index.html" class="header__logo">Amanda Low</a>
-    <nav class="nav">
-      <a href="../index.html" class="nav__link">Work</a>
-      <a href="../about.html" class="nav__link">About</a>
-      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" class="nav__link" target="_blank">CV</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead__inner">
+    <a href="../index.html" class="masthead__brand">
+      <span class="masthead__brand-name">Amanda Low</span>
+      <span class="masthead__brand-role">Product designer</span>
+    </a>
+    <nav class="masthead__nav" aria-label="Main">
+      <a href="../index.html" class="is-active">Work</a>
+      <a href="../about.html">About</a>
+      <a href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="case-hero">
-      <div class="container container--narrow">
-        <div class="case-nav">
-          <a href="../index.html" class="back-link">&larr; Back to Work</a>
-        </div>
-        <span class="case-hero__company">HelloFresh</span>
-        <h1 class="case-hero__title">Scaling Illustrations with AI</h1>
-        <p>How AI tools helped audit 382 illustrations across 40 teams and establish scalable migration workflows.</p>
+<main>
 
-        <div class="case-meta">
-          <div class="case-meta__item">
-            <span class="case-meta__label">Role</span>
-            <span class="case-meta__value">Product Designer (Design Ops)</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Timeline</span>
-            <span class="case-meta__value">Q1 2026 (ongoing)</span>
-          </div>
-          <div class="case-meta__item">
-            <span class="case-meta__label">Scope</span>
-            <span class="case-meta__value">Web, React Native | 8 brands</span>
-          </div>
-          <div class="case-meta__item case-meta__item--full">
-            <span class="case-meta__label">Ownership</span>
-            <div class="stepper-pills">
-              <span class="stepper-pills__step stepper-pills__step--active">Discovery</span>
-              <span class="stepper-pills__step stepper-pills__step--active">Definition</span>
-              <span class="stepper-pills__step stepper-pills__step--active">Design</span>
-              <span class="stepper-pills__step">Development</span>
-              <span class="stepper-pills__step">Deployment</span>
-            </div>
-          </div>
-        </div>
+  <!-- ================ CASE HEADER ================ -->
+  <section class="case-header">
+    <div class="case-header__inner">
+      <a href="../index.html" class="back">← Back to work</a>
+      <p class="eyebrow">HelloFresh · Design Ops · 2026</p>
+      <h1 class="case-header__title">Scaling Illustrations with AI.</h1>
+      <p class="case-header__sub">An AI-assisted audit of 382 visual assets across 34 teams, with a migration plan from a 2D library to a unified 3D system.</p>
 
-        </div>
-    </section>
-
-    <section class="case-image-full">
-      <div class="container">
-        <img src="../images/ai-illustration-hero.png" alt="Before and after comparison of 2D flat illustrations versus new 3D clay-style illustrations">
-      </div>
-    </section>
-
-    <article class="container container--narrow">
-      <section class="case-section">
-        <h2 class="case-section__title">Overview</h2>
-        <div class="case-section__content">
-          <h3>The Challenge</h3>
-          <p>In mid-2025, HelloFresh defined a new 3D illustration style to modernize the brand. But rollout stalled almost immediately.</p>
-
-          <p>The problem? <strong>40 teams across 8 brands</strong> had been storing and implementing their own illustrations for years. There was no centralized inventory, no clear ownership map, and assets lived in dozens of locations:</p>
-
-          <ul>
-            <li>Local files in 2 major repositories (Web + React Native)</li>
-            <li>8 different CDN domains</li>
-            <li>Contentful CMS</li>
-            <li>Inline SVG components buried in code</li>
-          </ul>
-
-          <p>Nobody knew what existed, where it lived, or who owned it.</p>
-
-          <h3>Why I Was Brought In</h3>
-          <p>I was asked to help unblock the migration because of my experience working embedded in engineering teams since joining HelloFresh. I had:</p>
-
-          <ul>
-            <li>Strong relationships with developers across squads</li>
-            <li>Knowledge of the complexity from working on multi-brand, multi-domain rollouts</li>
-            <li>A track record of bridging design and engineering gaps</li>
-          </ul>
-
-          <blockquote>
-            <p>"This would take months of manual searching. What if we used AI to do the audit instead?"</p>
-            <cite>— My pitch to the team</cite>
-          </blockquote>
-
-          <h3>The AI-Assisted Approach</h3>
-          <p>I proposed using AI tools to scale what would otherwise be months of tedious manual work. Claude Code could search codebases for image files. ChatGPT could help generate consistent replacement illustrations. Together, they could transform an overwhelming migration into a manageable, systematic process.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">The Audit</h2>
-        <div class="case-section__content">
-          <p>The first step was understanding what we were dealing with. I used Claude Code to systematically search both repositories.</p>
-
-          <h3>Discovery Method</h3>
-          <p>Claude Code searched for SVG, PNG, and WebP files across the codebase, then helped classify each by content type, platform, and team ownership using CODEOWNERS files.</p>
-
-          <h3>What We Found</h3>
-          <ul>
-            <li><strong>382</strong> illustrations total</li>
-            <li><strong>265</strong> web illustrations</li>
-            <li><strong>117</strong> mobile illustrations</li>
-            <li><strong>8</strong> CDN domains</li>
-            <li><strong>20</strong> duplicates identified</li>
-          </ul>
-
-          <h3>Classification</h3>
-          <ul>
-            <li><strong>207</strong> 2D illustrations (need replacement)</li>
-            <li><strong>27</strong> already in 3D target style</li>
-            <li><strong>81</strong> photos (case-by-case)</li>
-            <li><strong>27</strong> animations (separate review)</li>
-          </ul>
-
-          <div class="case-image">
-            <img src="../images/ai-illustration-audit.png" alt="Spreadsheet showing the illustration audit with columns for platform, screen, team owner, content type, and more">
-            <p class="case-image__caption">The audit spreadsheet catalogued every illustration with metadata for prioritization</p>
-          </div>
-
-          <p><strong>Key Insight:</strong> Customer visibility became the most important prioritization factor. 197 illustrations were only visible to logged-in customers (high priority), while 91 appeared on public marketing pages (medium priority).</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Guidelines & AI Workflows</h2>
-        <div class="case-section__content">
-          <h3>Defining the Target Style</h3>
-          <p>The new 3D style needed to be precisely defined so teams could create consistent illustrations—whether by hand or with AI assistance. I documented the key characteristics:</p>
-
-          <h3>Visual Characteristics</h3>
-          <ul>
-            <li>Smooth, rounded "clay" or "plastic" surfaces</li>
-            <li>Matte finish (not glossy or shiny)</li>
-            <li>Soft shadows and ambient occlusion</li>
-            <li>Simple, bold colors (gold, purple, green)</li>
-            <li>Rounded edges, no sharp corners</li>
-            <li>"Toy" or "Pixar" aesthetic</li>
-          </ul>
-
-          <h3>Size Guidelines</h3>
-          <ul>
-            <li><strong>UI illustrations:</strong> 40px to 128px</li>
-            <li><strong>Scene illustrations:</strong> 256px to 1024px</li>
-            <li><strong>Mobile assets:</strong> Export at 3x (1080px minimum)</li>
-            <li><strong>Web assets:</strong> Export at 2x (1440px minimum)</li>
-          </ul>
-
-          <div class="case-image">
-            <img src="../images/ai-illustration-style.png" alt="Examples of the target 3D illustration style showing food, delivery trucks, and reward icons">
-            <p class="case-image__caption">The target 3D style: friendly, matte clay aesthetic with soft shadows</p>
-          </div>
-
-          <h3>AI Generation Workflow</h3>
-          <p>For new illustration requests, I created ChatGPT prompts that reliably produce on-brand results:</p>
-
-          <blockquote>
-            <p>"Using this exact aesthetic, create a [description] with a clay-like aesthetic icon. Keep the background transparent."</p>
-            <cite>— Base prompt template</cite>
-          </blockquote>
-
-          <p>I also developed a detailed JSON style specification that teams can use for more complex generation needs, covering perspective, lighting, textures, and color palette.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Migration Approach</h2>
-        <div class="case-section__content">
-          <p>With the audit complete and guidelines established, I organized the cross-team migration effort:</p>
-
-          <h3>Prioritization Framework</h3>
-          <p>We prioritized by customer impact:</p>
-          <ul>
-            <li><strong>Priority 1:</strong> Logged-in customer screens (197 illustrations) — active users see these daily</li>
-            <li><strong>Priority 2:</strong> Logged-out public pages (91 illustrations) — affects acquisition</li>
-            <li><strong>Priority 3:</strong> Design system components (6 illustrations) — cascades to multiple screens</li>
-          </ul>
-
-          <h3>Low-Effort Implementation</h3>
-          <p>The beauty of the audit was that it made replacement straightforward. Each row in the spreadsheet included:</p>
-          <ul>
-            <li>Exact file path or CDN URL</li>
-            <li>Team owner (from CODEOWNERS)</li>
-            <li>Screen where it appears</li>
-            <li>Trigger conditions</li>
-          </ul>
-
-          <p>Teams could use Claude Code to locate and replace files with minimal manual searching. What might have taken hours per illustration now took minutes.</p>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Results</h2>
-        <div class="case-section__content">
-          <p>The project is ongoing, but we've achieved significant milestones:</p>
-
-          <h3>Audit Outcomes</h3>
-          <ul>
-            <li><strong>382 illustrations</strong> catalogued across web and mobile</li>
-            <li><strong>40 teams</strong> now have clear ownership visibility</li>
-            <li><strong>207 replacement candidates</strong> identified and prioritized</li>
-            <li><strong>20 duplicates</strong> flagged for consolidation</li>
-          </ul>
-
-          <h3>Process Improvements</h3>
-          <ul>
-            <li>Illustration request workflow established via Jira</li>
-            <li>AI prompts documented for consistent generation</li>
-            <li>Guidelines published for all brands</li>
-            <li>New illustrations already being created in target style</li>
-          </ul>
-
-          <h3>What's Next</h3>
-          <ul>
-            <li>Native iOS and Android audit (not yet covered)</li>
-            <li>Zest design system integration for centralized storage</li>
-            <li>Animation consistency guidelines</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section">
-        <h2 class="case-section__title">Reflection</h2>
-        <div class="case-section__content">
-          <h3>What AI Enabled</h3>
-          <p>This project wouldn't have been feasible without AI assistance. Manually searching two large repositories, opening hundreds of files, classifying each visually, and mapping ownership would have taken months. With Claude Code, I completed the audit in weeks—and with higher accuracy, since the AI could systematically check CODEOWNERS files and CDN patterns I might have missed.</p>
-
-          <h3>The Human Layer</h3>
-          <p>AI handled the tedious discovery work, but the strategic decisions remained human. Prioritization by customer visibility, the decision to separate photos from illustrations for review, the choice to flag duplicates rather than auto-dedupe—these required judgment that understood the organizational context.</p>
-
-          <h3>What I'd Do Differently</h3>
-          <ul>
-            <li><strong>Include native apps earlier:</strong> Native iOS and Android weren't in scope, but they'll need auditing eventually. Starting sooner would have given a complete picture.</li>
-            <li><strong>Prototype the migration flow:</strong> Having teams actually replace a few illustrations during the audit phase would have surfaced implementation friction earlier.</li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="case-nav case-nav--bottom">
-        <a href="../index.html" class="back-link">&larr; Back to Work</a>
-        <a href="compact-cards.html" class="next-link">Next: Product Card Accessibility &rarr;</a>
-      </div>
-    </article>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="footer__copy">&copy; 2026 Amanda Low</p>
-      <div class="social-links">
-        <a href="mailto:amanda.r.low@outlook.com" class="social-link">Email</a>
-        <a href="https://www.linkedin.com/in/amanda-r-low/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <p class="snapshot snapshot--keyvalue case-header__meta">
+        <span><b>Role</b> Product Designer, Design Ops</span>
+        <span><b>Timeline</b> Q2 2026, ongoing</span>
+        <span><b>Scope</b> Web, React Native, 8 brands</span>
+        <span><b>Stage</b> Discovery, Definition, Design</span>
+      </p>
     </div>
-  </footer>
+  </section>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
-    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    </button>
-    <figure class="lightbox__figure">
-      <img src="" alt="" class="lightbox__img">
-      <figcaption class="lightbox__caption"></figcaption>
+  <!-- ================ HERO IMAGE ================ -->
+  <div class="case-hero">
+    <figure class="case-hero__inner">
+      <img src="../images/ai-illustration-hero.png" alt="Grid comparing 2D flat illustrations with their 3D clay-style replacements: meals, flames, cakes, pancakes, and cupcakes">
     </figure>
-    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
-    </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <!-- ================ 01 PROBLEM ================ -->
+  <section class="band" id="problem">
+    <div class="band__inner">
+      <p class="eyebrow">01 · The problem</p>
+      <h2 class="section__title">A new style, no map of the work.</h2>
+
+      <div class="prose">
+        <p class="lede">In mid-2025, HelloFresh defined a new 3D illustration style to modernise the brand. Rollout was slow to start. 34 teams across 8 brands had been storing and implementing their own illustrations. There was no centralised inventory, no clear ownership map, and assets lived in dozens of locations.</p>
+        <p>I was asked to help unblock the migration because of my experience bridging the design–engineering gap while embedded in engineering teams. I had strong relationships with developers and engineering managers, hands-on experience with multi-brand rollouts, and a track record of navigating complexity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 02 APPROACH ================ -->
+  <section class="band" id="approach">
+    <div class="band__inner">
+      <p class="eyebrow">02 · The approach</p>
+      <h2 class="section__title">Targeted AI, not a chatbot.</h2>
+
+      <div class="prose">
+        <p class="lede">The new 3D style was already established. New assets could be generated with a custom ChatGPT prompt. The hard part wasn't making art. It was finding all the places the old art lived.</p>
+        <p>An audit was needed to map and replace the old illustrations. I tested whether Claude Code could scale what would otherwise require weeks of tedious manual work. After some prototyping, I found it could search codebases for image files and be trained to recognise the difference between photos, 2D illustrations, and 3D illustrations, transforming an overwhelming migration into a systematic process.</p>
+      </div>
+
+      <figure class="case-figure case-figure--inset">
+        <img src="../images/ai-illustration-style.png" alt="Examples of the target 3D illustration style showing food, delivery trucks, and reward icons">
+        <figcaption>The target 3D style. Friendly, matte clay aesthetic with soft shadows.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 03 WHAT WE FOUND ================ -->
+  <section class="band" id="found">
+    <div class="band__inner">
+      <p class="eyebrow">03 · What we found</p>
+      <h2 class="section__title">What the audit surfaced.</h2>
+
+      <div class="prose">
+        <p>Claude Code searched for image asset file types across the codebase, then helped classify each one by content, size, location, platform, and team ownership.</p>
+      </div>
+
+      <ul class="stat-grid">
+        <li>
+          <p class="stat-grid__num">382</p>
+          <p class="stat-grid__label">Total assets audited</p>
+        </li>
+        <li>
+          <p class="stat-grid__num">211</p>
+          <p class="stat-grid__label">2D illustrations to replace<span>163 web · 48 mobile</span></p>
+        </li>
+        <li>
+          <p class="stat-grid__num">34</p>
+          <p class="stat-grid__label">Teams across 8 brands</p>
+        </li>
+        <li>
+          <p class="stat-grid__num">27</p>
+          <p class="stat-grid__label">Animations needing rework</p>
+        </li>
+      </ul>
+
+      <figure class="case-figure">
+        <img src="../images/ai-illustration-audit.png" alt="Spreadsheet showing the illustration audit with columns for platform, screen, team owner, content type, and more">
+        <figcaption>The audit spreadsheet. Every illustration catalogued with metadata for prioritisation.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 04 AUDIT TOOL ================ -->
+  <section class="band" id="tool">
+    <div class="band__inner">
+      <p class="eyebrow">04 · From spreadsheet to tool</p>
+      <h2 class="section__title">A communication tool, then a platform.</h2>
+
+      <div class="prose">
+        <p>The CSV had the data, but I needed a way to see illustrations alongside their screens. Essential for helping teams recreate assets and review pull requests. Claude suggested an HTML site to share the audit with stakeholders.</p>
+        <p>Once built, an unexpected benefit emerged. I could spot misclassifications immediately. Some 3D illustrations had been tagged as 2D. Photos had been labelled as illustrations. Since I could customise the UI, I added a review feature so designers could reassign assets from their own teams. What started as a communication tool became an interactive platform for 34 teams to filter, review, and correct the data themselves.</p>
+        <p>The site also solved another problem. There had been no central repository. With illustrations scattered across teams and storage locations, maintaining consistency for common states required constant coordination. Now everyone had a single source of truth.</p>
+      </div>
+
+      <figure class="case-figure">
+        <img src="../images/ai-illustration-audit-tool.png" alt="Screenshot of the illustration audit tool showing a grid of assets with filters for team, asset type, platform, and brand, plus a detail panel for reclassifying assets">
+        <figcaption>The audit tool. Designers could filter by team, spot misclassifications, and reassign asset types.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================ 05 PRIORITISATION ================ -->
+  <section class="band" id="prioritisation">
+    <div class="band__inner">
+      <p class="eyebrow">05 · Prioritisation</p>
+      <h2 class="section__title">Replace once, use everywhere.</h2>
+
+      <div class="prose">
+        <p class="lede">With the audit complete, I planned the cross-team migration. Prioritisation was based on impact and efficiency.</p>
+      </div>
+
+      <ol class="priority-list">
+        <li>
+          <span class="priority-list__num">A</span>
+          <div>
+            <p class="priority-list__head">Design system components</p>
+            <p class="priority-list__count">6 assets · cascades automatically</p>
+          </div>
+        </li>
+        <li>
+          <span class="priority-list__num">B</span>
+          <div>
+            <p class="priority-list__head">Cross-platform concepts</p>
+            <p class="priority-list__count">19 assets · replace once, use everywhere</p>
+          </div>
+        </li>
+        <li>
+          <span class="priority-list__num">C</span>
+          <div>
+            <p class="priority-list__head">Logged-in screens</p>
+            <p class="priority-list__count">103 assets · the core experience</p>
+          </div>
+        </li>
+        <li>
+          <span class="priority-list__num">D</span>
+          <div>
+            <p class="priority-list__head">Logged-out pages</p>
+            <p class="priority-list__count">73 assets · acquisition</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="prose">
+        <p>Since Claude had already identified each file's name, location, and owning team, it could handle the replacement. Teams could run the swap themselves, or I could open pull requests for them to review.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 06 PROGRESS ================ -->
+  <section class="band" id="progress">
+    <div class="band__inner">
+      <p class="eyebrow">06 · Where it stands</p>
+      <h2 class="section__title">Progress and next steps.</h2>
+
+      <div class="ship">
+        <article class="ship__col">
+          <p class="ship__label">Done</p>
+          <ul class="ship__list">
+            <li>Audit complete</li>
+            <li>Migration plan established</li>
+            <li>Illustration request workflow set up in Jira</li>
+            <li>ChatGPT prompts documented for consistent 3D generation</li>
+          </ul>
+        </article>
+        <article class="ship__col">
+          <p class="ship__label">Next</p>
+          <ul class="ship__list">
+            <li>Audit native iOS and Android codebases for remaining legacy illustrations</li>
+            <li>Work with design systems team to centralise storage and create reusable components</li>
+            <li>Update 2D animations to the 3D style</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ BOTTOM NAV ================ -->
+  <nav class="case-bottom-nav" aria-label="Case study navigation">
+    <div class="case-bottom-nav__inner">
+      <a class="back" href="../index.html">← Back to work</a>
+      <a class="next" href="product-cards.html">Next case study, Product Card Accessibility →</a>
+    </div>
+  </nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__copy">&copy; 2026 Amanda Low</p>
+    <ul class="pills site-footer__pills">
+      <li><button type="button" class="pill pill--invert copy-email" data-email="amanda.r.low@outlook.com" data-default="Email" data-copied="Copied">Email</button></li>
+      <li><a class="pill pill--invert" href="https://www.linkedin.com/in/amanda-r-low/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="pill pill--invert" href="https://drive.google.com/file/d/1KXRCN-ZH1ND5MANVYW0ukST_RX_2N7os/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/codex.js"></script>
 </body>
 </html>
