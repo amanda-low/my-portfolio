@@ -98,10 +98,10 @@ Personal portfolio site for Amanda Low, Product Designer. Minimal, editorial aes
 - See `STYLEGUIDE.md` for complete documentation
 
 ## Image Optimization
-- Max width: 1500px (resized for mobile performance)
+- Max width: 2400px (retina-safe target — ~2× the ~1200px band container)
 - Transparent PNGs: keep as PNG
 - Non-transparent images: convert to JPG at 85% quality
-- Target total images folder size: ~40MB
+- Target total images folder size: ~50MB
 
 ## Key Images
 - `images/cart-revamp-hero.png` - Homepage hero for Checkout (device mockups, transparent)
